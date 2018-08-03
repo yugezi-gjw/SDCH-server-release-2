@@ -75,6 +75,11 @@ public class MockHISPatientQuery implements IPatientQuery {
         return mockData;
     }
 
+    @Override
+    public RegistrationVO queryByZyId(String zyId) {
+        return null;
+    }
+
     public String searchBodyPart(String condition) {
         CodeSystemServiceImp codeSystemServiceImp = new CodeSystemServiceImp();
         List<BodyPartVO> bodyParts = codeSystemServiceImp.queryBodyParts(condition, "1");

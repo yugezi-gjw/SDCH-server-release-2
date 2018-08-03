@@ -135,11 +135,7 @@ public class RegistryFactory {
 
     private static RegistrationVO getHISPatient(String hisId) {
         IPatientQuery iPatientQuery = hisPatientQuery();
-        if (iPatientQuery == null) {
-            return null;
-        } else {
-            return iPatientQuery.queryByHisId(hisId);
-        }
+        return iPatientQuery == null ? null : iPatientQuery.queryByZyId(hisId);
     }
 
     private static IPatientQuery hisPatientQuery() {

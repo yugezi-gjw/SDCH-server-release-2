@@ -7,4 +7,6 @@ import com.varian.oiscn.core.patient.RegistrationVO;
  */
 public interface IPatientQuery {
     RegistrationVO queryByHisId(String hisId);
+
+    RegistrationVO queryByZyId(String zyId);
 }
