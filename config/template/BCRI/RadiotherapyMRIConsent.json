@@ -1,0 +1,476 @@
+﻿{
+  "name": "Form",
+  "description": "",
+  "type": "FormComponent",
+  "properties": {
+    "width": "660px",
+    "height": "",
+    "flexWrap": "wrap",
+    "groupSettings": "[{\"name\": \"group1\", \"suffix\": \"_g:group1\", \"errorMsg\":\"groupErrorMsg\"}]"
+  },
+  "children": [
+    {
+      "name": "HTML",
+      "description": "Custom HTML.",
+      "type": "HtmlComponent",
+      "properties": {
+        "html": "<link rel='stylesheet' href='/print.css'><style>.bodytext p { margin: 0;text-indent: 2em;}</style>",
+        "isFormHeader": false
+      },
+      "children": []
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into 2 rows.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "100%",
+        "height": "auto",
+        "class": "vform-default",
+        "padding": "0",
+        "alignItems": "",
+        "justifyContent": "",
+        "alignSelf": "",
+        "flexFlow": "column",
+        "flexGrow": 1,
+        "hidden": false
+      },
+      "children": [
+        {
+          "name": "Layout",
+          "description": "",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "100%",
+            "height": "70px",
+            "borderTop": "",
+            "borderRight": "",
+            "borderBottom": "",
+            "borderLeft": "",
+            "class": "",
+            "padding": "0 0 0 0",
+            "alignItems": "",
+            "justifyContent": "",
+            "alignSelf": "",
+            "flexFlow": "rowwrap",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": [
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "50%",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "HTML",
+                  "description": "CustomHTML.",
+                  "type": "HtmlComponent",
+                  "properties": {
+                    "html": "<img width='150' height='47' src='/assets/images/bcri-logo.png'/>",
+                    "isFormHeader": false
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "50%",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0",
+                "alignItems": "",
+                "justifyContent": "flex-end",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "Barcode",
+                  "description": "Barcode",
+                  "type": "BarcodeComponent",
+                  "properties": {
+                    "usePatientId": "false",
+                    "value": "patient.hisId",
+                    "width": "1",
+                    "height": "30",
+                    "displayValue": "false"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layout",
+          "description": "",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "100%",
+            "height": "40px",
+            "borderTop": "",
+            "borderRight": "",
+            "borderBottom": "",
+            "borderLeft": "",
+            "class": "",
+            "padding": "0 0 30px 0",
+            "alignItems": "",
+            "justifyContent": "center",
+            "alignSelf": "",
+            "flexFlow": "rowwrap",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": [
+            {
+              "name": "HTML",
+              "description": "CustomHTML.",
+              "type": "HtmlComponent",
+              "properties": {
+                "html": "<div id='title'>放疗MRI定位检查知情同意书</div>",
+                "isFormHeader": false
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Layout",
+          "description": "",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "100%",
+            "height": "auto",
+            "borderTop": "",
+            "borderRight": "",
+            "borderBottom": "",
+            "borderLeft": "",
+            "class": "",
+            "padding": "0 0 0 0",
+            "alignItems": "",
+            "justifyContent": "",
+            "alignSelf": "",
+            "flexFlow": "rowwrap",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": [
+            {
+              "name": "HTML",
+              "description": "CustomHTML.",
+              "type": "HtmlComponent",
+              "properties": {
+                "html": "<div class='greeting'>患者同志您好：</div> <div class='bodytext'> <p > MRI检查需在强磁场中进行，为确保安全，患有幽闭恐惧症、安装心脏起搏器、动脉瘤术后、体部止血夹的患者严谨磁共振检查，体内有金属异物或铁磁性植入物、代偿心衰和早期妊娠的病人不能进行此项检查。 </p> <p >患者病情较重（如平卧困难、容易呛咳、身体衰弱、心脏血管疾患、生命体征不稳定、昏迷等）或者体内含有金属异物等情况，在MRI检查时可能出现意外情况。</p> <p >MRI检查时间相对较长，检查过程中需病人配合。高龄或病情危重病人需家属陪同检查。</p> <p >检查前需要除去发卡、别针、项链、戒指、手表、假牙、假发、义眼、皮带、硬币、钥匙、信用卡、手机等金属及磁性物品，不要穿着有金属钩的内衣。家属及陪护人员未经过许可不能进入磁体间，金属物品（包括轮椅、平车、监护设备和其他抢救设备）不能进入磁体间。如擅自进入，易造成人员伤亡及机器的损害。</p> <p >胃肠道检查患者检查前4小时内请勿用含有金属盐的药物。</p> <p >腹盆部扫描必要时需注射654-Ⅱ，此药可有效地减慢胃肠道蠕动，减少扫描中的胃肠蠕动伪影。用药后常见副作用有：口干，少见的有心率加快等。青光眼、前列腺肥大、心动过速者禁用。</p> </div> <br> <div class='greeting' style='text-indent:2em'>我已对上述情况充分知情，并保证遵守上述规定，配合并同意进行MRI检查。</div>",
+                "isFormHeader": false
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "2 Row layout",
+          "description": "Divides the form into 2 rows.",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "100%",
+            "height": "auto",
+            "class": "vform-default",
+            "padding": "0 0 0 0",
+            "alignItems": "",
+            "justifyContent": "",
+            "alignSelf": "",
+            "flexFlow": "column",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": [
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "100%",
+                "height": "150px",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+              },
+              "children": []
+            },
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "100%",
+                "height": "40px",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "2 Column layout",
+                  "description": "Divides the form into 2 columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "100%",
+                    "class": "vform-default",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "flexFlow": "row",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "360px",
+                        "height": "100%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": []
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "60px",
+                        "height": "100%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "20px 0 0 12px",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "HTML",
+                          "description": "CustomHTML.",
+                          "type": "HtmlComponent",
+                          "properties": {
+                            "html": "<div class='signature'>患者签字：</div>",
+                            "isFormHeader": false
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "120px",
+                        "height": "100%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "1px solid #B3B3B3",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "100%",
+                "height": "40px",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "2 Column layout",
+                  "description": "Divides the form into 2 columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "100%",
+                    "class": "vform-default",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "flexFlow": "row",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "360px",
+                        "height": "100%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": []
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "60px",
+                        "height": "100%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "20px 0 0 12px",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "HTML",
+                          "description": "CustomHTML.",
+                          "type": "HtmlComponent",
+                          "properties": {
+                            "html": "<div class='signature'>签字日期：</div>",
+                            "isFormHeader": false
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "120px",
+                        "height": "100%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "1px solid #B3B3B3",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

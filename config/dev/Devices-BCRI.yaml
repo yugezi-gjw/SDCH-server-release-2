@@ -1,0 +1,186 @@
+deviceList:
+  - id: PV2
+    interval: 15
+    capacity: 276
+    jobType: IMMOB
+    color: '#FFAABB'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: 1100EX
+    interval: 15
+    capacity: 276
+    jobType: TREATMENT
+    color: '#CDC467'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: PV1
+    interval: 15
+    capacity: 276
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#FFE765'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: 23EX
+    interval: 15
+    capacity: 276
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#B4B5B4'
+    timeSlotList:
+      - startTime: 8:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: D-2300CD
+    interval: 15
+    capacity: 276
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#5A9ED4'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: 21EX 1900
+    interval: 23
+    capacity: 276
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#FF8B00'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: Acuity1
+    interval: 12
+    capacity: 276
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#E97070'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: iX-2
+    interval: 15
+    capacity: 276
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#9ADA53'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: iX 1100
+    interval: 12
+    capacity: 276
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#E97070'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: TrueBeam_Config
+    interval: 20
+    capacity: 207
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#FFAABB'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: HESN5
+    interval: 30
+    capacity: 138
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#B268B0'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: TrueBeamSN2747
+    interval: 30
+    capacity: 1
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#FFE765'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: Demo mHDR v2
+    interval: 30
+    capacity: 20
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#FFAABB'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: Treat_Mac
+    interval: 30
+    capacity: 20
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#FFAABB'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: Elekta SL 75
+    interval: 30
+    capacity: 20
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#FFAABB'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: 600CD
+    interval: 1
+    capacity: 20
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#FFAABB'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: 6EX
+    interval: 30
+    capacity: 20
+    jobType: TREATMENT
+    usage: AssignDeviceSDCH
+    color: '#FFAABB'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59

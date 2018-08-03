@@ -1,0 +1,71 @@
+patients:
+  -
+    hisId: 201804121531
+    nationalId: 201804121531
+    fullName: 刘美琳
+    gender: Female
+    birthDate: 2001-02-03
+    age: 17
+    telephone: 13523533222
+    address: 北京市永昌北路一号
+    contactPerson: 刘玉珠
+    contactPhone: 18812343332
+    #既往病史
+    medicalHistory: 右乳癌保乳术后2个月。术前穿刺病理： - 乳腺浸润性导管癌，Ⅱ级。ER(强+90%),PR(强+70%),HER2(1+),Ki67(+30%)。SLNB0/1。术前瑞宁德治疗22个月。2016-4-7行保乳术，术后病理： - 乳腺浸润性导管癌，大小0.9×0.8×0.7cm； - 部分肿瘤细胞变性（反应率约30%），伴间质纤维化、钙化、淋巴细胞浸润，符合治疗后改变； - 未见脉管癌栓； -（上、下、内、外）切缘均未见癌。术后内分泌治疗。
+
+    urgent: true
+    #阳性标识
+    positiveSign: 皮肤疾病
+    #保险类型
+    insuranceType: Med4513
+    #保险类型
+    patientSource: 住院
+    physicianComment: 医生备注
+    allergyInfo: 青霉素过敏
+    bodypart: 脑
+    diagnosisNote: 分期描述测试
+    diagnosisDate: 2018-04-01
+    physicianName: 黎国柱
+    physicianBName: 李小光
+    physicianCName: 宋俊书
+    tcode: T1h
+    ncode: N1
+    mcode: M1
+    staging: Stage IVC
+    ecogScore: 3
+    ecogDesc: ecog描述测试
+    alert: 癫痫
+    recurrent: true
+#    physicianGroupId:
+#    physicianId:
+    diagnosisCode: C10.0
+    diagnosisDesc: 会厌前面恶性肿瘤
+    dynamicFormItems:
+      - key: bedNo
+        value: 11111
+      - key: room
+        value: 123
+  -
+    hisId: 2018010202
+    nationalId: 2312123426789898
+    fullName: 张大民
+    gender: Male
+    birthDate: 2001-02-03
+    age: 17
+    telephone: 13523533222
+    address: 北京市永昌北路一号
+    contactPerson: 刘玉珠
+    contactPhone: 18812343332
+    #既往病史
+    medicalHistory: 未见脉管癌栓； -（上、下、内、外）切缘均未见癌。术后内分泌治疗。
+    diagnosisDate: 2018-04-01
+    urgent: true
+    #阳性标识
+    positiveSign: 皮肤疾病
+    #保险类型
+    insuranceType: 1
+    #保险类型
+#    insuranceType: 新农合
+    patientSource: 住院
+    dynamicFormItems:
+

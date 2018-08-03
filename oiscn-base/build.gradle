@@ -1,0 +1,14 @@
+dependencies {
+    compile(
+            project(':oiscn-common'),
+            project(':oiscn-anticorruption'),
+            'io.dropwizard:dropwizard-core:1.0.5',
+            'io.dropwizard:dropwizard-client:1.0.5',
+            'io.dropwizard:dropwizard-auth:1.0.5',
+            'com.microsoft.sqlserver:mssql-jdbc:6.2.2.jre8',
+            'org.yaml:snakeyaml:1.10',
+            'com.belerweb:pinyin4j:2.5.1',
+            'net.sf.json-lib:json-lib:2.4:jdk15'
+    )
+    testCompile 'com.microsoft.sqlserver:mssql-jdbc:6.2.2.jre8'
+}

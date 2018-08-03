@@ -1,0 +1,4 @@
+linkCPInDynamicFormItems:
+  - activityCode: PlaceImmobilizationAndCTOrder
+    dynamicFormTag: MRICheckbox
+    cpTemplateId: MRICarePath

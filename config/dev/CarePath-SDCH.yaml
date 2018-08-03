@@ -1,0 +1,23 @@
+defaultCarePathTemplateName: SDCH.Short
+carePath:
+  - templateId: SDCH.Short
+    templateName: 山东标准治疗流程
+    description: 这个是正常的CP
+    category: PRIMARY
+  - templateId: PP
+    templateName: PP的CP
+    description: 不应该显示
+    category: PRIMARY
+  - templateId: Nick
+    templateName: 尼克的CP
+    description: 不要使用尼克的CP
+    category: PRIMARY
+  - templateId: bf care path
+    templateName: 带空格的CP啊
+    description: 很多很多很多的描述
+    category: PRIMARY
+  - templateId: MRICarePath
+    templateName: MRI流程
+    description: MRI隐含的流程
+    category: OPTIONAL
+

@@ -1,0 +1,17 @@
+.idea
+**/*.iml
+**/*.ipr
+**/*.iws
+**/build
+**/.gradle
+**/.bak
+**/.clover
+**/log
+**/generated
+**/generated_tests
+**/local-config.yml
+**/bin
+**/.project
+**/.classpath
+**/.settings
+gradle.properties

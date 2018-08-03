@@ -1,0 +1,209 @@
+{
+  "resourceType": "Bundle",
+  "id": "c2bf259c-caaa-4d11-95e3-50731c398a6d",
+  "meta": {
+    "lastUpdated": "2017-07-12T14:02:02.056+05:30"
+  },
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:8000/fhir/TreatmentSummary?_format=json&patient=6"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://localhost:8000/fhir/TreatmentSummary/TreatmentSummary_Wed Jul 12 14:01:54 IST 2017",
+      "resource": {
+        "resourceType": "TreatmentSummary",
+        "id": "TreatmentSummary_Wed Jul 12 14:01:54 IST 2017",
+        "meta": {
+          "profile": [
+            "http://varian.com/fhir/resources/TreatmentSummary"
+          ]
+        },
+        "subject": {
+          "id": "Patient/6",
+          "reference": "Patient/6",
+          "display": "America, Captain"
+        },
+        "course": [
+          {
+            "courseId": "C1",
+            "startTime": "2016-12-13T16:33:31+05:30",
+            "status": "ACTIVE",
+            "planSetup": [
+              {
+                "planSetupId": "Plan 1",
+                "planSetupName": "First Plan",
+                "status": "TreatApproval",
+                "intent": "CURATIVE",
+                "treatmentType": "Linac",
+                "createdOn": "2017-05-26T04:31:33+05:30",
+                "fractionSummary": [
+                  {
+                    "fractionationId": "F1",
+                    "fractionsPlanned": 10,
+                    "fractionsGiven": 1,
+                    "fractionsRemaining": 9,
+                    "treatmentStartTime": "2017-05-02T04:52:16+05:30",
+                    "lastTreatmentTime": "2017-05-02T04:52:35+05:30",
+                    "elapsedDays": 0
+                  }
+                ],
+                "doseSummary": [
+                  {
+                    "fractionationId": "F1",
+                    "siteId": "PTV",
+                    "dosePlanned": 200.0,
+                    "doseGiven": 20.0,
+                    "doseRemaining": 180.0,
+                    "dosePerFraction": 20.0,
+                    "doseUnit": {
+                      "coding": [
+                        {
+                          "code": "Gy"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "statusDate": "2017-05-26T04:42:18+05:30",
+                "field": [
+                  {
+                    "fieldId": "F1",
+                    "fieldName": "F1",
+                    "createdOn": "2017-05-26T04:33:23+05:30",
+                    "toleranceId": "T1",
+                    "toleranceName": "T1",
+                    "scale": "IEC1217",
+                    "technique": "STATIC",
+                    "energy": "15X",
+                    "collMode": "AsymmetryX&Y",
+                    "gantryRotation": 0.0,
+                    "collimatorRotation": 0.0,
+                    "collimatorX": 10.0,
+                    "collimatorY": 10.0,
+                      "couchRotation": 0.0,
+                    "couchLat": 24.0,
+                    "couchLng": 23.0,
+                    "couchVrt": 22.0,
+                    "doseRate": 160,
+                      "weight": 1.419,
+                    "setupField": false
+                  },
+                  {
+                    "fieldId": "SetUp",
+                    "fieldName": "SetUp",
+                    "createdOn": "2017-05-26T04:34:14+05:30",
+                    "toleranceId": "T1",
+                    "toleranceName": "T1",
+                    "scale": "IEC1217",
+                    "technique": "STATIC",
+                    "energy": "15X",
+                    "collMode": "AsymmetryX&Y",
+                    "gantryRotation": 0.0,
+                    "collimatorRotation": 0.0,
+                    "collimatorX": 10.0,
+                    "collimatorY": 10.0,
+                      "couchRotation": 0.0,
+                    "couchLat": 24.0,
+                    "couchLng": 23.0,
+                    "couchVrt": 22.0,
+                    "doseRate": 160,
+                      "weight": 1.070,
+                    "setupField": false
+                  }
+                ]
+              },
+              {
+                "planSetupId": "Plan 2",
+                "planSetupName": "Second Plan",
+                "status": "TreatApproval",
+                "intent": "CURATIVE",
+                "treatmentType": "Linac",
+                "createdOn": "2017-05-26T04:34:33+05:30",
+                "fractionSummary": [
+                  {
+                    "fractionationId": "F1",
+                    "fractionsPlanned": 10,
+                    "fractionsGiven": 1,
+                    "fractionsRemaining": 9,
+                    "treatmentStartTime": "2017-05-26T04:52:35+05:30",
+                    "lastTreatmentTime": "2017-05-26T05:02:45+05:30",
+                    "elapsedDays": 0
+                  }
+                ],
+                "doseSummary": [
+                  {
+                    "fractionationId": "F1",
+                    "siteId": "R1",
+                    "dosePlanned": 240.0,
+                    "doseGiven": 24.0,
+                    "doseRemaining": 216.0,
+                    "dosePerFraction": 24.0,
+                    "doseUnit": {
+                      "coding": [
+                        {
+                          "code": "Gy"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "statusDate": "2017-05-26T04:52:04+05:30",
+                "field": [
+                  {
+                    "fieldId": "F1",
+                    "fieldName": "F1",
+                    "createdOn": "2017-05-26T04:34:33+05:30",
+                    "toleranceId": "T1",
+                    "toleranceName": "T1",
+                    "scale": "IEC1217",
+                    "technique": "STATIC",
+                    "energy": "15X",
+                    "collMode": "AsymmetryX&Y",
+                    "gantryRotation": 0.0,
+                    "collimatorRotation": 0.0,
+                    "collimatorX": 10.0,
+                    "collimatorY": 10.0,
+                      "couchRotation": 0.0,
+                    "couchLat": 24.0,
+                    "couchLng": 23.0,
+                    "couchVrt": 22.0,
+                    "doseRate": 160,
+                      "weight": 1.104,
+                    "setupField": false
+                  },
+                  {
+                    "fieldId": "SetUp",
+                    "fieldName": "SetUp",
+                    "createdOn": "2017-05-26T04:34:33+05:30",
+                    "toleranceId": "T1",
+                    "toleranceName": "T1",
+                    "scale": "IEC1217",
+                    "technique": "STATIC",
+                    "energy": "15X",
+                    "collMode": "AsymmetryX&Y",
+                    "gantryRotation": 0.0,
+                    "collimatorRotation": 0.0,
+                    "collimatorX": 10.0,
+                    "collimatorY": 10.0,
+                      "couchRotation": 0.0,
+                    "couchLat": 24.0,
+                    "couchLng": 23.0,
+                    "couchVrt": 22.0,
+                    "doseRate": 160,
+                      "weight": 1.038,
+                    "setupField": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

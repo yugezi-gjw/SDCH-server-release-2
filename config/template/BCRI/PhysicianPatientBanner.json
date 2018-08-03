@@ -1,0 +1,584 @@
+﻿{
+  "name": "Form",
+  "description": "",
+  "type": "FormComponent",
+  "properties": {
+    "width": "100%",
+    "height": "70px",
+    "background": "#ffffff",
+    "flexWrap": "wrap",
+    "groupSettings": "[{\"name\": \"group1\", \"suffix\": \"_g:group1\", \"errorMsg\":\"groupErrorMsg\"}]"
+  },
+  "children": [
+    {
+      "name": "HTML",
+      "description": "Custom HTML.",
+      "type": "HtmlComponent",
+      "properties": {
+        "html": "<style>.form-urgent-icon{margin:7px 0 0 15px}.form-banner{min-width:1200px}.pad10{padding-right:10px}.form-name{font-size:24px;font-size: 24px;font-weight: 300;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;} .none-div div{display:none} .form-heading{margin-right:8px} .form-urgent{ margin: 0 10px 0 -19px;display: inline-block;} .header-section:nth-child(2n){flex:5} .header-section{box-sizing:border-box;justify-content:space-between;align-items:center;flex:3;}</style>",
+        "isFormHeader": false
+      },
+      "children": []
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "100%",
+        "height": "",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default form-banner",
+        "padding": "0 0 0 0",
+        "alignItems": "",
+        "justifyContent": "",
+        "alignSelf": "",
+        "flexFlow": "row wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex",
+        "switchField": ""
+      },
+      "children": [
+        {
+          "name": "Layout",
+          "description": "Divides the form into rows and columns.",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "33%",
+            "height": "70px",
+            "borderTop": "",
+            "borderRight": "",
+            "borderBottom": "",
+            "borderLeft": "",
+            "class": "vform-default header-section none-div",
+            "padding": "0 30px 0 30px",
+            "alignItems": "",
+            "justifyContent": "",
+            "alignSelf": "",
+            "flexFlow": "row nowrap",
+            "flexGrow": "",
+            "hidden": false,
+            "display": "flex",
+            "switchField": ""
+          },
+          "children": [
+            {
+              "name": "layout",
+              "description": "Divides the form into rows and columns.",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "70%",
+                "height": "",
+                "class": "vform-default",
+                "padding": "",
+                "alignItems": "center",
+                "justifyContent": "flex-start",
+                "alignSelf": "center",
+                "flexFlow": "row warp",
+                "flexGrow": "",
+                "hidden": false,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "showImage",
+                  "description": "showImage.",
+                  "type": "ShowImageComponent",
+                  "properties": {
+                    "name": "headImg",
+                    "width": "50px",
+                    "height": "50px",
+                    "content": "",
+                    "expression": "'data:image/png;base64,'+'##patient.photo#'",
+                    "alt": "headImg",
+                    "class": "form-heading",
+                    "default":"/assets/images/defaultphoto.png",
+                    "isShowExp":""
+                  },
+                  "children": []
+                },
+                {
+                  "name": "ModelLabel",
+                  "description": "",
+                  "type": "ModelLabelComponent",
+                  "properties": {
+                    "content": "",
+                    "class": "form-name",
+                    "visibleExp": "",
+                    "expression":"##patient.chineseName#"
+                  },
+                  "children": []
+                },
+                {
+                  "name": "showImage",
+                  "description": "showImage.",
+                  "type": "ShowImageComponent",
+                  "properties": {
+                    "name": "headImg",
+                    "width": "16px",
+                    "height": "16px",
+                    "content": "",
+                    "expression": "",
+                    "alt": "urgent",
+                    "class": "form-urgent-icon",
+                    "default":"/assets/images/urgent_red.png",
+                    "isShowExp":"##patient.urgent#"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "2 Row layout",
+              "description": "Divides the form into 2 rows.",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "30%",
+                "height": "",
+                "class": "vform-default",
+                "padding": "",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "column",
+                "flexGrow": "",
+                "hidden": false,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "Layout",
+                  "description": "",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": "",
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "ModelLabel",
+                      "description": "",
+                      "type": "ModelLabelComponent",
+                      "properties": {
+                        "content": "",
+                        "class": "pad10",
+                        "visibleExp": "",
+                        "expression":"##patient.gender#",
+                        "pipeName":"genderToChinese"
+                      },
+                      "children": []
+                    },
+                    {
+                      "name": "ModelLabel",
+                      "description": "",
+                      "type": "ModelLabelComponent",
+                      "properties": {
+                        "content": "",
+                        "class": "pad10",
+                        "visibleExp": "",
+                        "expression":"##patient.age#?'##patient.age#'+'岁':''",
+                        "default":""
+                      },
+                      "children": []
+                    },
+                    {
+                      "name": "showImage",
+                      "description": "showImage.",
+                      "type": "ShowImageComponent",
+                      "properties": {
+                        "name": "headImg",
+                        "width": "17px",
+                        "height": "",
+                        "content": "",
+                        "expression": "",
+                        "alt": "headImg",
+                        "class": "warning-icon",
+                        "default":"/assets/images/warning1_orange.png",
+                        "isShowExp":"##patient.warningText#",
+                        "tooltip":"##patient.warningText#"
+                      },
+                      "children": []
+                    }
+
+                  ]
+                },
+                {
+                  "name": "Layout",
+                  "description": "",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": "",
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "ModelLabel",
+                      "description": "",
+                      "type": "ModelLabelComponent",
+                      "properties": {
+                        "content": "",
+                        "class": "",
+                        "visibleExp": "",
+                        "expression":"'患者ID: '+'##patient.hisId#'"
+                      },
+                      "children": []
+                    }
+
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layout",
+          "description": "Divides the form into rows and columns.",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "30%",
+            "height": "70px",
+            "borderTop": "",
+            "borderRight": "1px solid lightgray",
+            "borderBottom": "",
+            "borderLeft": "1px solid lightgray",
+            "class": "vform-default header-section  none-div",
+            "padding": "0 30px 0 30px",
+            "alignItems": "",
+            "justifyContent": "",
+            "alignSelf": "",
+            "flexFlow": "row nowarp",
+            "flexGrow": "",
+            "hidden": false,
+            "display": "flex",
+            "switchField": ""
+          },
+          "children": [
+            {
+              "name": "2 Row layout",
+              "description": "Divides the form into 2 rows.",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "100%",
+                "height": "",
+                "class": "vform-default",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "column",
+                "flexGrow": "",
+                "hidden": false,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "Layout",
+                  "description": "",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": "",
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "ModelLabel",
+                      "description": "",
+                      "type": "ModelLabelComponent",
+                      "properties": {
+                        "content": "",
+                        "class": "pad10",
+                        "visibleExp": "",
+                        "expression":"##patient.diagnosisDesc#"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Layout",
+                  "description": "",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": "",
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "ModelLabel",
+                      "description": "",
+                      "type": "ModelLabelComponent",
+                      "properties": {
+                        "content": "分期: ",
+                        "class": "",
+                        "visibleExp": "",
+                        "expression":""
+                      },
+                      "children": []
+                    },
+                    {
+                      "name": "ModelLabel",
+                      "description": "",
+                      "type": "ModelLabelComponent",
+                      "properties": {
+                        "content": "",
+                        "class": "pad10",
+                        "visibleExp": "",
+                        "expression":"##patient.staging#"
+                      },
+                      "children": []
+                    },
+                    {
+                      "name": "ModelLabel",
+                      "description": "",
+                      "type": "ModelLabelComponent",
+                      "properties": {
+                        "content": "",
+                        "class": "pad10",
+                        "visibleExp": "",
+                        "expression":"##patient.tcode#"
+                      },
+                      "children": []
+                    },
+                    {
+                      "name": "ModelLabel",
+                      "description": "",
+                      "type": "ModelLabelComponent",
+                      "properties": {
+                        "content": "",
+                        "class": "pad10",
+                        "visibleExp": "",
+                        "expression":"##patient.ncode#"
+                      },
+                      "children": []
+                    },
+                    {
+                      "name": "ModelLabel",
+                      "description": "",
+                      "type": "ModelLabelComponent",
+                      "properties": {
+                        "content": "",
+                        "class": "",
+                        "visibleExp": "",
+                        "expression":"##patient.mcode#"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layout",
+          "description": "Divides the form into rows and columns.",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "33%",
+            "height": "70px",
+            "borderTop": "",
+            "borderRight": "",
+            "borderBottom": "",
+            "borderLeft": "",
+            "class": "vform-default header-section  none-div",
+            "padding": "0 30px 0 30px",
+            "alignItems": "",
+            "justifyContent": "",
+            "alignSelf": "",
+            "flexFlow": "row nowarp",
+            "flexGrow": "",
+            "hidden": false,
+            "display": "flex",
+            "switchField": ""
+          },
+          "children": [
+            {
+              "name": "2 Row layout",
+              "description": "Divides the form into 2 rows.",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "100%",
+                "height": "",
+                "class": "vform-default",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "column",
+                "flexGrow": "",
+                "hidden": false,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "Layout",
+                  "description": "",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "",
+                    "height": "",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": "",
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "ModelLabel",
+                      "description": "",
+                      "type": "ModelLabelComponent",
+                      "properties": {
+                        "content": "",
+                        "class": "pad10",
+                        "visibleExp": "",
+                        "expression":"##patient.physicianName#"
+                      },
+                      "children": []
+                    },
+                    {
+                      "name": "ModelLabel",
+                      "description": "",
+                      "type": "ModelLabelComponent",
+                      "properties": {
+                        "content": "",
+                        "class": "pad10",
+                        "visibleExp": "",
+                        "expression":"##patient.physicianBName#"
+                      },
+                      "children": []
+                    },
+                    {
+                      "name": "ModelLabel",
+                      "description": "",
+                      "type": "ModelLabelComponent",
+                      "properties": {
+                        "content": "",
+                        "class": "pad10",
+                        "visibleExp": "",
+                        "expression":"##patient.physicianCName#"
+                      },
+                      "children": []
+                    },
+                    {
+                      "name": "ModelLabel",
+                      "description": "",
+                      "type": "ModelLabelComponent",
+                      "properties": {
+                        "content": "",
+                        "class": "",
+                        "visibleExp": "",
+                        "expression":"(##patient.physicianGroupName#)"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Layout",
+                  "description": "",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "",
+                    "height": "",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": "",
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "ModelLabel",
+                      "description": "",
+                      "type": "ModelLabelComponent",
+                      "properties": {
+                        "content": "",
+                        "class": "",
+                        "visibleExp": "",
+                        "expression":"##patient.physicianPhone#"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+server:
+  callingServiceUrl: http://127.0.0.1:55070/appointments/mockcallingserver
+  method: POST
+  connectionTimeout: 30000
+  retryTimes: 10
+  retryInterval: 99
+###  contentType: text/html
+  contentType: application/x-www-form-urlencoded
+  charset: UTF-8
+config:
+  logo: http://localhost:3000/assets/images/u10.png
+  companyInfo: 瓦里安中国公司
+  systemInfo:
+    callingCount: 3
+  checkInGuide:
+    summaryGuide:
+      texts:
+      - summary guide text1
+      - summary guide text2
+      imageUrls:
+      - summary guide image1
+      - summary guide image2
+      videoUrls:
+      - summary guide video1
+      - summary guide video2
+    devicesGuide:
+      devices:
+      -
+       deviceId: deviceId1,
+       deviceName: deviceName1,
+       ariaDeviceId: aria device id1,
+       deviceRoom: device room1,
+       deviceGuide:
+         texts:
+         - device guide text1
+         - device guide text2
+         imageUrls:
+         - device guide image1
+         - device guide image2
+         videoUrls:
+         - device guide video1
+         - device guide video2
+      -
+       deviceId: deviceId2,
+       deviceName: deviceName2,
+       ariaDeviceId: aria device id2,
+       deviceRoom: device room2,
+       deviceGuide:
+         texts:
+         - device guide text1
+         - device guide text2
+         imageUrls:
+         - device guide image1
+         - device guide image2
+         videoUrls:
+         - device guide video1
+         - device guide video2
+      -
+       deviceId: macaddress1008
+       deviceName: 制模1008
+       ariaDeviceId: 1008
+       deviceRoom: 制模房间1008
+       deviceGuide:
+         texts:
+         - device guide text1
+         - device guide text2
+         imageUrls:
+         - device guide image1
+         - device guide image2
+         videoUrls:
+         - device guide video1
+         - device guide video2
+      -
+       deviceId: macaddress1096
+       deviceName: 制模1096
+       ariaDeviceId: 1096
+       deviceRoom: 制模房间1096
+       deviceGuide:
+         texts:
+         - device guide text1
+         - device guide text2
+         imageUrls:
+         - device guide image1
+         - device guide image2
+         videoUrls:
+         - device guide video1
+         - device guide video2
+  callingPatientGuide:
+    summaryGuide:
+      texts:
+      - summary guide text1
+      - summary guide text2
+      imageUrls:
+      - summary guide image1
+      - summary guide image2
+      videoUrls:
+      - summary guide video1
+      - summary guide video2
+    devicesGuide:
+      devices:
+      - deviceId: deviceId3
+        deviceName: deviceName3
+        ariaDeviceId: aria device id3
+        deviceRoom: device room3
+        deviceGuide:
+          texts:
+          - device guide text1
+          - device guide text2
+          imageUrls:
+          - device guide image1
+          - device guide image2
+          videoUrls:
+          - device guide video1
+          - device guide video2

@@ -1,0 +1,1125 @@
+﻿{
+    "name": "Form",
+    "description": "",
+    "type": "FormComponent",
+    "properties": {
+        "width": "660px",
+        "height": "",
+        "flexWrap": "wrap",
+        "groupSettings": "[{\"name\": \"group1\", \"suffix\": \"_g:group1\", \"errorMsg\":\"groupErrorMsg\"}]"
+    },
+    "children": [
+        {
+            "name": "HTML",
+            "description": "Custom HTML.",
+            "type": "HtmlComponent",
+            "properties": {
+                "html": "<link rel='stylesheet' href='/print.css'><style>.code{white-space:nowrap!important}</style>",
+                "isFormHeader": false
+            },
+            "children": []
+        },
+        {
+            "name": "Layout",
+            "description": "Divides the form into 2 rows.",
+            "type": "LayoutComponent",
+            "properties": {
+                "width": "100%",
+                "height": "auto",
+                "class": "vform-default",
+                "padding": "0 42px 0 42px",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "column",
+                "flexGrow": 1,
+                "hidden": false
+            },
+            "children": [
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "100%",
+                        "height": "70px",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "50%",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<img width='150' height='47' src='/assets/images/hospital-logo.png'/>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "50%",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0",
+                                "alignItems": "",
+                                "justifyContent": "flex-end",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "Barcode",
+                                    "description": "Barcode",
+                                    "type": "BarcodeComponent",
+                                    "properties": {
+                                        "usePatientId": "false",
+                                        "value": "patient.hisId",
+                                        "width": "1",
+                                        "height": "30",
+                                        "displayValue": "false"
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "100%",
+                        "height": "40px",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 10px 0",
+                        "alignItems": "",
+                        "justifyContent": "center",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "HTML",
+                            "description": "CustomHTML.",
+                            "type": "HtmlComponent",
+                            "properties": {
+                                "html": "<div id='title'>CT造影剂使用知情同意书</div>",
+                                "isFormHeader": false
+                            },
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "100%",
+                        "height": "auto",
+                        "borderTop": "0.5px solid #B3B3B3",
+                        "borderRight": "0.5px solid #B3B3B3",
+                        "borderBottom": "0.5px solid #B3B3B3",
+                        "borderLeft": "0.5px solid #B3B3B3",
+                        "class": "patient-info-div",
+                        "padding": "10px 0 10px 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "column",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "height": "auto",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 10px 0 10px",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "alignSelf": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "hidden": false,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "2 Column layout",
+                                    "description": "Divides the form into 2 columns.",
+                                    "type": "LayoutComponent",
+                                    "properties": {
+                                        "class": "vform-default",
+                                        "padding": "0 0 0 0",
+                                        "alignItems": "",
+                                        "justifyContent": "",
+                                        "flexFlow": "row",
+                                        "flexGrow": 1,
+                                        "hidden": false,
+                                        "display": "flex"
+                                    },
+                                    "children": [
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "30%",
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "2 Column layout",
+                                                    "description": "Divides the form into 2 columns.",
+                                                    "type": "LayoutComponent",
+                                                    "properties": {
+                                                        "width": "100%",
+                                                        "height": "100%",
+                                                        "class": "vform-default",
+                                                        "padding": "0 0 0 0",
+                                                        "alignItems": "",
+                                                        "justifyContent": "",
+                                                        "flexFlow": "row",
+                                                        "flexGrow": 1,
+                                                        "hidden": false,
+                                                        "display": "flex"
+                                                    },
+                                                    "children": [
+                                                        {
+                                                            "name": "Layout",
+                                                            "description": "",
+                                                            "type": "LayoutComponent",
+                                                            "properties": {
+                                                                "width": "52px",
+                                                                "height": "",
+                                                                "borderTop": "",
+                                                                "borderRight": "",
+                                                                "borderBottom": "",
+                                                                "borderLeft": "",
+                                                                "class": "",
+                                                                "padding": "0 0 0 0",
+                                                                "alignItems": "",
+                                                                "justifyContent": "",
+                                                                "flexFlow": "row wrap",
+                                                                "flexGrow": 1,
+                                                                "display": "flex"
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "name": "HTML",
+                                                                    "description": "CustomHTML.",
+                                                                    "type": "HtmlComponent",
+                                                                    "properties": {
+                                                                        "html": "<span class='font10pxbold'>姓名：</span>",
+                                                                        "isFormHeader": false
+                                                                    },
+                                                                    "children": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "Layout",
+                                                            "description": "",
+                                                            "type": "LayoutComponent",
+                                                            "properties": {
+                                                                "width": "140px",
+                                                                "height": "",
+                                                                "borderTop": "",
+                                                                "borderRight": "",
+                                                                "borderBottom": "",
+                                                                "borderLeft": "",
+                                                                "class": "",
+                                                                "padding": "0 0 0 0",
+                                                                "alignItems": "",
+                                                                "justifyContent": "",
+                                                                "flexFlow": "row wrap",
+                                                                "flexGrow": 1,
+                                                                "display": "flex"
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "name": "ContextLabel",
+                                                                    "description": "提供上下文数据项的显示",
+                                                                    "type": "ContextLabelComponent",
+                                                                    "properties": {
+                                                                        "content": "",
+                                                                        "class": "bodytext",
+                                                                        "name": "patient.chineseName"
+                                                                    },
+                                                                    "children": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "30%",
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "2 Column layout",
+                                                    "description": "Divides the form into 2 columns.",
+                                                    "type": "LayoutComponent",
+                                                    "properties": {
+                                                        "width": "100%",
+                                                        "height": "auto",
+                                                        "class": "vform-default",
+                                                        "padding": "0 0 0 0",
+                                                        "alignItems": "",
+                                                        "justifyContent": "",
+                                                        "flexFlow": "row",
+                                                        "flexGrow": 1,
+                                                        "hidden": false,
+                                                        "display": "flex"
+                                                    },
+                                                    "children": [
+                                                        {
+                                                            "name": "Layout",
+                                                            "description": "",
+                                                            "type": "LayoutComponent",
+                                                            "properties": {
+                                                                "width": "39px",
+                                                                "height": "",
+                                                                "borderTop": "",
+                                                                "borderRight": "",
+                                                                "borderBottom": "",
+                                                                "borderLeft": "",
+                                                                "class": "",
+                                                                "padding": "0 0 0 0",
+                                                                "alignItems": "",
+                                                                "justifyContent": "",
+                                                                "flexFlow": "row wrap",
+                                                                "flexGrow": 1,
+                                                                "display": "flex"
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "name": "HTML",
+                                                                    "description": "CustomHTML.",
+                                                                    "type": "HtmlComponent",
+                                                                    "properties": {
+                                                                        "html": "<span class='font10pxbold'>性别：</span>",
+                                                                        "isFormHeader": false
+                                                                    },
+                                                                    "children": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "Layout",
+                                                            "description": "",
+                                                            "type": "LayoutComponent",
+                                                            "properties": {
+                                                                "width": "153px",
+                                                                "height": "",
+                                                                "borderTop": "",
+                                                                "borderRight": "",
+                                                                "borderBottom": "",
+                                                                "borderLeft": "",
+                                                                "class": "",
+                                                                "padding": "0 0 0 0",
+                                                                "alignItems": "",
+                                                                "justifyContent": "",
+                                                                "flexFlow": "row wrap",
+                                                                "flexGrow": 1,
+                                                                "display": "flex"
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "name": "ContextLabel",
+                                                                    "description": "提供上下文数据项的显示",
+                                                                    "type": "ContextLabelComponent",
+                                                                    "properties": {
+                                                                        "content": "",
+                                                                        "class": "bodytext",
+                                                                        "name": "patient.gender",
+                                                                        "formatter": "[{\"key\":\"MALE\",\"value\":\"男\"},{\"key\":\"FEMALE\",\"value\":\"女\"}]"
+                                                                    },
+                                                                    "children": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "40%",
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "2 Column layout",
+                                                    "description": "Divides the form into 2 columns.",
+                                                    "type": "LayoutComponent",
+                                                    "properties": {
+                                                        "width": "100%",
+                                                        "height": "auto",
+                                                        "class": "vform-default",
+                                                        "padding": "0 0 0 0",
+                                                        "alignItems": "",
+                                                        "justifyContent": "",
+                                                        "flexFlow": "row",
+                                                        "flexGrow": 1,
+                                                        "hidden": false,
+                                                        "display": "flex"
+                                                    },
+                                                    "children": [
+                                                        {
+                                                            "name": "Layout",
+                                                            "description": "",
+                                                            "type": "LayoutComponent",
+                                                            "properties": {
+                                                                "width": "39px",
+                                                                "height": "",
+                                                                "borderTop": "",
+                                                                "borderRight": "",
+                                                                "borderBottom": "",
+                                                                "borderLeft": "",
+                                                                "class": "",
+                                                                "padding": "0 0 0 0",
+                                                                "alignItems": "",
+                                                                "justifyContent": "",
+                                                                "flexFlow": "row wrap",
+                                                                "flexGrow": 1,
+                                                                "display": "flex"
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "name": "HTML",
+                                                                    "description": "CustomHTML.",
+                                                                    "type": "HtmlComponent",
+                                                                    "properties": {
+                                                                        "html": "<span class='font10pxbold'>年龄：</span>",
+                                                                        "isFormHeader": false
+                                                                    },
+                                                                    "children": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "Layout",
+                                                            "description": "",
+                                                            "type": "LayoutComponent",
+                                                            "properties": {
+                                                                "width": "217px",
+                                                                "height": "",
+                                                                "borderTop": "",
+                                                                "borderRight": "",
+                                                                "borderBottom": "",
+                                                                "borderLeft": "",
+                                                                "class": "",
+                                                                "padding": "0 0 0 0",
+                                                                "alignItems": "",
+                                                                "justifyContent": "",
+                                                                "flexFlow": "row wrap",
+                                                                "flexGrow": 1,
+                                                                "display": "flex"
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "name": "ContextLabel",
+                                                                    "description": "提供上下文数据项的显示",
+                                                                    "type": "ContextLabelComponent",
+                                                                    "properties": {
+                                                                        "content": "",
+                                                                        "class": "bodytext",
+                                                                        "name": "patient.age"
+                                                                    },
+                                                                    "children": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "height": "auto",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "5px 10px 0 10px",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "alignSelf": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "hidden": false,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "2 Column layout",
+                                    "description": "Divides the form into 2 columns.",
+                                    "type": "LayoutComponent",
+                                    "properties": {
+                                        "class": "vform-default",
+                                        "padding": "0 0 0 0",
+                                        "alignItems": "",
+                                        "justifyContent": "",
+                                        "flexFlow": "row",
+                                        "flexGrow": 1,
+                                        "hidden": false,
+                                        "display": "flex"
+                                    },
+                                    "children": [
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "30%",
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "2 Column layout",
+                                                    "description": "Divides the form into 2 columns.",
+                                                    "type": "LayoutComponent",
+                                                    "properties": {
+                                                        "width": "100%",
+                                                        "height": "auto",
+                                                        "class": "vform-default",
+                                                        "padding": "0 0 0 0",
+                                                        "alignItems": "",
+                                                        "justifyContent": "",
+                                                        "flexFlow": "row",
+                                                        "flexGrow": 1,
+                                                        "hidden": false,
+                                                        "display": "flex"
+                                                    },
+                                                    "children": [
+                                                        {
+                                                            "name": "Layout",
+                                                            "description": "",
+                                                            "type": "LayoutComponent",
+                                                            "properties": {
+                                                                "width": "52px",
+                                                                "height": "",
+                                                                "borderTop": "",
+                                                                "borderRight": "",
+                                                                "borderBottom": "",
+                                                                "borderLeft": "",
+                                                                "class": "",
+                                                                "padding": "0 0 0 0",
+                                                                "alignItems": "",
+                                                                "justifyContent": "",
+                                                                "flexFlow": "row wrap",
+                                                                "flexGrow": 1,
+                                                                "display": "flex"
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "name": "HTML",
+                                                                    "description": "CustomHTML.",
+                                                                    "type": "HtmlComponent",
+                                                                    "properties": {
+                                                                        "html": "<span class='font10pxbold'>病案号：</span>",
+                                                                        "isFormHeader": false
+                                                                    },
+                                                                    "children": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "Layout",
+                                                            "description": "",
+                                                            "type": "LayoutComponent",
+                                                            "properties": {
+                                                                "width": "140px",
+                                                                "height": "",
+                                                                "borderTop": "",
+                                                                "borderRight": "",
+                                                                "borderBottom": "",
+                                                                "borderLeft": "",
+                                                                "class": "",
+                                                                "padding": "0 0 0 0",
+                                                                "alignItems": "",
+                                                                "justifyContent": "",
+                                                                "flexFlow": "row wrap",
+                                                                "flexGrow": 1,
+                                                                "display": "flex"
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "name": "ContextLabel",
+                                                                    "description": "提供上下文数据项的显示",
+                                                                    "type": "ContextLabelComponent",
+                                                                    "properties": {
+                                                                        "content": "",
+                                                                        "class": "bodytext",
+                                                                        "name": "patient.hisId"
+                                                                    },
+                                                                    "children": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "30%",
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "HTML",
+                                                    "description": "CustomHTML.",
+                                                    "type": "HtmlComponent",
+                                                    "properties": {
+                                                        "html": "<span class='font10pxbold'>科室：</span><span class='bodytext'>放疗科</span>",
+                                                        "isFormHeader": false
+                                                    },
+                                                    "children": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "40%",
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "2 Column layout",
+                                                    "description": "Divides the form into 2 columns.",
+                                                    "type": "LayoutComponent",
+                                                    "properties": {
+                                                        "width": "100%",
+                                                        "height": "auto",
+                                                        "class": "vform-default inline-group",
+                                                        "padding": "0 0 0 0",
+                                                        "alignItems": "",
+                                                        "justifyContent": "",
+                                                        "flexFlow": "row",
+                                                        "flexGrow": 1,
+                                                        "hidden": false,
+                                                        "display": "flex"
+                                                    },
+                                                    "children": [
+                                                        {
+                                                            "name": "Layout",
+                                                            "description": "",
+                                                            "type": "LayoutComponent",
+                                                            "properties": {
+                                                                "width": "39px",
+                                                                "height": "",
+                                                                "borderTop": "",
+                                                                "borderRight": "",
+                                                                "borderBottom": "",
+                                                                "borderLeft": "",
+                                                                "class": "",
+                                                                "padding": "0 0 0 0",
+                                                                "alignItems": "",
+                                                                "justifyContent": "",
+                                                                "flexFlow": "row wrap",
+                                                                "flexGrow": 1,
+                                                                "display": "flex"
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "name": "HTML",
+                                                                    "description": "CustomHTML.",
+                                                                    "type": "HtmlComponent",
+                                                                    "properties": {
+                                                                        "html": "<span class='font10pxbold'>诊断：</span>",
+                                                                        "isFormHeader": false
+                                                                    },
+                                                                    "children": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "Layout",
+                                                            "description": "",
+                                                            "type": "LayoutComponent",
+                                                            "properties": {
+                                                                "width": "217px",
+                                                                "height": "",
+                                                                "borderTop": "",
+                                                                "borderRight": "",
+                                                                "borderBottom": "",
+                                                                "borderLeft": "",
+                                                                "class": "",
+                                                                "padding": "0 0 0 0",
+                                                                "alignItems": "",
+                                                                "justifyContent": "",
+                                                                "flexFlow": "row",
+                                                                "flexGrow": 1,
+                                                                "display": "flex"
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "name": "ContextLabel",
+                                                                    "description": "提供上下文数据项的显示",
+                                                                    "type": "ContextLabelComponent",
+                                                                    "properties": {
+                                                                        "content": "",
+                                                                        "class": "bodytext code",
+                                                                        "name": "patient.diagnosisCode"
+                                                                    },
+                                                                    "children": []
+                                                                },
+                                                                {
+                                                                    "name": "ContextLabel",
+                                                                    "description": "提供上下文数据项的显示",
+                                                                    "type": "ContextLabelComponent",
+                                                                    "properties": {
+                                                                        "content": "",
+                                                                        "class": "bodytext",
+                                                                        "name": "patient.diagnosisDesc"
+                                                                    },
+                                                                    "children": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "100%",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "20px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "HTML",
+                            "description": "CustomHTML.",
+                            "type": "HtmlComponent",
+                            "properties": {
+                                "html": "<div class='greeting'>患者同志您好：</div> <div class='bodytext'><p> 由于临床诊治的需要，CT增强扫描需要经静脉注射含碘造影剂。我院CT室目前使用的增强造影剂为非离子型造影剂，其不良反应或副反应的发生率相对较低，约为3.12%；严重和致命性药物副反应的发生率为0.04%。请您在接受碘造影剂前，认真阅读使用碘造影剂后可能会发生的不良反应及危险因素。</p> </div>  <div class='font12pxbold paddingtop5'>一、使用含碘造影剂的绝对禁忌症</div> <div class='subcontent'><div>1. 碘过敏者</div> <div>2. 严重甲状腺功能亢进者</div> <div>3. 48小时内服用二甲双胍药物治疗糖尿病的患者</div> <div>4. 妊娠患者</div> <div>5. 限碘治疗期间的患者</div></div> <div class='font12pxbold paddingtop5'>二、使用含碘造影剂的相对禁忌症</div> <div class='subcontent'><div>1. 过度焦虑及过敏体质者，有癫痫病史者</div> <div>2. 各类严重心血管和肺部疾病患者，肝肾功能不全，糖尿病</div> <div>3. 其他不适用于进行增强检查的疾病</div> <div><span class='warning'>*</span><span class='bodybold'>如有上述情况请务必告知CT室医务人员</span></div></div> <div class='font12pxbold paddingtop5'>三、在接受造影剂时可能出现以下情况</div> <div class='subcontent'><div>1. 轻度过敏反应：恶心、呕吐、皮肤潮红、低热、寒战、瘙痒，通常为一过性反应</div> <div>2. 重度过敏反应：血压下降、心率紊乱、痉挛、呼吸道水肿、呼吸困难、急性窒息、严重者可能出现呼吸循环停止等</div> <div>3. 血管并发症：使用高压静脉注射器注射造影剂时，少数患者因心血管脆弱会发生造影剂皮下外渗的情况，数日后即可吸收。少数病人可能发生局部软组织损伤和坏死。</div> <div><span class='warning'>*</span><span class='bodybold'>如出现上述情况医师将尽力采取相应措施进行治疗，希望患者理解和配合。</span></div></div> <div class='greeting'>知情同意声明</div> <div class='bodytext'><p> 本人已充分了解知情同意书中的各项内容，理解上述提及的风险是医务人员尽最大努力达到专业责任标准的情况下仍难以避免的，对此已有充分的思想准备。本人愿积极配合，若在造影剂使用中（后）出现意外紧急情况，同意接受医师的必要处理。</p> </div> <p>最后本人明确表示<span class='font14pxbold'>&nbsp同意&nbsp</span>使用CT造影剂</p>",
+                                "isFormHeader": false
+                            },
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "2 Row layout",
+                    "description": "Divides the form into 2 rows.",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "100%",
+                        "height": "auto",
+                        "class": "vform-default",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "column",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "660px",
+                                "height": "40px",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "alignSelf": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "hidden": false,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "2 Column layout",
+                                    "description": "Divides the form into 2 columns.",
+                                    "type": "LayoutComponent",
+                                    "properties": {
+                                        "width": "100%",
+
+                                        "class": "vform-default",
+                                        "padding": "0 0 0 0",
+                                        "alignItems": "",
+                                        "justifyContent": "",
+                                        "flexFlow": "row",
+                                        "flexGrow": 1,
+                                        "hidden": false,
+                                        "display": "flex"
+                                    },
+                                    "children": [
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "400px",
+
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "60px",
+
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "20px 0 0 12px",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "HTML",
+                                                    "description": "CustomHTML.",
+                                                    "type": "HtmlComponent",
+                                                    "properties": {
+                                                        "html": "<div class='font10pxbold'>患者签字：</div>",
+                                                        "isFormHeader": false
+                                                    },
+                                                    "children": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "120px",
+
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "1px solid #B3B3B3",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "100%",
+                                "height": "40px",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "alignSelf": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "hidden": false,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "2 Column layout",
+                                    "description": "Divides the form into 2 columns.",
+                                    "type": "LayoutComponent",
+                                    "properties": {
+                                        "width": "100%",
+
+                                        "class": "vform-default",
+                                        "padding": "0 0 0 0",
+                                        "alignItems": "",
+                                        "justifyContent": "",
+                                        "flexFlow": "row",
+                                        "flexGrow": 1,
+                                        "hidden": false,
+                                        "display": "flex"
+                                    },
+                                    "children": [
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "400px",
+
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "60px",
+
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "20px 0 0 12px",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "HTML",
+                                                    "description": "CustomHTML.",
+                                                    "type": "HtmlComponent",
+                                                    "properties": {
+                                                        "html": "<div class='font10pxbold'>签字日期：</div>",
+                                                        "isFormHeader": false
+                                                    },
+                                                    "children": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "120px",
+
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "1px solid #B3B3B3",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

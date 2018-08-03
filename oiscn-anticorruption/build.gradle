@@ -1,0 +1,15 @@
+dependencies {
+    compile project(':oiscn-common')
+    compile project(':oiscn-cache')
+    compile (
+        'ca.uhn.hapi.fhir:hapi-fhir-base:3.2.0',
+        'ca.uhn.hapi.fhir:hapi-fhir-server:3.2.0',
+        'ca.uhn.hapi.fhir:hapi-fhir-client:3.2.0',
+        'ca.uhn.hapi.fhir:hapi-fhir-structures-dstu3:3.2.0',
+        'org.reflections:reflections:0.9.10'
+    )
+    compile  name: 'com.varian.fhir.resources', version: '991', ext: 'jar', changing: false
+	configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+}

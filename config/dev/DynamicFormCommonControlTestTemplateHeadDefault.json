@@ -1,0 +1,73 @@
+﻿{
+  "bingrentiwei": "仰卧",
+  "teshutiwei": "闭上眼睛",
+  "fuyadian_immbDeviceGroup": "",
+  "paomodian_immbDeviceGroup": "",
+  "gaofenzidingweidian_immbDeviceGroup": true,
+  "gudingqi1_immbDeviceGroup": "",
+  "zhenxing_immbDeviceGroup": "2号枕",
+  "gudingqi2_immbDeviceGroup": "",
+  "qita_immbDeviceGroup": "",
+  "toumo_immbDeviceGroup": true,
+  "toujingjianmo_immbDeviceGroup": "",
+  "rumo_immbDeviceGroup": "",
+  "fumo_immbDeviceGroup": "",
+  "yinshui_immbDeviceGroup": "",
+  "yitimo_immbDeviceGroup": "",
+  "daitou_immbDeviceGroup": "",
+  "penqiang_immbDeviceGroup": "",
+  "bieniao_immbDeviceGroup": "",
+  "jingxiongmo_immbDeviceGroup": "",
+  "jingxiongmotice_immbDeviceGroup": "",
+  "jingxiongmoeshang_immbDeviceGroup": "",
+  "jingxiongmohuxidongdu_immbDeviceGroup": "",
+  "xiongmo_immbDeviceGroup": "",
+  "xiongmotice_immbDeviceGroup": "",
+  "xiongmoeshang_immbDeviceGroup": "",
+  "xiongmohuxidongdu_immbDeviceGroup": "",
+  "yishengteshuyaoqiu": "医生没有特殊要求",
+  "zhongliubuwei": "",
+  "esignature": null,
+  "congtoudingzhisuogugutou_scanSiteGroup": true,
+  "congtoudingzhiqiguanfencha_scanSiteGroup": "",
+  "jingxiongbu_scanSiteGroup": "",
+  "xiongbu_scanSiteGroup": "",
+  "shangfu_scanSiteGroup": "",
+  "xiafu_scanSiteGroup": "",
+  "fuke_scanSiteGroup": "",
+  "baqujiliangjifenci": [
+    {
+      "TVP1": [
+        {
+          "Target Volume": "GTV",
+          "bodypart": "BodyA_1",
+          "Dose": "30",
+          "Fractions": "20"
+        },
+        {
+          "Target Volume": "PTV",
+          "bodypart": "部位B",
+          "Dose": "20",
+          "Fractions": "18"
+        },
+        {
+          "Target Volume": "CTV",
+          "bodypart": "",
+          "Dose": "18",
+          "Fractions": "15"
+        },
+        {
+          "Target Volume": "",
+          "bodypart": "",
+          "Dose": "",
+          "Fractions": ""
+        },
+        {
+          "validationSkipped": "true",
+          "targetVolumeFooter": "true",
+          "remarkRow": "三个靶区两个部位的备注信息"
+        }
+      ]
+    }
+  ]
+}

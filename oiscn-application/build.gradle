@@ -1,0 +1,63 @@
+apply plugin: 'gradle-one-jar'
+apply plugin: 'application'
+
+buildscript {
+    repositories {
+        mavenLocal()
+        maven {url "http://maven.aliyun.com/nexus/content/groups/public/"}
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.github.rholder:gradle-one-jar:1.0.4'
+    }
+}
+
+dependencies {
+    compile (
+            project (':oiscn-security'),
+            project (':oiscn-common'),
+            project (':oiscn-base'),
+            project (':oiscn-anticorruption'),
+            project (':oiscn-patient'),
+            project (':oiscn-order'),
+            project (':oiscn-appointment'),
+            project (':oiscn-carepath'),
+            project (':oiscn-rt')
+    )
+}
+
+startScripts {
+    mainClassName = project.mainClassName
+}
+
+// Configure the oneJar task
+task oneJar(type: OneJar) {
+    mainClass = project.mainClassName
+    useStable = false
+    archiveName = 'oiscn.jar'
+}
+
+// Configure the run task to start the Dropwizard service
+run {
+    main mainClassName
+    args './config/local.yaml'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.11'
+}
+
+artifacts {
+    oneJar
+}
+
+task copyConfig(type: Copy) {
+    from 'config'
+    into 'build/libs/config'
+}
+
+oneJar {}.dependsOn 'copyConfig'
+
+build.dependsOn 'oneJar'
+

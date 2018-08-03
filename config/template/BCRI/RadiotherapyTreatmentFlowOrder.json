@@ -1,0 +1,3174 @@
+﻿{
+  "name": "Form",
+  "description": "",
+  "type": "FormComponent",
+  "properties": {
+    "width": "660px",
+    "height": "",
+    "flexWrap": "wrap",
+    "groupSettings": "[{\"name\": \"group1\", \"suffix\": \"_g:group1\", \"errorMsg\":\"groupErrorMsg\"}]"
+  },
+  "children": [
+    {
+      "name": "HTML",
+      "description": "Custom HTML.",
+      "type": "HtmlComponent",
+      "properties": {
+        "html": "<link rel='stylesheet' href='/print.css'> <style>.code{white-space:nowrap!important}.vertical-bar-background {background:transparent url('/assets/images/vertical-bar.png') bottom center no-repeat; } .flow-label-center {display: inline-block; text-align: center; width: 79px; } .line-height-one-dot-six {line-height: 1.6; } .barcodeText{display: inline-block; padding-right: 10px;}.flexrow {display: flex; } .lineheight {line-height: 1.8; } .paddingtop10px {padding: 10px 0 0 0; }</style>",
+        "isFormHeader": false
+      },
+      "children": []
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into 2 rows.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "100%",
+        "height": "auto",
+        "class": "vform-default",
+        "padding": "0 42px 0 42px",
+        "alignItems": "",
+        "justifyContent": "",
+        "alignSelf": "",
+        "flexFlow": "column",
+        "flexGrow": 1,
+        "hidden": false
+      },
+      "children": [
+        {
+          "name": "Layout",
+          "description": "",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "100%",
+            "height": "70px",
+            "borderTop": "",
+            "borderRight": "",
+            "borderBottom": "",
+            "borderLeft": "",
+            "class": "",
+            "padding": "0 0 0 0",
+            "alignItems": "",
+            "justifyContent": "",
+            "alignSelf": "",
+            "flexFlow": "rowwrap",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": [
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "50%",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "HTML",
+                  "description": "CustomHTML.",
+                  "type": "HtmlComponent",
+                  "properties": {
+                    "html": "<img width='150' height='47' src='/assets/images/bcri-logo.png'/>",
+                    "isFormHeader": false
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "50%",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0",
+                "alignItems": "",
+                "justifyContent": "flex-end",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "2 Row layout",
+                  "description": "Divides the form into 2 rows.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "100%",
+                    "class": "vform-default",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "column",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "100%",
+                        "height": "",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "flex-end",
+                        "alignSelf": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "Barcode",
+                          "description": "Barcode",
+                          "type": "BarcodeComponent",
+                          "properties": {
+                            "usePatientId": "false",
+                            "value": "patient.hisId",
+                            "width": "1",
+                            "height": "35",
+                            "displayValue": "false"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "100%",
+                        "height": "",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "flex-end",
+                        "alignSelf": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "Label",
+                          "description": "barcodeText",
+                          "type": "LabelComponent",
+                          "properties": {
+                            "content": "患者请治疗全程手持此单",
+                            "class": "barcodeText warning"
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Layout",
+          "description": "",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "100%",
+            "height": "40px",
+            "borderTop": "",
+            "borderRight": "",
+            "borderBottom": "",
+            "borderLeft": "",
+            "class": "",
+            "padding": "0 0 10px 0",
+            "alignItems": "",
+            "justifyContent": "center",
+            "alignSelf": "",
+            "flexFlow": "rowwrap",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": [
+            {
+              "name": "HTML",
+              "description": "CustomHTML.",
+              "type": "HtmlComponent",
+              "properties": {
+                "html": "<div id='title'>放疗科治疗流程单</div>",
+                "isFormHeader": false
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Layout",
+          "description": "",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "100%",
+            "height": "auto",
+            "borderTop": "0.5px solid #B3B3B3",
+            "borderRight": "0.5px solid #B3B3B3",
+            "borderBottom": "0.5px solid #B3B3B3",
+            "borderLeft": "0.5px solid #B3B3B3",
+            "class": "patient-info-div",
+            "padding": "10px 0 10px 0",
+            "alignItems": "",
+            "justifyContent": "",
+            "alignSelf": "",
+            "flexFlow": "column",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": [
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "height": "auto",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 10px 0 10px",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "2 Column layout",
+                  "description": "Divides the form into 2 columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "class": "vform-default",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "flexFlow": "row",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "25%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "100%",
+                            "class": "vform-default",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "52px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "HTML",
+                                  "description": "CustomHTML.",
+                                  "type": "HtmlComponent",
+                                  "properties": {
+                                    "html": "<span class='font10pxbold'>姓名：</span>",
+                                    "isFormHeader": false
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "108px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "ContextLabel",
+                                  "description": "提供上下文数据项的显示",
+                                  "type": "ContextLabelComponent",
+                                  "properties": {
+                                    "content": "",
+                                    "class": "bodytext",
+                                    "name": "patient.chineseName"
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "25%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "auto",
+                            "class": "vform-default",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "65px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "HTML",
+                                  "description": "CustomHTML.",
+                                  "type": "HtmlComponent",
+                                  "properties": {
+                                    "html": "<span class='font10pxbold'>性别：</span>",
+                                    "isFormHeader": false
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "95px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "ContextLabel",
+                                  "description": "提供上下文数据项的显示",
+                                  "type": "ContextLabelComponent",
+                                  "properties": {
+                                    "content": "",
+                                    "class": "bodytext",
+                                    "name": "patient.gender",
+                                    "formatter": "[{\"key\":\"MALE\",\"value\":\"男\"},{\"key\":\"FEMALE\",\"value\":\"女\"}]"
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "25%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "auto",
+                            "class": "vform-default",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "65px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "HTML",
+                                  "description": "CustomHTML.",
+                                  "type": "HtmlComponent",
+                                  "properties": {
+                                    "html": "<span class='font10pxbold'>年龄：</span>",
+                                    "isFormHeader": false
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "95px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "ContextLabel",
+                                  "description": "提供上下文数据项的显示",
+                                  "type": "ContextLabelComponent",
+                                  "properties": {
+                                    "content": "",
+                                    "class": "bodytext",
+                                    "name": "patient.age"
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "25%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "auto",
+                            "class": "vform-default",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "65x",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "HTML",
+                                  "description": "CustomHTML.",
+                                  "type": "HtmlComponent",
+                                  "properties": {
+                                    "html": "<span class='font10pxbold'>医保：</span>",
+                                    "isFormHeader": false
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "95px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "flex-start",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "ContextLabel",
+                                  "description": "提供上下文数据项的显示",
+                                  "type": "ContextLabelComponent",
+                                  "properties": {
+                                    "content": "",
+                                    "class": "bodytext",
+                                    "name": "patient.insuranceType"
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "height": "auto",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 10px 0 10px",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "2 Column layout",
+                  "description": "Divides the form into 2 columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "class": "vform-default",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "flexFlow": "row",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "25%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "100%",
+                            "class": "vform-default",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "52px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "HTML",
+                                  "description": "CustomHTML.",
+                                  "type": "HtmlComponent",
+                                  "properties": {
+                                    "html": "<span class='font10pxbold'>病案号：</span>",
+                                    "isFormHeader": false
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "108px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "ContextLabel",
+                                  "description": "提供上下文数据项的显示",
+                                  "type": "ContextLabelComponent",
+                                  "properties": {
+                                    "content": "",
+                                    "class": "bodytext",
+                                    "name": "patient.hisId"
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "25%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "auto",
+                            "class": "vform-default",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "65px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "HTML",
+                                  "description": "CustomHTML.",
+                                  "type": "HtmlComponent",
+                                  "properties": {
+                                    "html": "<span class='font10pxbold'>病人提示：</span>",
+                                    "isFormHeader": false
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "95px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "ContextLabel",
+                                  "description": "提供上下文数据项的显示",
+                                  "type": "ContextLabelComponent",
+                                  "properties": {
+                                    "content": "",
+                                    "class": "bodytext",
+                                    "name": "patient.warningText"
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "25%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "auto",
+                            "class": "vform-default",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "65px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "HTML",
+                                  "description": "CustomHTML.",
+                                  "type": "HtmlComponent",
+                                  "properties": {
+                                    "html": "<span class='font10pxbold'>联系电话：</span>",
+                                    "isFormHeader": false
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "95px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "ContextLabel",
+                                  "description": "提供上下文数据项的显示",
+                                  "type": "ContextLabelComponent",
+                                  "properties": {
+                                    "content": "",
+                                    "class": "bodytext",
+                                    "name": "patient.telephone"
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "25%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "auto",
+                            "class": "vform-default",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "65px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "HTML",
+                                  "description": "CustomHTML.",
+                                  "type": "HtmlComponent",
+                                  "properties": {
+                                    "html": "<span class='font10pxbold'>申请日期：</span>",
+                                    "isFormHeader": false
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "95px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "flex-start",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "ContextLabel",
+                                  "description": "提供上下文数据项的显示",
+                                  "type": "ContextLabelComponent",
+                                  "properties": {
+                                    "content": "",
+                                    "class": "bodytext",
+                                    "name": "system.date"
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "height": "auto",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "5px 10px 0 10px",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "2 Column layout",
+                  "description": "Divides the form into 2 columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "class": "vform-default",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "flexFlow": "row",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "50%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "auto",
+                            "class": "vform-default",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "52px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "HTML",
+                                  "description": "CustomHTML.",
+                                  "type": "HtmlComponent",
+                                  "properties": {
+                                    "html": "<span class='font10pxbold'>诊断：</span>",
+                                    "isFormHeader": false
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "268px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "ContextLabel",
+                                  "description": "提供上下文数据项的显示",
+                                  "type": "ContextLabelComponent",
+                                  "properties": {
+                                    "content": "",
+                                    "class": "bodytext code",
+                                    "name": "patient.diagnosisCode"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "name": "ContextLabel",
+                                  "description": "提供上下文数据项的显示",
+                                  "type": "ContextLabelComponent",
+                                  "properties": {
+                                    "content": "",
+                                    "class": " bodytext",
+                                    "name": "patient.diagnosisDesc"
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "50%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "auto",
+                            "class": "vform-default inline-group",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "65px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "HTML",
+                                  "description": "CustomHTML.",
+                                  "type": "HtmlComponent",
+                                  "properties": {
+                                    "html": "<span class='font10pxbold'>主治医生：</span>",
+                                    "isFormHeader": false
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "255px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "ContextLabel",
+                                  "description": "提供上下文数据项的显示",
+                                  "type": "ContextLabelComponent",
+                                  "properties": {
+                                    "content": "",
+                                    "class": "bodytext",
+                                    "name": "patient.physicianName"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "name": "ContextLabel",
+                                  "description": "提供上下文数据项的显示",
+                                  "type": "ContextLabelComponent",
+                                  "properties": {
+                                    "content": "",
+                                    "class": " bodytext",
+                                    "name": "patient.physicianBName"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "name": "ContextLabel",
+                                  "description": "提供上下文数据项的显示",
+                                  "type": "ContextLabelComponent",
+                                  "properties": {
+                                    "content": "",
+                                    "class": " bodytext",
+                                    "name": "patient.physicianCName"
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2 Row layout",
+          "description": "Divides the form into 2 rows.",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "100%",
+            "height": "auto",
+            "class": "vform-default",
+            "padding": "0 0 0 0",
+            "alignItems": "",
+            "justifyContent": "",
+            "alignSelf": "",
+            "flexFlow": "column",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": [
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "100%",
+                "height": "auto",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "20px 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "HTML",
+                  "description": "CustomHTML.",
+                  "type": "HtmlComponent",
+                  "properties": {
+                    "html": "<div class='greybackground'><div class='font14pxbold greypadding'>检查信息</div></div>",
+                    "isFormHeader": false
+                  },
+                  "children": []
+                },
+                {
+                  "name": "Layout",
+                  "description": "",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "auto",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "column",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into 2 rows.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "100%",
+        "height": "auto",
+        "class": "vform-default",
+        "padding": "0 42px 0 42px",
+        "alignItems": "",
+        "justifyContent": "",
+        "alignSelf": "",
+        "flexFlow": "column",
+        "flexGrow": 1,
+        "hidden": false
+      },
+      "children": [
+        {
+          "name": "2 Row layout",
+          "description": "Divides the form into 2 rows.",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "100%",
+            "height": "auto",
+            "class": "vform-default",
+            "padding": "0 0 0 0",
+            "alignItems": "",
+            "justifyContent": "",
+            "alignSelf": "",
+            "flexFlow": "column",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": []
+        },
+        {
+          "name": "2 Column layout",
+          "description": "Divides the form into 2 columns.",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "100%",
+            "height": "",
+            "class": "vform-default",
+            "padding": "0 0 0 0",
+            "alignItems": "",
+            "justifyContent": "",
+            "flexFlow": "row",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": [
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "20%",
+                "height": "",
+                "borderTop": "",
+                "borderRight": "0px solid lightgray",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "flex-start",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "2 Row layout",
+                  "description": "Divides the form into 2 rows.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "100%",
+                    "class": "vform-default",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "column",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "100%",
+                        "height": "40px",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "Label",
+                          "description": "",
+                          "type": "LabelComponent",
+                          "properties": {
+                            "content": "1.制作定位模",
+                            "class": "flow-label-center font10pxbold"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "100%",
+                        "height": "90%",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "100%",
+                            "class": "vform-default",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "50%",
+                                "height": "100%",
+                                "class": "vertical-bar-background",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "50%",
+                                "height": "100%",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "70%",
+                "height": "",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "Layout",
+                  "description": "Divides the form into rows and columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "auto",
+                    "borderTop": "0",
+                    "borderRight": "0",
+                    "borderBottom": "0",
+                    "borderLeft": "0",
+                    "class": "vform-default",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "2 Column layout",
+                      "description": "Divides the form into 2 columns.",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "100%",
+                        "height": "100%",
+                        "class": "vform-default",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "Layout",
+                          "description": "",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "50%",
+                            "height": "100%",
+                            "borderTop": "",
+                            "borderRight": "",
+                            "borderBottom": "",
+                            "borderLeft": "",
+                            "class": "",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row wrap",
+                            "flexGrow": 1,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Label",
+                              "description": "",
+                              "type": "LabelComponent",
+                              "properties": {
+                                "content": "制模时间：",
+                                "class": "font10pxbold"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "Divides the form into rows and columns.",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "160px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "vform-default",
+                                "padding": "0 15px 0 5px",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "alignSelf": "",
+                                "flexFlow": "",
+                                "flexGrow": "",
+                                "hidden": false,
+                                "display": ""
+                              },
+                              "children": [
+                                {
+                                  "name": "Text Field",
+                                  "description": "Text input.",
+                                  "type": "InputComponent",
+                                  "properties": {
+                                    "type": "text",
+                                    "maxlength": 20,
+                                    "autocomplete": true,
+                                    "lineHeight": "1.2em",
+                                    "size": "20",
+                                    "required": false,
+                                    "containerClass": "",
+                                    "placeholder": "",
+                                    "isReadonly": false,
+                                    "containerPadding": "0 0 0 0",
+                                    "containerHeight": "20px",
+                                    "containerWidth": "100%",
+                                    "name": "请输入唯一标识",
+                                    "requiredErrorMsg": "required_error",
+                                    "vformValidatorMessage": "Validation error.",
+                                    "vformValidatorExpression": "",
+                                    "margin": "-20px 0 0 0"
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Layout",
+                          "description": "",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "50%",
+                            "height": "100%",
+                            "borderTop": "",
+                            "borderRight": "",
+                            "borderBottom": "",
+                            "borderLeft": "",
+                            "class": "",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row wrap",
+                            "flexGrow": 1,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Label",
+                              "description": "",
+                              "type": "LabelComponent",
+                              "properties": {
+                                "content": "地点：",
+                                "class": "font10pxbold"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "Divides the form into rows and columns.",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "200px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "vform-default",
+                                "padding": "0 0 0 5px",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "alignSelf": "",
+                                "flexFlow": "",
+                                "flexGrow": "",
+                                "hidden": false,
+                                "display": ""
+                              },
+                              "children": [
+                                {
+                                  "name": "Label",
+                                  "description": "",
+                                  "type": "LabelComponent",
+                                  "properties": {
+                                    "content": "106 (模具制作室)",
+                                    "class": "font10pxbold"
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Layout",
+                  "description": "Divides the form into rows and columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "50%",
+                    "height": "",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "vform-default",
+                    "padding": "20px 0 20px 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "HTML",
+                      "description": "Custom HTML.",
+                      "type": "HtmlComponent",
+                      "properties": {
+                        "html": "<span class='font10pxbold'>注意事项：</span><span class='font10px'><span class='warning'>*</span>如无医生特殊要求，做定位膜、CT定位均可正常吃饭喝水</span>",
+                        "isFormHeader": false,
+                        "class": "zhuyi"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Label",
+                  "description": "",
+                  "type": "LabelComponent",
+                  "properties": {
+                    "content": "",
+                    "class": ""
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2 Column layout",
+          "description": "Divides the form into 2 columns.",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "100%",
+            "height": "",
+            "class": "vform-default",
+            "padding": "10px 0 0 0",
+            "alignItems": "",
+            "justifyContent": "",
+            "flexFlow": "row",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": [
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "20%",
+                "height": "",
+                "borderTop": "",
+                "borderRight": "0px solid lightgray",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "flex-start",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "2 Row layout",
+                  "description": "Divides the form into 2 rows.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "100%",
+                    "class": "vform-default",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "column",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "100%",
+                        "height": "30px",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "Label",
+                          "description": "",
+                          "type": "LabelComponent",
+                          "properties": {
+                            "content": "2.CT定位",
+                            "class": "flow-label-center font10pxbold"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "100%",
+                        "height": "90%",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "100%",
+                            "class": "vform-default",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "50%",
+                                "height": "100%",
+                                "class": "vertical-bar-background",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "50%",
+                                "height": "100%",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "70%",
+                "height": "",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "Layout",
+                  "description": "Divides the form into rows and columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "",
+                    "borderTop": "0",
+                    "borderRight": "0",
+                    "borderBottom": "0",
+                    "borderLeft": "0",
+                    "class": "vform-default inline-group",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "2 Column layout",
+                      "description": "Divides the form into 2 columns.",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "100%",
+                        "height": "",
+                        "class": "vform-default",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "Layout",
+                          "description": "",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "50%",
+                            "height": "100%",
+                            "borderTop": "",
+                            "borderRight": "",
+                            "borderBottom": "",
+                            "borderLeft": "",
+                            "class": "",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row wrap",
+                            "flexGrow": 1,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Label",
+                              "description": "",
+                              "type": "LabelComponent",
+                              "properties": {
+                                "content": "定位时间：",
+                                "class": "font10pxbold"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "Divides the form into rows and columns.",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "160px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "vform-default",
+                                "padding": "0 15px 0 5px",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "alignSelf": "",
+                                "flexFlow": "",
+                                "flexGrow": "",
+                                "hidden": false,
+                                "display": ""
+                              },
+                              "children": [
+                                {
+                                  "name": "Text Field",
+                                  "description": "Text input.",
+                                  "type": "InputComponent",
+                                  "properties": {
+                                    "type": "text",
+                                    "maxlength": 20,
+                                    "autocomplete": true,
+                                    "lineHeight": "1.2em",
+                                    "size": "20",
+                                    "required": false,
+                                    "containerClass": "",
+                                    "placeholder": "",
+                                    "isReadonly": false,
+                                    "containerPadding": "0 0 0 0",
+                                    "containerHeight": "20px",
+                                    "containerWidth": "100%",
+                                    "name": "请输入唯一标识",
+                                    "requiredErrorMsg": "required_error",
+                                    "vformValidatorMessage": "Validation error.",
+                                    "vformValidatorExpression": "",
+                                    "margin": "-20px 0 0 0"
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Layout",
+                          "description": "",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "50%",
+                            "height": "100%",
+                            "borderTop": "",
+                            "borderRight": "",
+                            "borderBottom": "",
+                            "borderLeft": "",
+                            "class": "",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row wrap",
+                            "flexGrow": 1,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Label",
+                              "description": "",
+                              "type": "LabelComponent",
+                              "properties": {
+                                "content": "地点：",
+                                "class": "font10pxbold"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "Divides the form into rows and columns.",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "200px",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "vform-default",
+                                "padding": "0 0 0 5px",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "alignSelf": "",
+                                "flexFlow": "",
+                                "flexGrow": "",
+                                "hidden": false,
+                                "display": "",
+                                "switchField": ""
+                              },
+                              "children": [
+                                {
+                                  "name": "Label",
+                                  "description": "",
+                                  "type": "LabelComponent",
+                                  "properties": {
+                                    "content": "110 (CT定位室)",
+                                    "class": "font10pxbold"
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "Divides the form into rows and columns.",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "50%",
+                        "height": "",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "vform-default inline-group",
+                        "padding": "20px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "Label",
+                          "description": "",
+                          "class": "",
+                          "type": "LabelComponent",
+                          "properties": {
+                            "content": "扫描部位：",
+                            "class": "font10pxbold"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "font10px",
+                            "name": "form.saomiaobuwei"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "font10px",
+                            "name": "form.congtoudingzhisuogugutou_scanSiteGroup",
+                            "formatter": "[{\"key\":true,\"value\":\"头部\"}]"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "font10px",
+                            "name": "form.congtoudingzhiqiguanfencha_scanSiteGroup",
+                            "formatter": "[{\"key\":true,\"value\":\"颈部\"}]"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "font10px",
+                            "name": "form.jingxiongbu_scanSiteGroup",
+                            "formatter": "[{\"key\":true,\"value\":\"胸部\"}]"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "font10px",
+                            "name": "form.xiongbu_scanSiteGroup",
+                            "formatter": "[{\"key\":true,\"value\":\"胸部\"}]",
+                            "visibleExp": "$form.jingxiongbu_scanSiteGroup$!='true'"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "font10px",
+                            "name": "form.shangfu_scanSiteGroup",
+                            "formatter": "[{\"key\":true,\"value\":\"腹部\"}]"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "font10px",
+                            "name": "form.xiafu_scanSiteGroup",
+                            "formatter": "[{\"key\":true,\"value\":\"腹部\"}]",
+                            "visibleExp": "$form.shangfu_scanSiteGroup$!='true'"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "font10px",
+                            "name": "form.fuke_scanSiteGroup",
+                            "formatter": "[{\"key\":true,\"value\":\"腹部\"}]",
+                            "visibleExp": "$form.jingxiongbu_scanSiteGroup$!='true' && $form.xiafu_scanSiteGroup$!='true'"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "font10px",
+                            "name": "form.changgui_scanSiteGroup",
+                            "formatter": "[{\"key\":true,\"value\":\"盆腔\"}]"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "font10px",
+                            "name": "form.fukegongjing_scanSiteGroup",
+                            "formatter": "[{\"key\":true,\"value\":\"盆腔\"}]",
+                            "visibleExp": "$form.changgui_scanSiteGroup$!='true'"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "font10px",
+                            "name": "form.ruxian_scanSiteGroup",
+                            "formatter": "[{\"key\":true,\"value\":\"乳腺\"}]"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "font10px",
+                            "name": "form.sizhi_scanSiteGroup",
+                            "formatter": "[{\"key\":true,\"value\":\"四肢\"}]"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "font10px",
+                            "name": "form.zengqiang_ctScanGroup",
+                            "formatter": "[{\"key\":true,\"value\":\"增强\"},{\"key\":false,\"value\":\"平扫\"},{\"key\":\"\",\"value\":\"平扫\"}]"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2 Row layout",
+                      "description": "Divides the form into 2 rows.",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "100%",
+                        "height": "auto",
+                        "class": "vform-default",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "column",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "",
+                            "class": "vform-default",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "15%",
+                                "height": "0",
+                                "borderTop": "0",
+                                "borderRight": "0",
+                                "borderBottom": "0",
+                                "borderLeft": "0",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "HTML",
+                                  "description": "Custom HTML.",
+                                  "type": "HtmlComponent",
+                                  "properties": {
+                                    "html": "<p><span class='font10pxbold'>注意事项：</span></p>",
+                                    "isFormHeader": false
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "95%",
+                                "height": "",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [
+                                {
+                                  "name": "HTML",
+                                  "description": "Custom HTML.",
+                                  "type": "HtmlComponent",
+                                  "properties": {
+                                    "html": "<div class='lineheight font10px paddingtop10px'><div class=\"flexrow\"><div>（一）</div><div>做增强CT者，请于当日上午8:00/下午1:30到放疗门诊<input mdInput class='outpatient' style=\"width:80px\" type='text' />扎留置针</div></div><div class=\"flexrow\"><div>（二）</div><div>CT扫描患者在一周内不做钡剂造影检查</div> </div><div class=\"flexrow\"> <div>（三）</div><div>碘过敏、肾功能不全、重度心血管疾病、甲亢患者禁止做增强CT，孕妇禁做CT此项检查，糖尿病患者做增强检查前、后48小时内不能服用二甲双胍（请与临床医生联系更换替代药品） </div></div><div class=\"flexrow\"><div>（四）</div><div>增强CT扫描需要家属一人陪同，与当日详细阅读使用造影剂同意书后签字</div></div></div>",
+                                    "isFormHeader": false
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Layout",
+                  "description": "Divides the form into rows and columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "50%",
+                    "height": "",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "vform-default",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": []
+                },
+                {
+                  "name": "Label",
+                  "description": "",
+                  "type": "LabelComponent",
+                  "properties": {
+                    "content": "",
+                    "class": ""
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2 Column layout",
+          "description": "Divides the form into 2 columns.",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "100%",
+            "height": "",
+            "class": "vform-default",
+            "padding": "10px 0 0 0",
+            "alignItems": "",
+            "justifyContent": "",
+            "flexFlow": "row",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": [
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "20%",
+                "height": "",
+                "borderTop": "",
+                "borderRight": "0px solid lightgray",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "flex-start",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "2 Row layout",
+                  "description": "Divides the form into 2 rows.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "100%",
+                    "class": "vform-default",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "column",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "100%",
+                        "height": "30px",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex",
+                        "min-height": ""
+                      },
+                      "children": [
+                        {
+                          "name": "Label",
+                          "description": "",
+                          "type": "LabelComponent",
+                          "properties": {
+                            "content": "3.复位",
+                            "class": "flow-label-center font10pxbold"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "100%",
+                        "height": "80px",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "100%",
+                            "class": "vform-default",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "row",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "50%",
+                                "height": "100%",
+                                "class": "vertical-bar-background",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "50%",
+                                "height": "100%",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "70%",
+                "height": "",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "2 Column layout",
+                  "description": "Divides the form into 2 columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "30px",
+                    "class": "vform-default",
+                    "padding": "0 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "flexFlow": "row",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "50%",
+                        "height": "100%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "Label",
+                          "description": "",
+                          "type": "LabelComponent",
+                          "properties": {
+                            "content": "复位时间：",
+                            "class": "font10pxbold"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "Layout",
+                          "description": "Divides the form into rows and columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "160px",
+                            "height": "",
+                            "borderTop": "",
+                            "borderRight": "",
+                            "borderBottom": "",
+                            "borderLeft": "",
+                            "class": "vform-default",
+                            "padding": "0 15px 0 5px",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "alignSelf": "",
+                            "flexFlow": "",
+                            "flexGrow": "",
+                            "hidden": false,
+                            "display": ""
+                          },
+                          "children": [
+                            {
+                              "name": "Text Field",
+                              "description": "Text input.",
+                              "type": "InputComponent",
+                              "properties": {
+                                "type": "text",
+                                "maxlength": 20,
+                                "autocomplete": true,
+                                "lineHeight": "1.2em",
+                                "size": "20",
+                                "required": false,
+                                "containerClass": "",
+                                "placeholder": "",
+                                "isReadonly": false,
+                                "containerPadding": "0 0 0 0",
+                                "containerHeight": "20px",
+                                "containerWidth": "100%",
+                                "name": "请输入唯一标识",
+                                "requiredErrorMsg": "required_error",
+                                "vformValidatorMessage": "Validation error.",
+                                "vformValidatorExpression": "",
+                                "margin": "-20px 0 0 0"
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "50%",
+                        "height": "100%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "row wrap",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [
+                        {
+                          "name": "Label",
+                          "description": "",
+                          "type": "LabelComponent",
+                          "properties": {
+                            "content": "地点：",
+                            "class": "font10pxbold"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "Layout",
+                          "description": "Divides the form into rows and columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "200px",
+                            "height": "",
+                            "borderTop": "",
+                            "borderRight": "",
+                            "borderBottom": "",
+                            "borderLeft": "",
+                            "class": "vform-default",
+                            "padding": "0 0 0 5px",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "alignSelf": "",
+                            "flexFlow": "",
+                            "flexGrow": "",
+                            "hidden": false,
+                            "display": "",
+                            "switchField": ""
+                          },
+                          "children": [
+                            {
+                              "name": "Label",
+                              "description": "",
+                              "type": "LabelComponent",
+                              "properties": {
+                                "content": "107",
+                                "class": "font10pxbold"
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Layout",
+                  "description": "Divides the form into rows and columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "50%",
+                    "height": "80px",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "vform-default",
+                    "padding": "10px 0 0 0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [
+                    {
+                      "name": "HTML",
+                      "description": "Custom HTML.",
+                      "type": "HtmlComponent",
+                      "properties": {
+                        "html": "<span class='font10pxbold'>注意事项：</span><span class='font10px'>以后的放疗时间请跟治疗室的治疗师预约</span>",
+                        "isFormHeader": false
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2 Column layout",
+          "description": "Divides the form into 2 columns.",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "100%",
+            "height": "",
+            "class": "vform-default",
+            "padding": "10px 0 0 0",
+            "alignItems": "",
+            "justifyContent": "",
+            "flexFlow": "row",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": [
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "20%",
+                "height": "",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "flex-start",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [
+                {
+                  "name": "Label",
+                  "description": "",
+                  "type": "LabelComponent",
+                  "properties": {
+                    "content": "4.放疗",
+                    "class": "flow-label-center font10pxbold"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "70%",
+                "height": "",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

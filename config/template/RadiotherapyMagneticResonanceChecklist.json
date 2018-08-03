@@ -1,0 +1,1859 @@
+﻿{
+    "name": "Form",
+    "description": "",
+    "type": "FormComponent",
+    "properties": {
+        "width": "660px",
+        "height": "auto",
+        "flexWrap": "wrap",
+        "groupSettings": "[{\"name\": \"group1\", \"suffix\": \"_g:group1\", \"errorMsg\":\"groupErrorMsg\"}]"
+    },
+    "children": [
+        {
+            "name": "HTML",
+            "description": "Custom HTML.",
+            "type": "HtmlComponent",
+            "properties": {
+                "html": "<link rel='stylesheet' href='/print.css'>",
+                "isFormHeader": false
+            },
+            "children": []
+        },
+        {
+            "name": "Layout",
+            "description": "Divides the form into 2 rows.",
+            "type": "LayoutComponent",
+            "properties": {
+                "width": "660px",
+                "height": "auto",
+                "class": "vform-default",
+                "padding": "0 42px 0 42px",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "column",
+                "flexGrow": 1,
+                "hidden": false
+            },
+            "children": [
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "100%",
+                        "height": "70px",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "50%",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<img width='150' height='47' src='/assets/images/hospital-logo.png'/>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "50%",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0",
+                                "alignItems": "",
+                                "justifyContent": "flex-end",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "Barcode",
+                                    "description": "Barcode",
+                                    "type": "BarcodeComponent",
+                                    "properties": {
+                                        "usePatientId": "false",
+                                        "value": "patient.hisId",
+                                        "width": "1",
+                                        "height": "30",
+                                        "displayValue": "false"
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "100%",
+                        "height": "40px",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 30px 0",
+                        "alignItems": "",
+                        "justifyContent": "center",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "HTML",
+                            "description": "CustomHTML.",
+                            "type": "HtmlComponent",
+                            "properties": {
+                                "html": "<div id='title'>放疗磁共振定位检查前确认表</div>",
+                                "isFormHeader": false
+                            },
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "100%",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0 0 20px 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "HTML",
+                            "description": "CustomHTML.",
+                            "type": "HtmlComponent",
+                            "properties": {
+                                "html": "<div class='greeting'>患者同志您好：</div><div class='bodytext'><p>磁共振检查需在强磁场中进行，并非所有患者均可适用，为确保安全，防止禁忌症者发生意外，请您配合我们确认以下情况。</p></div>",
+                                "isFormHeader": false
+                            },
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "660px",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "540px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<span class='bodytext'>1. 您是否做过动脉瘤手术，术中是否戴金属夹子</span>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "70px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<div class='bodytext displayflex'><div class='bordermockcheckbox'></div><div class='checkboxlabel'>是</div><div class='bordermockcheckbox'></div><div class='checkboxlabel'>否</div></div>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "660px",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "540px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<span class='bodytext'>2. 您是否装有心脏起搏器</span>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "70px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<div class='bodytext displayflex'><div class='bordermockcheckbox'></div><div class='checkboxlabel'>是</div><div class='bordermockcheckbox'></div><div class='checkboxlabel'>否</div></div>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "660px",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "540px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<span class='bodytext'>3. 您是否有严重心脏病</span>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "70px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<div class='bodytext displayflex'><div class='bordermockcheckbox'></div><div class='checkboxlabel'>是</div><div class='bordermockcheckbox'></div><div class='checkboxlabel'>否</div></div>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "660px",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "540px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<span class='bodytext'>4. 您体内有金属假肢、体内泵或金属残留物</span>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "70px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<div class='bodytext displayflex'><div class='bordermockcheckbox'></div><div class='checkboxlabel'>是</div><div class='bordermockcheckbox'></div><div class='checkboxlabel'>否</div></div>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "660px",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "540px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<span class='bodytext'>5. 您是否患过精神病或幽闭恐惧症</span>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "70px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<div class='bodytext displayflex'><div class='bordermockcheckbox'></div><div class='checkboxlabel'>是</div><div class='bordermockcheckbox'></div><div class='checkboxlabel'>否</div></div>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "660px",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "540px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<span class='bodytext'>6. 您是否做过内耳手术，是否植入电子耳蜗</span>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "70px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<div class='bodytext displayflex'><div class='bordermockcheckbox'></div><div class='checkboxlabel'>是</div><div class='bordermockcheckbox'></div><div class='checkboxlabel'>否</div></div>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "660px",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "540px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<span class='bodytext'>7. 您是否已怀孕</span>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "70px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<div class='bodytext displayflex'><div class='bordermockcheckbox'></div><div class='checkboxlabel'>是</div><div class='bordermockcheckbox'></div><div class='checkboxlabel'>否</div></div>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "660px",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "540px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<span class='bodytext'>8. 您是否使用金属避孕环</span>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "70px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<div class='bodytext displayflex'><div class='bordermockcheckbox'></div><div class='checkboxlabel'>是</div><div class='bordermockcheckbox'></div><div class='checkboxlabel'>否</div></div>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "660px",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "540px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<span class='bodytext'>9. 您是否贴有膏药及热敷灵</span>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "70px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<div class='bodytext displayflex'><div class='bordermockcheckbox'></div><div class='checkboxlabel'>是</div><div class='bordermockcheckbox'></div><div class='checkboxlabel'>否</div></div>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "660px",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "540px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<span class='bodytext'>10. 您的眼内是否有过金属物</span>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "70px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<div class='bodytext displayflex'><div class='bordermockcheckbox'></div><div class='checkboxlabel'>是</div><div class='bordermockcheckbox'></div><div class='checkboxlabel'>否</div></div>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "660px",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "540px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<span class='bodytext'>11. 您是否有过过敏性哮喘及肺气肿类疾病</span>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "70px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<div class='bodytext displayflex'><div class='bordermockcheckbox'></div><div class='checkboxlabel'>是</div><div class='bordermockcheckbox'></div><div class='checkboxlabel'>否</div></div>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "660px",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "540px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<span class='bodytext'>12. 您是否有义眼、纹眼线、佩戴假牙及牙套</span>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "70px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<div class='bodytext displayflex'><div class='bordermockcheckbox'></div><div class='checkboxlabel'>是</div><div class='bordermockcheckbox'></div><div class='checkboxlabel'>否</div></div>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "660px",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "540px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<span class='bodytext'>13. 您近期是否做过金属加工工作</span>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "70px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<div class='bodytext displayflex'><div class='bordermockcheckbox'></div><div class='checkboxlabel'>是</div><div class='bordermockcheckbox'></div><div class='checkboxlabel'>否</div></div>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "660px",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "540px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<span class='bodytext'>14. 您是否有肾功能不全</span>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "70px",
+                                
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "HTML",
+                                    "description": "CustomHTML.",
+                                    "type": "HtmlComponent",
+                                    "properties": {
+                                        "html": "<div class='bodytext displayflex'><div class='bordermockcheckbox'></div><div class='checkboxlabel'>是</div><div class='bordermockcheckbox'></div><div class='checkboxlabel'>否</div></div>",
+                                        "isFormHeader": false
+                                    },
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "100%",
+                        "height": "auto",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "20px 0 20px 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "rowwrap",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "HTML",
+                            "description": "CustomHTML.",
+                            "type": "HtmlComponent",
+                            "properties": {
+                                "html": "<div class='greeting'>根据以上情况，您是否同意进行磁共振检查？</div>",
+                                "isFormHeader": false
+                            },
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "2 Row layout",
+                    "description": "Divides the form into 2 rows.",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "100%",
+                        "height": "auto",
+                        "class": "vform-default",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "alignSelf": "",
+                        "flexFlow": "column",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "100%",
+                                "height": "20px",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "alignSelf": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "hidden": false,
+                                "display": "flex"
+                            },
+                            "children": []
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "660px",
+                                "height": "40px",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "alignSelf": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "hidden": false,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "2 Column layout",
+                                    "description": "Divides the form into 2 columns.",
+                                    "type": "LayoutComponent",
+                                    "properties": {
+                                        "width": "100%",
+                                        
+                                        "class": "vform-default",
+                                        "padding": "0 0 0 0",
+                                        "alignItems": "",
+                                        "justifyContent": "",
+                                        "flexFlow": "row",
+                                        "flexGrow": 1,
+                                        "hidden": false,
+                                        "display": "flex"
+                                    },
+                                    "children": [
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "400px",
+                                                
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "100px",
+                                                
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "20px 0 0 12px",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "HTML",
+                                                    "description": "CustomHTML.",
+                                                    "type": "HtmlComponent",
+                                                    "properties": {
+                                                        "html": "<div class='signature'>患&nbsp&nbsp者&nbsp&nbsp签&nbsp&nbsp字&nbsp：</div>",
+                                                        "isFormHeader": false
+                                                    },
+                                                    "children": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "120px",
+                                                
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "1px solid #B3B3B3",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "660px",
+                                "height": "40px",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "alignSelf": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "hidden": false,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "2 Column layout",
+                                    "description": "Divides the form into 2 columns.",
+                                    "type": "LayoutComponent",
+                                    "properties": {
+                                        "width": "100%",
+                                        
+                                        "class": "vform-default",
+                                        "padding": "0 0 0 0",
+                                        "alignItems": "",
+                                        "justifyContent": "",
+                                        "flexFlow": "row",
+                                        "flexGrow": 1,
+                                        "hidden": false,
+                                        "display": "flex"
+                                    },
+                                    "children": [
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "400px",
+                                                
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "100px",
+                                                
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "20px 0 0 12px",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "HTML",
+                                                    "description": "CustomHTML.",
+                                                    "type": "HtmlComponent",
+                                                    "properties": {
+                                                        "html": "<div class='signature'>直系亲属签字：</div>",
+                                                        "isFormHeader": false
+                                                    },
+                                                    "children": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "120px",
+                                                
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "1px solid #B3B3B3",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "100%",
+                                "height": "40px",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "alignSelf": "",
+                                "flexFlow": "row wrap",
+                                "flexGrow": 1,
+                                "hidden": false,
+                                "display": "flex"
+                            },
+                            "children": [
+                                {
+                                    "name": "2 Column layout",
+                                    "description": "Divides the form into 2 columns.",
+                                    "type": "LayoutComponent",
+                                    "properties": {
+                                        "width": "100%",
+                                        
+                                        "class": "vform-default",
+                                        "padding": "0 0 0 0",
+                                        "alignItems": "",
+                                        "justifyContent": "",
+                                        "flexFlow": "row",
+                                        "flexGrow": 1,
+                                        "hidden": false,
+                                        "display": "flex"
+                                    },
+                                    "children": [
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "400px",
+                                                
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "100px",
+                                                
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "20px 0 0 12px",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": [
+                                                {
+                                                    "name": "HTML",
+                                                    "description": "CustomHTML.",
+                                                    "type": "HtmlComponent",
+                                                    "properties": {
+                                                        "html": "<div class='signature'>签&nbsp&nbsp字&nbsp&nbsp日&nbsp&nbsp期&nbsp：</div>",
+                                                        "isFormHeader": false
+                                                    },
+                                                    "children": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Layout",
+                                            "description": "",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "120px",
+                                                
+                                                "borderTop": "",
+                                                "borderRight": "",
+                                                "borderBottom": "1px solid #B3B3B3",
+                                                "borderLeft": "",
+                                                "class": "",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row wrap",
+                                                "flexGrow": 1,
+                                                "display": "flex"
+                                            },
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

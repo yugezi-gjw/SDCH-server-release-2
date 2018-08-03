@@ -1,0 +1,54 @@
+deviceList:
+  - id: ImmoDevice
+    interval: 30
+    capacity: 1
+    color: '#FFE765'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: CTScanner
+    interval: 15
+    capacity: 276
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: MRIScanner
+    interval: 30
+    capacity: 20
+    color: '#FFAABB'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: RepositionDevice
+    interval: 30
+    capacity: 20
+    color: '#FFAABB'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: 23EX
+    interval: 30
+    capacity: 20
+    color: '#FFAABB'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59
+  - id: IX 1100
+    interval: 30
+    capacity: 20
+    color: '#FFAABB'
+    timeSlotList:
+      - startTime: 00:00
+        endTime: 12:00
+      - startTime: 13:00
+        endTime: 23:59

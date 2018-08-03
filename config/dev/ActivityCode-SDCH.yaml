@@ -1,0 +1,204 @@
+PlaceCTOrderSDCH:
+  entryContent: 制模定位申请
+  content: 制模定位申请
+  completedContent: 制模定位已申请
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: PlaceImmobilizationAndCTOrder_SD
+    eclipseModuleId:
+ScheduleCTSDCH>>DoCTSDCH:
+  entryContent: 预约CT定位
+  content: 预约CT定位
+  completedContent: CT定位已预约
+  workspace:
+    workspaceType: SCHEDULE_SINGLE
+    defaultAppointmentView: DAY
+    dynamicFormTemplate:
+    eclipseModuleId:
+DoCTSDCH:
+  entryContent: 预约患者列表
+  content: CT定位
+  completedContent: CT定位已完成
+  needChargeBill: true
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: DoCTRecord_SD
+    eclipseModuleId:
+AssignDeviceSDCH:
+  entryContent: 分配治疗设备
+  content: 分配治疗设备
+  completedContent: 治疗设备已分配
+  needChargeBill: true
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId:
+    eclipseModuleId:
+AssignTPSSDCH:
+  entryContent: 分配计划系统
+  content: 分配计划系统
+  completedContent: 计划系统已分配
+  needChargeBill: true
+  needResourceForDynamicField:
+    sourceActivityCode: AssignDeviceSDCH
+    targetFieldName: yiXuanZhiLiaoSheBei
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId:
+    eclipseModuleId:
+ImportCTImageSDCH:
+  entryContent: 导入CT图像
+  content: 导入CT图像
+  completedContent: CT图像已导入
+  workspace:
+    workspaceType: ECLIPSE
+    dynamicFormTemplate:
+    eclipseModuleId: ImportExport
+CriticalOrganContouringSDCH:
+  entryContent: 勾画危及器官
+  content: 勾画危及器官
+  completedContent: 危及器官已勾画
+  workspace:
+    workspaceType: ECLIPSE
+    dynamicFormTemplate:
+    eclipseModuleId: Contouring
+TargetContouringSDCH:
+  entryContent: 勾画靶区
+  content: 勾画靶区
+  completedContent: 靶区已勾画
+  workspace:
+    workspaceType: ECLIPSE
+    dynamicFormTemplate:
+    eclipseModuleId: Contouring
+PlacePlanningOrderSDCH:
+  entryContent: 计划申请
+  content: 计划申请
+  completedContent: 计划已申请
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: PlacePlanningOrder_SD
+    eclipseModuleId:
+TreatmentPlanningSDCH:
+  entryContent: 创建计划
+  content: 创建计划
+  completedContent: 计划已完成
+  workspace:
+    workspaceType: ECLIPSE_DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: PlanningOrder_SD
+    eclipseModuleId: VA_VD
+TxPlanningConfirmationSDCH:
+  entryContent: 审核计划
+  content: 审核计划
+  completedContent: 计划已审核
+  workspace:
+    workspaceType: ECLIPSE_DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: PlanningOrder_SD
+    eclipseModuleId: VA_VD
+TxPlanningApproveSDCH:
+  entryContent: 确认计划
+  content: 确认计划
+  completedContent: 计划已确认
+  workspace:
+    workspaceType: ECLIPSE_DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: PlanningOrder_SD
+    eclipseModuleId: VA_VD
+TxPlanningApproveByDeanSDCH:
+  entryContent: 批准计划
+  content: 批准计划
+  completedContent: 计划已批准
+  releaseResourceForActivity: AssignTPSSDCH
+  workspace:
+    workspaceType: ECLIPSE_DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: PlanningOrder_SD
+    eclipseModuleId: VA_VD
+PlaceRepositioningOrderSDCH:
+  entryContent: 复位申请
+  content: 复位申请
+  completedContent: 复位已申请
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: PlaceRepositioningOrder_SD
+    eclipseModuleId:
+ScheduleRepositioningSDCH>>DoRepositioningSDCH:
+  entryContent: 预约复位
+  content: 预约复位
+  completedContent: 复位已预约
+  workspace:
+    workspaceType: SCHEDULE_SINGLE
+    defaultAppointmentView: DAY
+    dynamicFormTemplate:
+    eclipseModuleId:
+DoRepositioningSDCH:
+  entryContent: 预约患者列表
+  content: 复位
+  completedContent: 复位已完成
+  needChargeBill: true
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: AssignTPS_SD
+    eclipseModuleId:
+PlaceQAOrderSDCH:
+  entryContent: QA申请
+  content: QA申请
+  completedContent: QA已申请
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: PlaceQAOrderOrder_SD
+    eclipseModuleId:
+ExecuteQASDCH:
+  entryContent: QA执行
+  content: QA执行
+  completedContent: QA已执行
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: ExecuteQA_SD
+    eclipseModuleId:
+TxPreparation:
+  entryContent: 治疗准备
+  content: 治疗准备
+  completedContent: 治疗准备已完成
+  workspace:
+    workspaceType: ECLIPSE
+    dynamicFormTemplate:
+    eclipseModuleId: TxPreparation_SD
+TxOrderSDCH:
+  entryContent: 治疗申请
+  content: 治疗申请
+  completedContent: 治疗已申请
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: TxOrder_SD
+    eclipseModuleId:
+ScheduleTxSDCH>>DoTxSDCH:
+  entryContent: 预约治疗
+  content: 预约治疗
+  completedContent: 治疗已预约
+  releaseResourceForActivity: AssignDeviceSDCH
+  workspace:
+    workspaceType: SCHEDULE_MULTIPLE
+    defaultAppointmentView: WEEK
+    dynamicFormTemplate:
+    eclipseModuleId:
+DoTxSDCH:
+  entryContent: 预约患者列表
+  content: 治疗
+  completedContent: 治疗中
+  needChargeBill: true
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: DoTreatment_SD
+    eclipseModuleId:

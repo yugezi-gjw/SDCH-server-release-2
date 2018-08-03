@@ -1,0 +1,9 @@
+dependencies {
+    compile (
+            project(':oiscn-common'),
+            project(':oiscn-anticorruption'),
+            'io.dropwizard:dropwizard-core:1.0.5',
+            'io.dropwizard:dropwizard-client:1.0.5',
+            'io.dropwizard:dropwizard-auth:1.0.5',
+    )
+}

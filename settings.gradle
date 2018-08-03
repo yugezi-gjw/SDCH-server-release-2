@@ -1,0 +1,15 @@
+//config your root project name
+rootProject.name = 'ois-server'
+include 'oiscn-security'
+include 'oiscn-common'
+include 'oiscn-anticorruption'
+include 'oiscn-base'
+include 'oiscn-patient'
+include 'oiscn-application'
+include 'oiscn-appointment'
+include 'oiscn-order'
+include 'oiscn-encounter'
+include 'oiscn-carepath'
+include 'oiscn-rt'
+include 'oiscn-cache'
+

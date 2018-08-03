@@ -1,0 +1,6 @@
+hisPatientQueryEnable: false
+callingSystemEnable: false
+patientInfoServer:
+  hisPatientInfoServiceUrl: http://10.10.10.54:6688/RTIS/thirdpart/common.ered?reqCode=getOnisPatientMsg
+  method: GET
+  connectionTimeout: 3000

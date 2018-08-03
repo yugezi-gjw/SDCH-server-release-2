@@ -1,0 +1,10 @@
+defaultCarePathTemplateName: CCIPStandard
+carePath:
+  - templateId: CCIPStandard
+    templateName: CCIP的CP
+    description: ARIA CCIP标准CarePath
+    category: PRIMARY
+  - templateId: MRICarePath
+    templateName: MRI流程
+    description: 可选的MRI流程
+    category: OPTIONAL

@@ -1,0 +1,67 @@
+﻿{
+  "bingrentiwei": "俯卧",
+  "teshutiwei": "举起手来",
+  "fuyadian_immbDeviceGroup": true,
+  "paomodian_immbDeviceGroup": "",
+  "gaofenzidingweidian_immbDeviceGroup": "",
+  "gudingqi1_immbDeviceGroup": "orfit一体板",
+  "zhenxing_immbDeviceGroup": "",
+  "gudingqi2_immbDeviceGroup": "",
+  "qita_immbDeviceGroup": "",
+  "toumo_immbDeviceGroup": "",
+  "toujingjianmo_immbDeviceGroup": "",
+  "rumo_immbDeviceGroup": "",
+  "fumo_immbDeviceGroup": "",
+  "yinshui_immbDeviceGroup": "",
+  "yitimo_immbDeviceGroup": "",
+  "daitou_immbDeviceGroup": "",
+  "penqiang_immbDeviceGroup": "",
+  "bieniao_immbDeviceGroup": "",
+  "jingxiongmo_immbDeviceGroup": "",
+  "jingxiongmotice_immbDeviceGroup": "",
+  "jingxiongmoeshang_immbDeviceGroup": "",
+  "jingxiongmohuxidongdu_immbDeviceGroup": "",
+  "xiongmo_immbDeviceGroup": true,
+  "xiongmotice_immbDeviceGroup": "",
+  "xiongmoeshang_immbDeviceGroup": "",
+  "xiongmohuxidongdu_immbDeviceGroup": "",
+  "yishengteshuyaoqiu": "注意呼吸情况",
+  "zhongliubuwei": "",
+  "esignature": null,
+  "congtoudingzhisuogugutou_scanSiteGroup": "",
+  "congtoudingzhiqiguanfencha_scanSiteGroup": "",
+  "jingxiongbu_scanSiteGroup": "",
+  "xiongbu_scanSiteGroup": true,
+  "shangfu_scanSiteGroup": "",
+  "xiafu_scanSiteGroup": "",
+  "fuke_scanSiteGroup": "",
+  "baqujiliangjifenci": [
+    {
+      "TVP1": [
+        {
+          "Target Volume": "GTV",
+          "bodypart": "前胸",
+          "Dose": "12.2",
+          "Fractions": "20"
+        },
+        {
+          "Target Volume": "PTV",
+          "bodypart": "后背",
+          "Dose": "12.0",
+          "Fractions": "20"
+        },
+        {
+          "Target Volume": "",
+          "bodypart": "",
+          "Dose": "",
+          "Fractions": ""
+        },
+        {
+          "validationSkipped": "true",
+          "targetVolumeFooter": "true",
+          "remarkRow": "只有两个靶区的的备注信息"
+        }
+      ]
+    }
+  ]
+}

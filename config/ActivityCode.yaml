@@ -1,0 +1,208 @@
+PlaceImmobilizationAndCTOrder:
+  entryContent: 制模定位申请
+  content: 制模定位申请
+  completedContent: 制模定位已申请
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: PlaceImmobilizationAndCTOrder
+        defaultValue:
+         - templateId: PlaceImmobilizationAndCTOrderDefaultValue
+    eclipseModuleId:
+ScheduleImmobilization>>DoImmobilization:
+  entryContent: 预约制模
+  content: 预约制模
+  completedContent: 制模已预约
+  workspace:
+    workspaceType: SCHEDULE_SINGLE
+    defaultAppointmentView: WEEK
+    dynamicFormTemplate:
+    eclipseModuleId:
+DoImmobilization:
+  entryContent: 预约患者列表
+  content: 制模
+  completedContent: 制模已完成
+  needChargeBill: true
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: DoImmoRecord
+    eclipseModuleId:
+ScheduleCTSim>>DoCTSim:
+  entryContent: 预约CT定位
+  content: 预约CT定位
+  completedContent: CT定位已预约
+  workspace:
+    workspaceType: SCHEDULE_SINGLE
+    defaultAppointmentView: WEEK
+    dynamicFormTemplate:
+    eclipseModuleId:
+DoCTSim:
+  entryContent: 预约CT患者列表
+  content: CT定位
+  completedContent: CT定位已完成
+  needChargeBill: true
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: DoCTRecord
+    eclipseModuleId:
+ImportCTImage:
+  entryContent: 导入CT图像
+  content: 导入CT图像
+  completedContent: CT图像已导入
+  workspace:
+    workspaceType: ECLIPSE
+    dynamicFormTemplate:
+    eclipseModuleId: ImportExport
+CriticalOrganContouring:
+  entryContent: 勾画危及器官
+  content: 勾画危及器官
+  completedContent: 危及器官已勾画
+  workspace:
+    workspaceType: ECLIPSE
+    dynamicFormTemplate:
+    eclipseModuleId: Contouring
+TargetContouring:
+  entryContent: 勾画靶区
+  content: 勾画靶区
+  completedContent: 靶区已勾画
+  workspace:
+    workspaceType: ECLIPSE
+    dynamicFormTemplate:
+    eclipseModuleId: Contouring
+ContouringApproval:
+  entryContent: 靶区确认
+  content: 靶区确认
+  completedContent: 靶区已确认
+  workspace:
+    workspaceType: ECLIPSE
+    dynamicFormTemplate:
+    eclipseModuleId: Contouring
+PlacePlanningOrder:
+  entryContent: 计划申请
+  content: 计划申请
+  completedContent: 计划已申请
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: PlacePlanningOrder
+    eclipseModuleId:
+TreatmentPlanning:
+  entryContent: 创建计划
+  content: 创建计划
+  completedContent: 计划已完成
+  workspace:
+    workspaceType: ECLIPSE_DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: PlanningOrder
+    eclipseModuleId: VA_VD
+TxPlanningConfirmation:
+  entryContent: 审核计划
+  content: 审核计划
+  completedContent: 计划已审核
+  workspace:
+    workspaceType: ECLIPSE_DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: PlanningOrder
+    eclipseModuleId: VA_VD
+TxPlanningApproval:
+  entryContent: 确认计划
+  content: 确认计划
+  completedContent: 计划已确认
+  workspace:
+    workspaceType: ECLIPSE_DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: PlanningOrder
+    eclipseModuleId: VA_VD
+TxPlanningLink:
+  entryContent: 靶区计划关联
+  content: 靶区计划关联
+  completedContent: 靶区计划已关联
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: PlanningApproval
+    eclipseModuleId:
+ScheduleRepositioning>>DoRepositioning:
+  entryContent: 预约复位
+  content: 预约复位
+  completedContent: 复位已预约
+  workspace:
+    workspaceType: SCHEDULE_SINGLE
+    defaultAppointmentView: WEEK
+    dynamicFormTemplate:
+    eclipseModuleId:
+DoRepositioning:
+  entryContent: 预约患者列表
+  content: 复位
+  completedContent: 复位已完成
+  needChargeBill: true
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: DoRepositioning
+    eclipseModuleId:
+TreatmentApproval:
+  entryContent: 审核复位
+  content: 审核复位
+  completedContent: 复位已确认
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: TreatmentApproval
+    eclipseModuleId:
+ScheduleFirstTreatment>>DoTreatment:
+  entryContent: 预约治疗
+  content: 预约治疗
+  completedContent: 治疗已预约
+  workspace:
+    workspaceType: SCHEDULE_MULTIPLE
+    defaultAppointmentView: WEEK
+    dynamicFormTemplate:
+    eclipseModuleId:
+TxPreparation:
+  entryContent: 治疗准备
+  content: 治疗准备
+  completedContent: 治疗准备已完成
+  workspace:
+    workspaceType: ECLIPSE
+    dynamicFormTemplate:
+    eclipseModuleId: TxPreparation
+DoTreatment:
+  entryContent: 预约患者列表
+  content: 治疗
+  completedContent: 治疗中
+  needChargeBill: true
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: DoTreatment
+    eclipseModuleId:
+ScheduleMRI>>DoMRI:
+  entryContent: 预约MRI
+  content: 预约MRI
+  completedContent: MRI已预约
+  workspace:
+    workspaceType: SCHEDULE_SINGLE
+    defaultAppointmentView: WEEK
+    dynamicFormTemplate:
+    eclipseModuleId:
+DoMRI:
+  entryContent: 预约MRI患者列表
+  content: MRI定位
+  completedContent: MRI定位已完成
+  needChargeBill: true
+  workspace:
+    workspaceType: DYNAMIC_FORM
+    dynamicFormTemplate:
+      - templateId: DoMRIRecord
+    eclipseModuleId:
+ImportMRIImage:
+  entryContent: 导入MRI图像
+  content: 导入MRI图像
+  completedContent: MRI图像已导入
+  workspace:
+    workspaceType: ECLIPSE
+    dynamicFormTemplate:
+    eclipseModuleId: ImportExport

@@ -1,0 +1,845 @@
+{
+  "name": "Form",
+  "description": "",
+  "type": "FormComponent",
+  "properties": {
+    "width": "660px",
+    "height": "auto",
+    "flexWrap": "wrap",
+    "groupSettings": "[{\"name\": \"group1\", \"suffix\": \"_g:group1\", \"errorMsg\":\"groupErrorMsg\"}]"
+  },
+  "children": [
+    {
+      "name": "HTML",
+      "description": "Custom HTML.",
+      "type": "HtmlComponent",
+      "properties": {
+        "html": "<style>body{background:#ffffff}.mat-raised-button{margin-right:20px}md-select{width:100%}.mat-select-trigger{min-width:0;width:100%}.urgent{padding-top:15px}.mat-input-container{margin:0}form-render vform-checkbox{margin:0}</style>",
+        "isFormHeader": false
+      },
+      "children": []
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "100%",
+        "height": "50px",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "0 0 0 0",
+        "alignItems": "",
+        "justifyContent": "",
+        "alignSelf": "",
+        "flexFlow": "row wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex",
+        "switchField": ""
+      },
+      "children": [
+        {
+          "name": "Text Field",
+          "description": "Text input.",
+          "type": "InputComponent",
+          "properties": {
+            "type": "text",
+            "maxlength": 25,
+            "autocomplete": true,
+            "lineHeight": "1.2em",
+            "size": "25",
+            "required": "true",
+            "containerClass": "",
+            "placeholder": "患者ID",
+            "isReadonly": false,
+            "containerPadding": "0 20px 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "120px",
+            "name": "hisId",
+            "requiredErrorMsg": "required_error",
+            "vformValidatorMessage": "Validation error.",
+            "vformValidatorExpression": "",
+            "valueExp":"['##patient.hisId#']",
+            "isUpdateModeOnBlur":"true",
+            "disabledExp":"[##formContext.isPatientRetrieved#]"
+          },
+          "children": []
+        },
+        {
+          "name": "Text Field",
+          "description": "Text input.",
+          "type": "InputComponent",
+          "properties": {
+            "type": "text",
+            "maxlength": 25,
+            "autocomplete": true,
+            "lineHeight": "1.2em",
+            "size": "25",
+            "required": "true",
+            "containerClass": "",
+            "placeholder": "V号",
+            "isReadonly": false,
+            "containerPadding": "0 20px 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "120px",
+            "name": "ariaId",
+            "requiredErrorMsg": "required_error",
+            "vformValidatorMessage": "Validation error.",
+            "vformValidatorExpression": "",
+            "valueExp":"['##patient.ariaId#']",
+            "isUpdateModeOnBlur":"true",
+            "disabledExp":"[##formContext.isNotEmptyVid#]"
+          },
+          "children": []
+        },
+        {
+          "name": "Text Field",
+          "description": "Text input.",
+          "type": "InputComponent",
+          "properties": {
+            "type": "text",
+            "maxlength": 25,
+            "autocomplete": true,
+            "lineHeight": "1.2em",
+            "size": "25",
+            "required": false,
+            "containerClass": "",
+            "placeholder": "身份证号码",
+            "isReadonly": false,
+            "containerPadding": "0 20px 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "155px",
+            "name": "nationalId",
+            "requiredErrorMsg": "required_error",
+            "vformValidatorMessage": "Validation error.",
+            "vformValidatorExpression": "",
+            "valueExp":"['##patient.nationalId#']",
+            "isUpdateModeOnBlur":"true"
+          },
+          "children": []
+        },
+        {
+          "name": "checkboxImgContentText",
+          "description": "checkboxImgContentText.",
+          "type": "checkboxImgContentTextComponent",
+          "properties": {
+            "name": "urgent",
+            "checkboxClass": "",
+            "imgWidth": "16px",
+            "imgHeight": "16px",
+            "imgAlt": "urgent",
+            "checkboxImgExpression": "[##patient.urgent#]",
+            "activeImgSrc": "/assets/images/urgent_red.png",
+            "inActiveImgSrc": "/assets/images/urgent_gray.png",
+            "contentText": "紧急"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "100%",
+        "height": "50px",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "0 0 0 0",
+        "alignItems": "",
+        "justifyContent": "",
+        "alignSelf": "",
+        "flexFlow": "row wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex",
+        "switchField": ""
+      },
+      "children": [
+        {
+          "name": "Text Field",
+          "description": "Text input.",
+          "type": "InputComponent",
+          "properties": {
+            "type": "text",
+            "maxlength": 64,
+            "autocomplete": true,
+            "lineHeight": "1.2em",
+            "size": "25",
+            "required": true,
+            "containerClass": "",
+            "placeholder": "患者姓名",
+            "isReadonly": false,
+            "containerPadding": "0 20px 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "120px",
+            "name": "chineseName",
+            "requiredErrorMsg": "required_error",
+            "vformValidatorMessage": "Validation error.",
+            "vformValidatorExpression": "",
+            "valueExp":"['##patient.chineseName#']",
+            "isUpdateModeOnBlur":"true",
+            "isActualChineseLength":"true"
+          },
+          "children": []
+        },
+        {
+          "name": "Select",
+          "description": "Select from a list of options",
+          "type": "SelectComponent",
+          "properties": {
+            "tag": "",
+            "name": "gender",
+            "placeholder": "性别",
+            "required": false,
+            "containerClass": "gender",
+            "containerPadding": "0 20px 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "120px",
+            "options": "[{\"name\":\"男\",\"value\":\"male\"},{\"name\":\"女\",\"value\":\"female\"}]",
+            "requiredErrorMsg": "required_error",
+            "dataSourceToken": "GenderService",
+            "eventArgs": "",
+            "valueExp":"['##patient.gender#']",
+            "emptyDefaultDataSourceValue":"true"
+          },
+          "children": []
+        },
+        {
+          "name": "Date picker",
+          "description": "",
+          "type": "NgbdDatepickerPopup",
+          "properties": {
+            "containerMargin": "18px 20px 0 0",
+            "containerPadding": "",
+            "containerWidth": "",
+            "containerHeight": "45px",
+            "name":"birthday",
+            "mindate": "new Date(1850,0,1)",
+            "maxdate": "new Date()",
+            "defaultDate":"",
+            "dateLabel": "出生日期",
+            "dateErrorFlag": "",
+            "valueExp": "['##patient.birthday#']",
+            "required": false
+          },
+          "children": []
+        },
+        {
+          "name": "Text Field",
+          "description": "Text input.",
+          "type": "InputComponent",
+          "properties": {
+            "type": "text",
+            "maxlength": 20,
+            "autocomplete": true,
+            "lineHeight": "1.2em",
+            "size": "25",
+            "required": false,
+            "containerClass": "",
+            "placeholder": "年龄",
+            "isReadonly": false,
+            "containerPadding": "",
+            "containerHeight": "auto",
+            "containerWidth": "65px",
+            "name": "age",
+            "requiredErrorMsg": "required_error",
+            "vformValidatorMessage": "Validation error.",
+            "vformValidatorExpression": "",
+            "valueExp":"['##patient.age#']",
+            "disabledExp":"['##patient.birthday#'!='null' && '##patient.birthday#'!='']" ,
+            "isUpdateModeOnBlur":"true",
+            "numericType":"integer"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "100%",
+        "height": "50px",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "0 0 0 0",
+        "alignItems": "",
+        "justifyContent": "",
+        "alignSelf": "",
+        "flexFlow": "row wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex",
+        "switchField": ""
+      },
+      "children": [
+        {
+          "name": "Text Field",
+          "description": "Text input.",
+          "type": "InputComponent",
+          "properties": {
+            "type": "text",
+            "maxlength": 64,
+            "autocomplete": true,
+            "lineHeight": "1.2em",
+            "size": "25",
+            "required": false,
+            "containerClass": "",
+            "placeholder": "联系电话",
+            "isReadonly": false,
+            "containerPadding": "0 20px 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "120px",
+            "name": "telephone",
+            "requiredErrorMsg": "required_error",
+            "vformValidatorMessage": "Validation error.",
+            "vformValidatorExpression": "",
+            "valueExp":"['##patient.telephone#']",
+            "isUpdateModeOnBlur":"true"
+          },
+          "children": []
+        },
+        {
+          "name": "Text Field",
+          "description": "Text input.",
+          "type": "InputComponent",
+          "properties": {
+            "type": "text",
+            "maxlength": 256,
+            "autocomplete": true,
+            "lineHeight": "1.2em",
+            "size": "25",
+            "required": false,
+            "containerClass": "",
+            "placeholder": "联系地址",
+            "isReadonly": false,
+            "containerPadding": "0 20px 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "212px",
+            "name": "address",
+            "requiredErrorMsg": "required_error",
+            "vformValidatorMessage": "Validation error.",
+            "vformValidatorExpression": "",
+            "valueExp":"['##patient.address#']",
+            "isUpdateModeOnBlur":"true"
+
+          },
+          "children": []
+        },
+        {
+          "name": "Text Field",
+          "description": "Text input.",
+          "type": "InputComponent",
+          "properties": {
+            "type": "text",
+            "maxlength": 64,
+            "autocomplete": true,
+            "lineHeight": "1.2em",
+            "size": "25",
+            "required": false,
+            "containerClass": "",
+            "placeholder": "紧急联系人",
+            "isReadonly": false,
+            "containerPadding": "0 20px 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "120px",
+            "name": "contactPerson",
+            "requiredErrorMsg": "required_error",
+            "vformValidatorMessage": "Validation error.",
+            "vformValidatorExpression": "",
+            "valueExp":"['##patient.contactPerson#']",
+            "isUpdateModeOnBlur":"true",
+            "isActualChineseLength ":"true"
+          },
+          "children": []
+        },
+        {
+          "name": "Text Field",
+          "description": "Text input.",
+          "type": "InputComponent",
+          "properties": {
+            "type": "text",
+            "maxlength": 64,
+            "autocomplete": true,
+            "lineHeight": "1.2em",
+            "size": "25",
+            "required": false,
+            "containerClass": "",
+            "placeholder": "紧急联系人电话",
+            "isReadonly": false,
+            "containerPadding": "0 0 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "120px",
+            "name": "contactPhone",
+            "requiredErrorMsg": "required_error",
+            "vformValidatorMessage": "Validation error.",
+            "vformValidatorExpression": "",
+            "valueExp":"['##patient.contactPhone#']",
+            "isUpdateModeOnBlur":"true"
+
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "100%",
+        "height": "50px",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "0 0 0 0",
+        "alignItems": "",
+        "justifyContent": "",
+        "alignSelf": "",
+        "flexFlow": "row wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex",
+        "switchField": ""
+      },
+      "children": [
+        {
+          "name": "Select",
+          "description": "Select from a list of options",
+          "type": "SelectComponent",
+          "properties": {
+            "tag": "",
+            "name": "insuranceTypeCode",
+            "placeholder": "医疗保险",
+            "required": false,
+            "containerClass": "yiliao",
+            "containerPadding": "0 20px 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "263px",
+            "options": "",
+            "requiredErrorMsg": "",
+            "dataSourceToken": "InsuranceGroupService",
+            "eventArgs": "",
+            "valueExp":"['##patient.insuranceTypeCode#']",
+            "txtExp":"['##patient.insuranceType#']",
+            "emptyDefaultDataSourceValue":"true"
+          },
+          "children": []
+        },
+        {
+          "name": "Radio",
+          "description": "Select one option from a list of options",
+          "type": "RadioComponent",
+          "properties": {
+            "name": "patientSource",
+            "labelText": "患者来源",
+            "required": false,
+            "containerClass": "",
+            "containerPadding": "6px 0 0 0",
+            "containerMargin":"",
+            "containerHeight": "auto",
+            "containerWidth": "",
+            "requiredErrorMsg": "required_error",
+            "dataSourceToken": "PatientOriginService",
+            "options": "[{\"name\":\"住院\",\"value\":1},{\"name\":\"门诊\",\"value\":2}]",
+            "valueExp": "['##patient.patientSource#']",
+            "defaultValue":"门诊"
+
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Doctor Select",
+      "description": "",
+      "type": "DoctorSelectComponent",
+      "properties": {
+        "width": "",
+        "height": "",
+        "physicianIdExp": "['##patient.physicianId#']",
+        "physicianNameExp": "['##patient.physicianName#']",
+        "physicianBIdExp": "['##patient.physicianBId#']",
+        "physicianBNameExp": "['##patient.physicianBName#']",
+        "physicianCIdExp": "['##patient.physicianCId#']",
+        "physicianCNameExp": "['##patient.physicianCName#']",
+        "physicianGroupIdExp": "['##patient.physicianGroupId#']",
+        "physicianGroupNameExp": "[##patient.physicianGroupName#]",
+        "selectWidth":"120px",
+        "selectMargin":"",
+        "containerDisplay":"flex"
+      },
+      "children": []
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "100%",
+        "height": "50px",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "0 0 0 0",
+        "alignItems": "",
+        "justifyContent": "",
+        "alignSelf": "",
+        "flexFlow": "row wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex",
+        "switchField": ""
+      },
+      "children": [
+        {
+          "name": "EditableSelectControl",
+          "description": "Type and Select from a list of options",
+          "type": "EditableSelectControlComponent",
+          "properties": {
+            "name": "bodypart",
+            "containerWidth":"120px",
+            "placeholder": "诊断部位",
+            "codeExpression": "[##patient.bodypart#]",
+            "descExpression": "['##patient.bodypartDesc#']",
+            "dataSourceToken": "BodyPartGroupService",
+            "showMagnifierIcon": "false",
+            "showCode": "false"
+          },
+          "children": []
+        },
+        {
+          "name": "Date picker",
+          "description": "",
+          "type": "NgbdDatepickerPopup",
+          "properties": {
+            "containerMargin": "13px 20px 0 0",
+            "containerPadding": "",
+            "containerWidth": "123px",
+            "containerHeight": "45px",
+            "name":"diagnosisDate",
+            "mindate": "new Date(1850,0,1)",
+            "maxdate": "new Date()",
+            "defaultDate":"today",
+            "dateLabel": "诊断日期",
+            "dateErrorFlag": "",
+            "valueExp": "['##patient.diagnosisDate#']",
+            "required": true
+          },
+          "children": []
+        },
+        {
+          "name": "Radio",
+          "description": "Select one option from a list of options",
+          "type": "RadioComponent",
+          "properties": {
+            "name": "recurrent",
+            "labelText": "诊断类型",
+            "required": false,
+            "containerClass": "",
+            "containerPadding": "6px 0 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "",
+            "containerMargin":"",
+            "requiredErrorMsg": "required_error",
+            "options": "[{\"name\":\"原发\",\"value\":1},{\"name\":\"复发\",\"value\":2}]",
+            "valueExp": "['##patient.recurrent#']",
+            "dataSourceToken": "PatientRecurrentService"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "100%",
+        "height": "50px",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "0 0 0 0",
+        "alignItems": "",
+        "justifyContent": "",
+        "alignSelf": "",
+        "flexFlow": "row wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex",
+        "switchField": ""
+      },
+      "children": [
+        {
+          "name": "EditableSelectControl",
+          "description": "Type and Select from a list of options",
+          "type": "EditableSelectControlComponent",
+          "properties": {
+            "name": "diagnosisCode",
+            "containerWidth":"241px",
+            "placeholder": "诊断编码或诊断描述",
+            "codeExpression": "['##patient.diagnosisCode#']",
+            "descExpression": "['##patient.diagnosisDesc#']",
+            "dataSourceToken": "CodeValueService",
+            "showMagnifierIcon": "true",
+            "showCode": "true",
+            "isActualChineseLength":"true"
+          },
+          "children": []
+        },
+        {
+          "name": "Text Field",
+          "description": "Text input.",
+          "type": "InputComponent",
+          "properties": {
+            "type": "text",
+            "maxlength": 64,
+            "autocomplete": true,
+            "lineHeight": "1.2em",
+            "size": "25",
+            "required": "true",
+            "containerClass": "",
+            "placeholder": "诊断描述",
+            "isReadonly": false,
+            "containerPadding": "",
+            "containerHeight": "auto",
+            "containerWidth": "263px",
+            "name": "diagnosisDesc",
+            "requiredErrorMsg": "required_error",
+            "vformValidatorMessage": "Validation error.",
+            "vformValidatorExpression": "",
+            "valueExp":"['##patient.diagnosisDesc#']",
+            "isUpdateModeOnBlur":"true"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "100%",
+        "height": "50px",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "0 0 0 0",
+        "alignItems": "",
+        "justifyContent": "",
+        "alignSelf": "",
+        "flexFlow": "row wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex",
+        "switchField": ""
+      },
+      "children": [
+        {
+          "name": "TnmStaging",
+          "description": "TNM and Staging",
+          "type": "TnmStagingComponent",
+          "properties": {
+            "name": "tnm"
+          },
+          "children": []
+        },
+        {
+          "name": "Text Field",
+          "description": "Text input.",
+          "type": "InputComponent",
+          "properties": {
+            "type": "text",
+            "maxlength": 64,
+            "autocomplete": true,
+            "lineHeight": "1.2em",
+            "size": "25",
+            "required": false,
+            "containerClass": "",
+            "placeholder": "分期描述",
+            "isReadonly": false,
+            "containerPadding": "0 0 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "205px",
+            "name": "diagnosisNote",
+            "requiredErrorMsg": "required_error",
+            "vformValidatorMessage": "Validation error.",
+            "vformValidatorExpression": "",
+            "valueExp":"['##patient.diagnosisNote#']",
+            "isUpdateModeOnBlur":"true"
+
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "100%",
+        "height": "",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "0 0 20px 0",
+        "alignItems": "",
+        "justifyContent": "",
+        "alignSelf": "",
+        "flexFlow": "row wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex",
+        "switchField": ""
+      },
+      "children": [
+        {
+          "name": "showImage",
+          "description": "showImage.",
+          "type": "ShowImageComponent",
+          "properties": {
+            "name": "warningText_icon",
+            "width": "16px",
+            "height": "",
+            "content": "/assets/images/warning1_orange.png",
+            "expression": "",
+            "alt": "",
+            "class": "",
+            "default": "",
+            "pipeName": "",
+            "isShowExp": "",
+            "tooltip": "",
+            "margin":"18px 10px 0 0"
+          },
+          "children": []
+        },
+        {
+          "name": "Text Field",
+          "description": "Text input.",
+          "type": "InputComponent",
+          "properties": {
+            "type": "text",
+            "maxlength": 16,
+            "autocomplete": true,
+            "lineHeight": "1.2em",
+            "size": "25",
+            "required": false,
+            "containerClass": "",
+            "placeholder": "提示",
+            "isReadonly": false,
+            "containerPadding": "0 20px 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "242px",
+            "name": "warningText",
+            "requiredErrorMsg": "required_error",
+            "vformValidatorMessage": "Validation error.",
+            "vformValidatorExpression": "",
+            "valueExp":"['##patient.warningText#']",
+            "isUpdateModeOnBlur":"true"
+          },
+          "children": []
+        },
+        {
+          "name": "Text Field",
+          "description": "Text input.",
+          "type": "InputComponent",
+          "properties": {
+            "type": "text",
+            "maxlength": 32,
+            "autocomplete": true,
+            "lineHeight": "1.2em",
+            "size": "25",
+            "required": false,
+            "containerClass": "",
+            "placeholder": "阳性标识",
+            "isReadonly": false,
+            "containerPadding": "0 20px 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "120px",
+            "name": "positiveSign",
+            "requiredErrorMsg": "required_error",
+            "vformValidatorMessage": "Validation error.",
+            "vformValidatorExpression": "",
+            "valueExp":"['##patient.positiveSign#']",
+            "isUpdateModeOnBlur":"true"
+          },
+          "children": []
+        },
+        {
+          "name": "Select",
+          "description": "Select from a list of options",
+          "type": "SelectComponent",
+          "properties": {
+            "tag": "",
+            "name": "ecogScore",
+            "placeholder": "ECOG",
+            "required": false,
+            "containerClass": "",
+            "containerPadding": "0 20px 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "65px",
+            "options": "",
+            "requiredErrorMsg": "required_error",
+            "dataSourceToken": "PatientECOGService",
+            "eventArgs": "",
+            "valueExp":"[##patient.ecogScore#]",
+            "emptyDefaultDataSourceValue":"true"
+          },
+          "children": []
+        },
+        {
+          "name": "Text Field",
+          "description": "Text input.",
+          "type": "InputComponent",
+          "properties": {
+            "type": "text",
+            "maxlength": 32,
+            "autocomplete": true,
+            "lineHeight": "1.2em",
+            "size": "25",
+            "required": false,
+            "containerClass": "",
+            "placeholder": "ECOG评分描述",
+            "isReadonly": false,
+            "containerPadding": "0 0 0 0",
+            "containerHeight": "auto",
+            "containerWidth": "120px",
+            "name": "ecogDesc",
+            "requiredErrorMsg": "required_error",
+            "vformValidatorMessage": "Validation error.",
+            "vformValidatorExpression": "",
+            "valueExp":"['##patient.ecogDesc#']",
+            "isUpdateModeOnBlur":"true"
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}

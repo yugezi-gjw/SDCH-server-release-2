@@ -1,0 +1,1355 @@
+﻿{
+    "name": "Form",
+    "description": "",
+    "type": "FormComponent",
+    "properties": {
+        "width": "1200px",
+        "height": "auto",
+        "flexWrap": "wrap",
+        "background": "#ffffff",
+        "border": "1px solid #e7e8e9",
+        "groupSettings": ""
+    },
+    "children": [{
+        "name": "HTML",
+        "description": "Custom HTML.",
+        "type": "HtmlComponent",
+        "properties": {
+            "html": "<style>vform-context-label{padding:10px 0}.target-volume,.target-volume div.repeater-table-div{width:100%!important}.target-volume div.repeater-table-div > vform-dynamic{width:calc(50% - 20px)!important}treatment-linking{display:block} .bodybold {font-weight: bold} .place-template .mat-select-underline{ height:0;} .fontbold{font-weight:bold;} .padding-right-20px{padding-right:20px;} .inline-group vform-context-label{padding-right: 5px;}</style>",
+            "isFormHeader": false
+        },
+        "children": []
+    }, {
+        "name": "Layout",
+        "description": "Divides the form into rows and columns.",
+        "type": "LayoutComponent",
+        "properties": {
+            "width": "100%",
+            "height": "50px",
+            "borderTop": "",
+            "borderRight": "0",
+            "borderBottom": "1px solid #e7e8e9",
+            "borderLeft": "0",
+            "class": "vform-default",
+            "padding": "0 0 0 0",
+            "alignItems": "",
+            "justifyContent": "",
+            "alignSelf": "",
+            "flexFlow": "rows wrap",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+        },
+        "children": [{
+            "name": "2 Column layout",
+            "description": "Divides the form into 2 columns.",
+            "type": "LayoutComponent",
+            "properties": {
+                "width": "100%",
+                "height": "100%",
+                "class": "vform-default",
+                "padding": "0 0 0 0",
+                "alignItems": "center",
+                "justifyContent": "flex-start",
+                "flexFlow": "rows",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+            },
+            "children": [{
+                "name": "Layout",
+                "description": "",
+                "type": "LayoutComponent",
+                "properties": {
+                    "width": "1180px",
+                    "height": "100%",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "",
+                    "padding": "0 0 0 20px",
+                    "alignItems": "center",
+                    "justifyContent": "flex-start",
+                    "flexFlow": "rows wrap",
+                    "flexGrow": 1,
+                    "display": "flex"
+                },
+                "children": [{
+                    "name": "HTML",
+                    "description": "Custom HTML.",
+                    "type": "HtmlComponent",
+                    "properties": {
+                        "html": "<h3>计划确认单</h3>",
+                        "isFormHeader": "true"
+                    },
+                    "children": []
+                }, {
+                    "name": "HTML",
+                    "description": "Custom HTML.",
+                    "type": "HtmlComponent",
+                    "properties": {
+                        "html": "<input type='hidden' id='templateIdField' value='计划确认单'></input>",
+                        "isFormHeader": false
+                    },
+                    "children": []
+                }]
+            }]
+        }]
+    }, {
+        "name": "Layout",
+        "description": "Divides the form into rows and columns.",
+        "type": "LayoutComponent",
+        "properties": {
+            "width": "1160px",
+            "height": "auto",
+            "borderTop": "",
+            "borderRight": "",
+            "borderBottom": "",
+            "borderLeft": "",
+            "class": "vform-default",
+            "padding": "20px 20px 0 20px",
+            "alignItems": "center",
+            "justifyContent": "flex-start",
+            "alignSelf": "",
+            "flexFlow": "row wrap",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+        },
+        "children": [{
+            "name": "Layout",
+            "description": "Divides the form into rows and columns.",
+            "type": "LayoutComponent",
+            "properties": {
+                "width": "100%",
+                "height": "auto",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "2px solid #e7e8e9",
+                "borderLeft": "",
+                "class": "vform-default",
+                "padding": "10px 10px 10px 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+            },
+            "children": [{
+                "name": "Label",
+                "description": "",
+                "type": "LabelComponent",
+                "properties": {
+                    "content": "医嘱",
+                    "class": "font16px"
+                },
+                "children": []
+            }]
+        }]
+    }, {
+        "name": "Layout",
+        "description": "Divides the form into rows and columns.",
+        "type": "LayoutComponent",
+        "properties": {
+            "width": "1160px",
+            "height": "auto",
+            "borderTop": "",
+            "borderRight": "",
+            "borderBottom": "",
+            "borderLeft": "",
+            "class": "vform-default font14px",
+            "padding": "0 20px 0 20px",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "alignSelf": "",
+            "flexFlow": "row wrap",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+        },
+        "children": [{
+            "name": "2 Row layout",
+            "description": "Divides the form into 2 rows.",
+            "type": "LayoutComponent",
+            "properties": {
+                "width": "100%",
+                "height": "100%",
+                "class": "vform-default",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "column",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+            },
+            "children": [{
+                "name": "Layout",
+                "description": "",
+                "type": "LayoutComponent",
+                "properties": {
+                    "width": "100%",
+                    "height": "50%",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "",
+                    "padding": "0 0 0 0",
+                    "alignItems": "center",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                },
+                "children": [{
+                    "name": "2 Column layout",
+                    "description": "Divides the form into 2 columns.",
+                    "type": "LayoutComponent",
+                    "properties": {
+                        "width": "100%",
+                        "height": "auto",
+                        "class": "vform-default",
+                        "padding": "0 0 0 0",
+                        "alignItems": "center",
+                        "justifyContent": "flex-start",
+                        "flexFlow": "row",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                    },
+                    "children": [{
+                        "name": "Layout",
+                        "description": "",
+                        "type": "LayoutComponent",
+                        "properties": {
+                            "width": "500px",
+                            "height": "auto",
+                            "borderTop": "",
+                            "borderRight": "",
+                            "borderBottom": "1px solid #e7e8e9",
+                            "borderLeft": "",
+                            "class": "",
+                            "padding": "0",
+                            "alignItems": "center",
+                            "justifyContent": "flex-start",
+                            "flexFlow": "row wrap",
+                            "flexGrow": 1,
+                            "display": "flex"
+                        },
+                        "children": [{
+                            "name": "2 Column layout",
+                            "description": "Divides the form into 2 columns.",
+                            "type": "LayoutComponent",
+                            "properties": {
+                                "width": "100%",
+                                "height": "auto",
+                                "class": "vform-default",
+                                "padding": "0 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "row",
+                                "flexGrow": 1,
+                                "hidden": false,
+                                "display": "flex"
+                            },
+                            "children": [{
+                                "name": "Layout",
+                                "description": "",
+                                "type": "LayoutComponent",
+                                "properties": {
+                                    "width": "830px",
+                                    "height": "",
+                                    "borderTop": "",
+                                    "borderRight": "",
+                                    "borderBottom": "",
+                                    "borderLeft": "",
+                                    "class": "",
+                                    "padding": "0 0 0 0",
+                                    "alignItems": "center",
+                                    "justifyContent": "flex-start",
+                                    "flexFlow": "row wrap",
+                                    "flexGrow": 1,
+                                    "display": "flex"
+                                },
+                                "children": [{
+                                    "name": "2 Column layout",
+                                    "description": "Divides the form into 2 columns.",
+                                    "type": "LayoutComponent",
+                                    "properties": {
+                                        "width": "100%",
+                                        "height": "100%",
+                                        "class": "vform-default",
+                                        "padding": "0 0 0 0",
+                                        "alignItems": "",
+                                        "justifyContent": "",
+                                        "flexFlow": "row",
+                                        "flexGrow": 1,
+                                        "hidden": false,
+                                        "display": "flex"
+                                    },
+                                    "children": [{
+                                        "name": "Layout",
+                                        "description": "",
+                                        "type": "LayoutComponent",
+                                        "properties": {
+                                            "width": "50%",
+                                            "height": "100%",
+                                            "borderTop": "0",
+                                            "borderRight": "0",
+                                            "borderBottom": "0",
+                                            "borderLeft": "0",
+                                            "class": "",
+                                            "padding": "0 0 0 0",
+                                            "alignItems": "center",
+                                            "justifyContent": "",
+                                            "flexFlow": "row wrap",
+                                            "flexGrow": 1,
+                                            "display": "flex"
+                                        },
+                                        "children": [{
+                                            "name": "2 Column layout",
+                                            "description": "Divides the form into 2 columns.",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "100%",
+                                                "height": "100%",
+                                                "class": "vform-default",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row",
+                                                "flexGrow": 1,
+                                                "hidden": false,
+                                                "display": "flex"
+                                            },
+                                            "children": [{
+                                                "name": "Layout",
+                                                "description": "",
+                                                "type": "LayoutComponent",
+                                                "properties": {
+                                                    "width": "50%",
+                                                    "height": "",
+                                                    "borderTop": "",
+                                                    "borderRight": "",
+                                                    "borderBottom": "",
+                                                    "borderLeft": "",
+                                                    "class": "",
+                                                    "padding": "0 0 0 0",
+                                                    "alignItems": "center",
+                                                    "justifyContent": "",
+                                                    "flexFlow": "row wrap",
+                                                    "flexGrow": 1,
+                                                    "display": "flex"
+                                                },
+                                                "children": [{
+                                                    "name": "Label",
+                                                    "description": "",
+                                                    "type": "LabelComponent",
+                                                    "properties": {
+                                                        "content": "治疗技术",
+                                                        "class": "fontbold padding-right-20px",
+                                                        "height": "",
+                                                        "line-height": ""
+                                                    },
+                                                    "children": []
+                                                }, {
+                                                    "name": "Layout",
+                                                    "description": "",
+                                                    "type": "LayoutComponent",
+                                                    "properties": {
+                                                        "width": "200px",
+                                                        "height": "100%",
+                                                        "borderTop": "",
+                                                        "borderRight": "",
+                                                        "borderBottom": "",
+                                                        "borderLeft": "",
+                                                        "class": "inline-group",
+                                                        "padding": "0 0 0 0",
+                                                        "alignItems": "",
+                                                        "justifyContent": "",
+                                                        "flexFlow": "row wrap",
+                                                        "flexGrow": 1,
+                                                        "display": "flex"
+                                                    },
+                                                    "children": [{
+                                                        "name": "ContextLabel",
+                                                        "description": "提供上下文数据项的显示",
+                                                        "type": "ContextLabelComponent",
+                                                        "properties": {
+                                                            "content": "",
+                                                            "class": "bodytext",
+                                                            "name": "form.erwei_treatTechGroup",
+                                                            "formatter": "[{\"key\":true,\"value\":\"二维\"}]"
+                                                        },
+                                                        "children": []
+                                                    }, {
+                                                        "name": "ContextLabel",
+                                                        "description": "提供上下文数据项的显示",
+                                                        "type": "ContextLabelComponent",
+                                                        "properties": {
+                                                            "content": "",
+                                                            "class": "bodytext",
+                                                            "name": "form.sanweishixing_treatTechGroup",
+                                                            "formatter": "[{\"key\":true,\"value\":\"三维适型\"}]"
+                                                        },
+                                                        "children": []
+                                                    }, {
+                                                        "name": "ContextLabel",
+                                                        "description": "提供上下文数据项的显示",
+                                                        "type": "ContextLabelComponent",
+                                                        "properties": {
+                                                            "content": "",
+                                                            "class": "bodytext",
+                                                            "name": "form.sanweitiaoqiang_treatTechGroup",
+                                                            "formatter": "[{\"key\":true,\"value\":\"三维调强\"}]"
+                                                        },
+                                                        "children": []
+                                                    }, {
+                                                        "name": "ContextLabel",
+                                                        "description": "提供上下文数据项的显示",
+                                                        "type": "ContextLabelComponent",
+                                                        "properties": {
+                                                            "content": "",
+                                                            "class": "bodytext",
+                                                            "name": "form.xuanzhuantiaoqiang_treatTechGroup",
+                                                            "formatter": "[{\"key\":true,\"value\":\"旋转调强\"}]"
+                                                        },
+                                                        "children": []
+                                                    }]
+                                                }]
+                                            }, {
+                                                "name": "Layout",
+                                                "description": "",
+                                                "type": "LayoutComponent",
+                                                "properties": {
+                                                    "width": "50%",
+                                                    "height": "100%",
+                                                    "borderTop": "",
+                                                    "borderRight": "",
+                                                    "borderBottom": "",
+                                                    "borderLeft": "",
+                                                    "class": "",
+                                                    "padding": "0 0 0 0",
+                                                    "alignItems": "center",
+                                                    "justifyContent": "",
+                                                    "flexFlow": "row wrap",
+                                                    "flexGrow": 1,
+                                                    "display": "flex"
+                                                },
+                                                "children": [{
+                                                    "name": "Label",
+                                                    "description": "",
+                                                    "type": "LabelComponent",
+                                                    "properties": {
+                                                        "content": "治疗设备",
+                                                        "class": "fontbold padding-right-20px"
+                                                    },
+                                                    "children": []
+                                                }, {
+                                                    "name": "ContextLabel",
+                                                    "description": "提供上下文数据项的显示",
+                                                    "type": "ContextLabelComponent",
+                                                    "properties": {
+                                                        "content": "",
+                                                        "class": "",
+                                                        "name": "form.jiasuqi",
+                                                        "formatter": ""
+                                                    },
+                                                    "children": []
+                                                }]
+                                            }]
+                                        }]
+                                    }, {
+                                        "name": "Layout",
+                                        "description": "",
+                                        "type": "LayoutComponent",
+                                        "properties": {
+                                            "width": "50%",
+                                            "height": "100%",
+                                            "borderTop": "0",
+                                            "borderRight": "0",
+                                            "borderBottom": "0",
+                                            "borderLeft": "0",
+                                            "class": "",
+                                            "padding": "0 0 0 0",
+                                            "alignItems": "center",
+                                            "justifyContent": "flex-start",
+                                            "flexFlow": "row wrap",
+                                            "flexGrow": 1,
+                                            "display": "flex"
+                                        },
+                                        "children": [{
+                                            "name": "2 Column layout",
+                                            "description": "Divides the form into 2 columns.",
+                                            "type": "LayoutComponent",
+                                            "properties": {
+                                                "width": "100%",
+                                                "height": "100%",
+                                                "class": "vform-default",
+                                                "padding": "0 0 0 0",
+                                                "alignItems": "",
+                                                "justifyContent": "",
+                                                "flexFlow": "row",
+                                                "flexGrow": 1,
+                                                "hidden": false,
+                                                "display": "flex"
+                                            },
+                                            "children": [{
+                                                "name": "Layout",
+                                                "description": "",
+                                                "type": "LayoutComponent",
+                                                "properties": {
+                                                    "width": "50%",
+                                                    "height": "100%",
+                                                    "borderTop": "",
+                                                    "borderRight": "",
+                                                    "borderBottom": "",
+                                                    "borderLeft": "",
+                                                    "class": "",
+                                                    "padding": "0 0 0 0",
+                                                    "alignItems": "center",
+                                                    "justifyContent": "",
+                                                    "flexFlow": "row wrap",
+                                                    "flexGrow": 1,
+                                                    "display": "flex"
+                                                },
+                                                "children": [{
+                                                    "name": "Label",
+                                                    "description": "",
+                                                    "type": "LabelComponent",
+                                                    "properties": {
+                                                        "content": "治疗部位",
+                                                        "class": "fontbold padding-right-20px"
+                                                    },
+                                                    "children": []
+                                                }, {
+                                                    "name": "Layout",
+                                                    "description": "",
+                                                    "type": "LayoutComponent",
+                                                    "properties": {
+                                                        "width": "200px",
+                                                        "height": "100%",
+                                                        "borderTop": "",
+                                                        "borderRight": "",
+                                                        "borderBottom": "",
+                                                        "borderLeft": "",
+                                                        "class": "inline-group",
+                                                        "padding": "0 0 0 0",
+                                                        "alignItems": "",
+                                                        "justifyContent": "",
+                                                        "flexFlow": "row wrap",
+                                                        "flexGrow": 1,
+                                                        "display": "flex"
+                                                    },
+                                                    "children": [{
+                                                        "name": "ContextLabel",
+                                                        "description": "提供上下文数据项的显示",
+                                                        "type": "ContextLabelComponent",
+                                                        "properties": {
+                                                            "content": "",
+                                                            "class": "bodytext",
+                                                            "name": "form.toubu_treatSiteGroup",
+                                                            "formatter": "[{\"key\":true,\"value\":\"头部\"}]"
+                                                        },
+                                                        "children": []
+                                                    }, {
+                                                        "name": "ContextLabel",
+                                                        "description": "提供上下文数据项的显示",
+                                                        "type": "ContextLabelComponent",
+                                                        "properties": {
+                                                            "content": "",
+                                                            "class": "bodytext",
+                                                            "name": "form.jingbu_treatSiteGroup",
+                                                            "formatter": "[{\"key\":true,\"value\":\"颈部\"}]"
+                                                        },
+                                                        "children": []
+                                                    }, {
+                                                        "name": "ContextLabel",
+                                                        "description": "提供上下文数据项的显示",
+                                                        "type": "ContextLabelComponent",
+                                                        "properties": {
+                                                            "content": "",
+                                                            "class": "bodytext",
+                                                            "name": "form.xiongbu_treatSiteGroup",
+                                                            "formatter": "[{\"key\":true,\"value\":\"胸部\"}]"
+                                                        },
+                                                        "children": []
+                                                    }, {
+                                                        "name": "ContextLabel",
+                                                        "description": "提供上下文数据项的显示",
+                                                        "type": "ContextLabelComponent",
+                                                        "properties": {
+                                                            "content": "",
+                                                            "class": "bodytext",
+                                                            "name": "form.fubu_treatSiteGroup",
+                                                            "formatter": "[{\"key\":true,\"value\":\"腹部\"}]"
+                                                        },
+                                                        "children": []
+                                                    }, {
+                                                        "name": "ContextLabel",
+                                                        "description": "提供上下文数据项的显示",
+                                                        "type": "ContextLabelComponent",
+                                                        "properties": {
+                                                            "content": "",
+                                                            "class": "bodytext",
+                                                            "name": "form.penqiang_treatSiteGroup",
+                                                            "formatter": "[{\"key\":true,\"value\":\"盆腔\"}]"
+                                                        },
+                                                        "children": []
+                                                    }, {
+                                                        "name": "ContextLabel",
+                                                        "description": "提供上下文数据项的显示",
+                                                        "type": "ContextLabelComponent",
+                                                        "properties": {
+                                                            "content": "",
+                                                            "class": "bodytext",
+                                                            "name": "form.ruxian_treatSiteGroup",
+                                                            "formatter": "[{\"key\":true,\"value\":\"乳腺\"}]"
+                                                        },
+                                                        "children": []
+                                                    }, {
+                                                        "name": "ContextLabel",
+                                                        "description": "提供上下文数据项的显示",
+                                                        "type": "ContextLabelComponent",
+                                                        "properties": {
+                                                            "content": "",
+                                                            "class": "bodytext",
+                                                            "name": "form.sizhi_treatSiteGroup",
+                                                            "formatter": "[{\"key\":true,\"value\":\"四肢\"}]"
+                                                        },
+                                                        "children": []
+                                                    }]
+                                                }]
+                                            }, {
+                                                "name": "Layout",
+                                                "description": "",
+                                                "type": "LayoutComponent",
+                                                "properties": {
+                                                    "width": "50%",
+                                                    "height": "100%",
+                                                    "borderTop": "",
+                                                    "borderRight": "",
+                                                    "borderBottom": "",
+                                                    "borderLeft": "",
+                                                    "class": "",
+                                                    "padding": "0 0 0 0",
+                                                    "alignItems": "center",
+                                                    "justifyContent": "",
+                                                    "flexFlow": "row wrap",
+                                                    "flexGrow": 1,
+                                                    "display": "flex"
+                                                },
+                                                "children": [{
+                                                    "name": "Label",
+                                                    "description": "",
+                                                    "type": "LabelComponent",
+                                                    "properties": {
+                                                        "content": "摆位要求",
+                                                        "class": "fontbold padding-right-20px"
+                                                    },
+                                                    "children": []
+                                                }, {
+                                                    "name": "ContextLabel",
+                                                    "description": "提供上下文数据项的显示",
+                                                    "type": "ContextLabelComponent",
+                                                    "properties": {
+                                                        "content": "",
+                                                        "class": "padding-right-20px",
+                                                        "name": "form.bingrentiwei",
+                                                        "formatter": ""
+                                                    },
+                                                    "children": []
+                                                }, {
+                                                    "name": "ContextLabel",
+                                                    "description": "提供上下文数据项的显示",
+                                                    "type": "ContextLabelComponent",
+                                                    "properties": {
+                                                        "content": "",
+                                                        "class": "",
+                                                        "name": "form.fangxiang",
+                                                        "formatter": ""
+                                                    },
+                                                    "children": []
+                                                }]
+                                            }]
+                                        }]
+                                    }]
+                                }]
+                            }]
+                        }]
+                    }]
+                }]
+            }, {
+                "name": "Layout",
+                "description": "",
+                "type": "LayoutComponent",
+                "properties": {
+                    "width": "100%",
+                    "height": "auto",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "1px solid #e7e8e9",
+                    "borderLeft": "",
+                    "class": "",
+                    "padding": "5px 0",
+                    "alignItems": "center",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                },
+                "children": [{
+                    "name": "Label",
+                    "description": "",
+                    "type": "LabelComponent",
+                    "properties": {
+                        "content": "既往照射部位剂量、方式，及危及器官受量",
+                        "class": "fontbold padding-right-20px",
+                        "height": "",
+                        "line-height": ""
+                    },
+                    "children": []
+                }, {
+                    "name": "ContextLabel",
+                    "description": "提供上下文数据项的显示",
+                    "type": "ContextLabelComponent",
+                    "properties": {
+                        "content": "",
+                        "class": "",
+                        "name": "form.jiwangzhaoshebuwei",
+                        "formatter": ""
+                    },
+                    "children": []
+                }]
+            }, {
+                "name": "Layout",
+                "description": "",
+                "type": "LayoutComponent",
+                "properties": {
+                    "width": "100%",
+                    "height": "auto",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "1px solid #e7e8e9",
+                    "borderLeft": "",
+                    "class": "",
+                    "padding": "0 0 0 0",
+                    "alignItems": "center",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                },
+                "children": [{
+                    "name": "Label",
+                    "description": "",
+                    "type": "LabelComponent",
+                    "properties": {
+                        "content": "备注",
+                        "class": "fontbold padding-right-20px",
+                        "height": "",
+                        "line-height": ""
+                    },
+                    "children": []
+                }, {
+                    "name": "ContextLabel",
+                    "description": "提供上下文数据项的显示",
+                    "type": "ContextLabelComponent",
+                    "properties": {
+                        "content": "",
+                        "class": "",
+                        "name": "form.beizhu"
+                    },
+                    "children": []
+                }]
+            }, {
+                "name": "Layout",
+                "description": "",
+                "type": "LayoutComponent",
+                "properties": {
+                    "width": "100%",
+                    "height": "auto",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "2px solid #e7e8e9",
+                    "borderLeft": "",
+                    "class": "",
+                    "padding": "0 0 0 0",
+                    "alignItems": "center",
+                    "justifyContent": "",
+                    "alignSelf": "",
+                    "flexFlow": "row wrap",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                },
+                "children": [{
+                    "name": "Label",
+                    "description": "",
+                    "type": "LabelComponent",
+                    "properties": {
+                        "content": "呼吸运动/特殊外放要求",
+                        "class": "fontbold padding-right-20px",
+                        "height": "",
+                        "line-height": ""
+                    },
+                    "children": []
+                }, {
+                    "name": "ContextLabel",
+                    "description": "提供上下文数据项的显示",
+                    "type": "ContextLabelComponent",
+                    "properties": {
+                        "content": "",
+                        "class": "",
+                        "name": "form.huxiyundong"
+                    },
+                    "children": []
+                }]
+            }]
+        }]
+    },
+        {
+            "name": "Layout",
+            "description": "Divides the form into rows and columns.",
+            "type": "LayoutComponent",
+            "properties": {
+                "width": "730px",
+                "height": "50px",
+                "borderTop": "",
+                "borderRight": "0",
+                "borderBottom": "",
+                "borderLeft": "0",
+                "class": "vform-default",
+                "padding": "0 0 0 20px",
+                "alignItems": "center",
+                "justifyContent": "flex-start",
+                "alignSelf": "",
+                "flexFlow": "rows wrap",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+            },
+            "children": [{
+                "name": "HTML",
+                "description": "Custom HTML.",
+                "type": "HtmlComponent",
+                "properties": {
+                    "html": "<h4>靶区剂量及分次</h4>",
+                    "padding": ""
+                },
+                "children": []
+            }]
+        },
+        {
+            "name": "Layout",
+            "description": "Divides the form into rows and columns.",
+            "type": "LayoutComponent",
+            "properties": {
+                "width": "1180px",
+                "height": "auto",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "vform-default",
+                "padding": "0 0 0 20px",
+                "alignItems": "center",
+                "justifyContent": "flex-start",
+                "alignSelf": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+            },
+            "children": [{
+                "name": "TargetVolumePrescription",
+                "description": "",
+                "type": "RepeaterComponent",
+                "properties": {
+                    "name": "baqujiliangjifenci",
+                    "class": "x-scroll target-volume",
+                    "repeatRowText": "靶区",
+                    "padding": "0 5px 0 5px",
+                    "height": "auto",
+                    "width": "100%",
+                    "showRepeatButton": true,
+                    "flexFlow": "row wrap",
+                    "isReadonly": "true",
+                    "requireValidation": "true",
+                    "requiredColumns": "[\"Target Volume\", \"Dose\", \"Fractions\"]",
+                    "errMsg": "error-019",
+                    "metadataTemplate": {
+                        "name": "TargetVolPres",
+                        "description": "Insert a target volume prescription column",
+                        "type": "TargetVolumeTable",
+                        "properties": {
+                            "name": "TVP1",
+                            "containerClass": "",
+                            "dynamicWidth": "auto",
+                            "dynamicHeight":"auto",
+                            "diaplay":"",
+                            "padding": "0 20px 0 0",
+                            "height": "auto",
+                            "width": "auto",
+                            "tablePadding": "",
+                            "tableName": "",
+                            "showActions": true,
+                            "showAddRowControl": false,
+                            "automaticallyAddRow": true,
+                            "showHeaderRow": true,
+                            "initialRows": 3,
+                            "isTableNameHidden": true,
+                            "columns": [{
+                                "label": "靶区",
+                                "class": "",
+                                "width": "60px",
+                                "metadata": {
+                                    "name": "",
+                                    "description": "",
+                                    "type": "InputComponent",
+                                    "properties": {
+                                        "type": "text",
+                                        "maxlength": 20,
+                                        "autocomplete": true,
+                                        "lineHeight": "1.2em",
+                                        "size": "18",
+                                        "required": false,
+                                        "containerClass": "",
+                                        "placeholder": "",
+                                        "containerPadding": "",
+                                        "containerHeight": "auto",
+                                        "containerWidth": "60px",
+                                        "name": "Target Volume",
+                                        "isReadonly": "true"
+                                    },
+                                    "children": []
+                                }
+                            }, {
+                                "label": "部位",
+                                "class": "",
+                                "width": "112px",
+                                "metadata": {
+                                    "name": "",
+                                    "description": "",
+                                    "type": "InputComponent",
+                                    "properties": {
+                                        "type": "text",
+                                        "maxlength": 30,
+                                        "autocomplete": true,
+                                        "lineHeight": "1.2em",
+                                        "size": "18",
+                                        "required": false,
+                                        "containerClass": "",
+                                        "placeholder": "",
+                                        "containerPadding": "",
+                                        "containerHeight": "auto",
+                                        "containerWidth": "112px",
+                                        "name": "bodypart",
+                                        "bodyPartToolTip": true,
+                                        "isReadonly": "true"
+                                    },
+                                    "children": []
+                                }
+                            }, {
+                                "label": "剂量(Gy)",
+                                "class": "",
+                                "width": "66px",
+                                "metadata": {
+                                    "name": "",
+                                    "description": "",
+                                    "type": "InputComponent",
+                                    "properties": {
+                                        "type": "text",
+                                        "maxlength": 20,
+                                        "autocomplete": true,
+                                        "lineHeight": "1.2em",
+                                        "size": "18",
+                                        "required": false,
+                                        "containerClass": "",
+                                        "placeholder": "",
+                                        "numericType": "float",
+                                        "containerPadding": "",
+                                        "containerHeight": "auto",
+                                        "containerWidth": "66px",
+                                        "name": "Dose",
+                                        "isReadonly": "true"
+                                    },
+                                    "children": []
+                                }
+                            }, {
+                                "label": "分次",
+                                "class": "",
+                                "width": "40px",
+                                "metadata": {
+                                    "name": "",
+                                    "description": "",
+                                    "type": "InputComponent",
+                                    "properties": {
+                                        "type": "text",
+                                        "maxlength": 20,
+                                        "autocomplete": true,
+                                        "lineHeight": "1.2em",
+                                        "size": "18",
+                                        "required": false,
+                                        "containerClass": "",
+                                        "placeholder": "",
+                                        "numericType": "integer",
+                                        "containerPadding": "",
+                                        "containerHeight": "auto",
+                                        "containerWidth": "40px",
+                                        "name": "Fractions",
+                                        "isReadonly": "true"
+                                    },
+                                    "children": []
+                                }
+                            }],
+                            "footer": {
+                                "name": "",
+                                "description": "",
+                                "type": "InputComponent",
+                                "properties": {
+                                    "type": "text",
+                                    "maxlength": 32,
+                                    "autocomplete": true,
+                                    "lineHeight": "1.2em",
+                                    "size": "18",
+                                    "required": false,
+                                    "inputClass": "remarkInput",
+                                    "containerClass": "",
+                                    "placeholder": "备注",
+                                    "containerPadding": "",
+                                    "containerHeight": "auto",
+                                    "containerWidth": "100%",
+                                    "name": "remarkRow",
+                                    "isReadonly": "true"
+                                },
+                                "children": []
+                            }
+                        },
+                        "children": []
+                    },
+                    "firstMetadataTemplate": {
+                        "name": "TargetVolPres",
+                        "description": "Insert a target volume prescription column",
+                        "type": "TargetVolumeTable",
+                        "properties": {
+                            "name": "TVP1",
+                            "containerClass": "",
+                            "dynamicWidth": "auto",
+                            "dynamicHeight":"auto",
+                            "diaplay":"",
+                            "padding": "0 20px 0 0",
+                            "height": "auto",
+                            "width": "auto",
+                            "tablePadding": "",
+                            "tableName": "",
+                            "showActions": true,
+                            "showAddRowControl": false,
+                            "automaticallyAddRow": true,
+                            "showHeaderRow": true,
+                            "initialRows": 3,
+                            "columns": [{
+                                "label": "靶区",
+                                "class": "",
+                                "width": "60px",
+                                "metadata": {
+                                    "name": "",
+                                    "description": "",
+                                    "type": "InputComponent",
+                                    "properties": {
+                                        "type": "text",
+                                        "maxlength": 20,
+                                        "autocomplete": true,
+                                        "lineHeight": "1.2em",
+                                        "size": "18",
+                                        "required": false,
+                                        "containerClass": "",
+                                        "placeholder": "",
+                                        "containerPadding": "",
+                                        "containerHeight": "auto",
+                                        "containerWidth": "60px",
+                                        "name": "Target Volume",
+                                        "isReadonly": "true"
+                                    },
+                                    "children": []
+                                }
+                            }, {
+                                "label": "部位",
+                                "class": "",
+                                "width": "112px",
+                                "metadata": {
+                                    "name": "",
+                                    "description": "",
+                                    "type": "InputComponent",
+                                    "properties": {
+                                        "type": "text",
+                                        "maxlength": 30,
+                                        "autocomplete": true,
+                                        "lineHeight": "1.2em",
+                                        "size": "18",
+                                        "required": false,
+                                        "containerClass": "",
+                                        "placeholder": "",
+                                        "containerPadding": "",
+                                        "containerHeight": "auto",
+                                        "containerWidth": "112px",
+                                        "name": "bodypart",
+                                        "bodyPartToolTip": true,
+                                        "isReadonly": "true"
+                                    },
+                                    "children": []
+                                }
+                            }, {
+                                "label": "剂量(Gy)",
+                                "class": "",
+                                "width": "66px",
+                                "metadata": {
+                                    "name": "",
+                                    "description": "",
+                                    "type": "InputComponent",
+                                    "properties": {
+                                        "type": "text",
+                                        "maxlength": 20,
+                                        "autocomplete": true,
+                                        "lineHeight": "1.2em",
+                                        "size": "18",
+                                        "required": false,
+                                        "containerClass": "",
+                                        "placeholder": "",
+                                        "numericType": "float",
+                                        "containerPadding": "",
+                                        "containerHeight": "auto",
+                                        "containerWidth": "66px",
+                                        "name": "Dose",
+                                        "isReadonly": "true"
+                                    },
+                                    "children": []
+                                }
+                            }, {
+                                "label": "分次",
+                                "class": "",
+                                "width": "60px",
+                                "metadata": {
+                                    "name": "",
+                                    "description": "",
+                                    "type": "InputComponent",
+                                    "properties": {
+                                        "type": "text",
+                                        "maxlength": 20,
+                                        "autocomplete": true,
+                                        "lineHeight": "1.2em",
+                                        "size": "18",
+                                        "required": false,
+                                        "containerClass": "",
+                                        "placeholder": "",
+                                        "numericType": "integer",
+                                        "containerPadding": "",
+                                        "containerHeight": "auto",
+                                        "containerWidth": "40px",
+                                        "name": "Fractions",
+                                        "isReadonly": "true"
+                                    },
+                                    "children": []
+                                }
+                            }],
+                            "footer": {
+                                "name": "",
+                                "description": "",
+                                "type": "InputComponent",
+                                "properties": {
+                                    "type": "text",
+                                    "maxlength": 32,
+                                    "autocomplete": true,
+                                    "lineHeight": "1.2em",
+                                    "size": "18",
+                                    "required": false,
+                                    "inputClass": "remarkInput",
+                                    "containerClass": "",
+                                    "placeholder": "备注",
+                                    "containerPadding": "",
+                                    "containerHeight": "auto",
+                                    "containerWidth": "100%",
+                                    "name": "remarkRow",
+                                    "isReadonly": "true"
+                                },
+                                "children": []
+                            }
+                        },
+                        "children": []
+                    }
+                },
+                "children": []
+            }]
+        },
+        {
+            "name": "Layout",
+            "description": "Divides the form into rows and columns.",
+            "type": "LayoutComponent",
+            "properties": {
+                "width": "",
+                "class": "vform-default",
+                "padding": "0 20px 0 20px",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "",
+                "flexGrow": "",
+                "hidden": false,
+                "display": "",
+                "switchField": ""
+            },
+            "children": [
+                {
+                    "name": "Treatment Linking",
+                    "description": "",
+                    "type": "TreatmentLinkingComponent",
+                    "properties": {
+                        "name": "请输入唯一标识"
+                    },
+                    "children": []
+                }
+            ]
+        },
+        {
+        "name": "Layout",
+        "description": "Divides the form into rows and columns.",
+        "type": "LayoutComponent",
+        "properties": {
+            "width": "1160px",
+            "height": "auto",
+            "borderTop": "",
+            "borderRight": "",
+            "borderBottom": "1px solid #e7e8e9",
+            "borderLeft": "",
+            "class": "vform-default",
+            "padding": "20px",
+            "alignItems": "center",
+            "justifyContent": "",
+            "alignSelf": "",
+            "flexFlow": "rows wrap",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+        },
+        "children": [{
+            "name": "2 Column layout",
+            "description": "Divides the form into 2 columns.",
+            "type": "LayoutComponent",
+            "properties": {
+                "width": "100%",
+                "height": "100%",
+                "class": "vform-default",
+                "padding": "0 0 0 0",
+                "alignItems": "center",
+                "justifyContent": "",
+                "flexFlow": "row",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+            },
+            "children": [{
+                "name": "Layout",
+                "description": "",
+                "type": "LayoutComponent",
+                "properties": {
+                    "width": "1auto",
+                    "height": "auto",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "",
+                    "padding": "0",
+                    "alignItems": "center",
+                    "justifyContent": "flex-start",
+                    "flexFlow": "rows wrap",
+                    "flexGrow": 1,
+                    "display": "flex"
+                },
+                "children": [{
+                    "name": "Label",
+                    "description": "",
+                    "type": "LabelComponent",
+                    "properties": {
+                        "content": "危及器官及限量",
+                        "class": "fontbold"
+                    },
+                    "children": []
+                }]
+            }, {
+                "name": "Layout",
+                "description": "",
+                "type": "LayoutComponent",
+                "properties": {
+                    "width": "100%",
+                    "height": "auto",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "",
+                    "padding": "0 0 0 0",
+                    "alignItems": "center",
+                    "justifyContent": "flex-start",
+                    "flexFlow": "rows wrap",
+                    "flexGrow": 1,
+                    "display": "flex"
+                },
+                "children": [{
+                    "name": "ContextLabel",
+                    "description": "提供上下文数据项的显示",
+                    "type": "ContextLabelComponent",
+                    "properties": {
+                        "content": "",
+                        "class": "",
+                        "name": "form.weijiqiguanjixianliang"
+                    },
+                    "children": []
+                }]
+            }]
+        }]
+    }, {
+        "name": "Layout",
+        "description": "Divides the form into rows and columns.",
+        "type": "LayoutComponent",
+        "properties": {
+            "width": "1180px",
+            "height": "60px",
+            "borderTop": "1px solid #e7e8e9",
+            "borderRight": "0",
+            "borderBottom": "",
+            "borderLeft": "0",
+            "class": "vform-default",
+            "padding": "0 20px 0 0",
+            "alignItems": "center",
+            "justifyContent": "flex-end",
+            "alignSelf": "",
+            "flexFlow": "rows wrap",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+        },
+        "children": [{
+            "name": "Submit Button",
+            "description": "Submit the form",
+            "type": "SubmitBtnComponent",
+            "properties": {
+                "width": "150px",
+                "height": "60px",
+                "text": "提交"
+            },
+            "children": []
+        }]
+    }]
+}

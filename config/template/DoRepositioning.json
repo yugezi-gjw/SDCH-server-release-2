@@ -1,0 +1,3083 @@
+﻿{
+  "name": "Form",
+  "description": "",
+  "type": "FormComponent",
+  "properties": {
+    "width": "1200px",
+    "height": "auto",
+    "flexWrap": "wrap",
+    "border": "1px solid #e7e8e9",
+    "background": "#ffffff"
+  },
+  "children": [{
+    "name": "HTML",
+    "description": "Custom HTML.",
+    "type": "HtmlComponent",
+    "properties": {
+      "html": "<style> .target-volume,.target-volume div.repeater-table-div{width:100%!important}.target-volume div.repeater-table-div > vform-dynamic{width:calc(50% - 20px)!important}.bodybold {font-weight: bold} .word-break{width:100%; word-break:break-all;}</style>",
+      "isFormHeader": false
+    },
+    "children": []
+  },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "1160px",
+        "height": "50px",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "1px solid #e7e8e9",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "0 20px 0 20px",
+        "alignItems": "center",
+        "justifyContent": "flex-start",
+        "alignSelf": "",
+        "flexFlow": "rows wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex"
+      },
+      "children": [{
+        "name": "HTML",
+        "description": "Custom HTML.",
+        "type": "HtmlComponent",
+        "properties": {
+          "html": "<h3>复位记录单</h3>"
+        },
+        "children": []
+      },
+        {
+          "name": "HTML",
+          "description": "Custom HTML.",
+          "type": "HtmlComponent",
+          "properties": {
+            "html": "<input type='hidden' id='templateIdField' value='复位记录单'></input>",
+            "isFormHeader": false
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "100%",
+        "height": "auto",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "0",
+        "alignItems": "center",
+        "justifyContent": "flex-start",
+        "alignSelf": "",
+        "flexFlow": "rows wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex"
+      },
+      "children": [{
+        "name": "2 Column layout",
+        "description": "Divides the form into 2 columns.",
+        "type": "LayoutComponent",
+        "properties": {
+          "width": "100%",
+          "height": "100%",
+          "class": "vform-default",
+          "padding": "0 0 0 0",
+          "alignItems": "",
+          "justifyContent": "",
+          "flexFlow": "row",
+          "flexGrow": 1,
+          "hidden": false,
+          "display": "flex"
+        },
+        "children": [{
+          "name": "Layout",
+          "description": "",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "33%",
+            "height": "100%",
+            "borderTop": "",
+            "borderRight": "",
+            "borderBottom": "",
+            "borderLeft": "",
+            "class": "",
+            "padding": "20px",
+            "alignItems": "",
+            "justifyContent": "",
+            "flexFlow": "row wrap",
+            "flexGrow": 1,
+            "display": "flex"
+          },
+          "children": [{
+            "name": "2 Row layout",
+            "description": "Divides the form into 2 rows.",
+            "type": "LayoutComponent",
+            "properties": {
+              "width": "100%",
+              "height": "100%",
+              "class": "vform-default",
+              "padding": "0 0 0 0",
+              "alignItems": "",
+              "justifyContent": "",
+              "alignSelf": "",
+              "flexFlow": "column",
+              "flexGrow": 1,
+              "hidden": false,
+              "display": "flex"
+            },
+            "children": [{
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "100%",
+                "height": "",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 20px 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+              },
+              "children": [{
+                "name": "ISOCenters",
+                "description": "ISOCenters",
+                "type": "RepeaterComponent",
+                "properties": {
+                  "name": "zhiliaodengzhongxin",
+                  "containerClass": "",
+                  "repeatRowText": "",
+                  "padding": "0 0 0 0",
+                  "height": "auto",
+                  "width": "100%",
+                  "dataSourceToken": "ISOCenterDataService",
+                  "showRepeatButton": false,
+                  "flexFlow": "row wrap",
+                  "templateSeed": {
+                    "name": "plan1",
+                    "description": "plan1",
+                    "type": "TableComponent",
+                    "properties": {
+                      "name": "plan1",
+                      "containerClass": "",
+                      "dynamicWidth": "90%",
+                      "padding": "0 5px 0 5px",
+                      "height": "auto",
+                      "width": "100%",
+                      "tablePadding": "0 0 0 20px",
+                      "tableName": "Lung RA",
+                      "showActions": true,
+                      "showAddRowControl": true,
+                      "automaticallyAddRow": true,
+                      "showHeaderRow": true,
+                      "initialRows": 1,
+                      "columns": [{
+                        "label": "",
+                        "class": "",
+                        "width": "25%",
+                        "metadata": {
+                          "name": "isoNameLabel",
+                          "description": "",
+                          "type": "IncrementalLabelComponent",
+                          "properties": {
+                            "containerClass": "",
+                            "placeholder": "",
+                            "containerPadding": "0 5px 0 5px",
+                            "containerHeight": "auto",
+                            "containerWidth": "100%",
+                            "content": "ISO"
+                          },
+                          "children": []
+                        }
+                      },
+                        {
+                          "label": "Vrt(cm)",
+                          "class": "",
+                          "width": "80px",
+                          "metadata": {
+                            "name": "",
+                            "description": "",
+                            "type": "InputComponent",
+                            "properties": {
+                              "type": "number",
+                              "maxlength": 20,
+                              "autocomplete": true,
+                              "lineHeight": "1.2em",
+                              "size": "20",
+                              "required": false,
+                              "containerClass": "",
+                              "placeholder": "",
+                              "containerPadding": "0 5px 0 5px",
+                              "containerHeight": "auto",
+                              "containerWidth": "80px",
+                              "name": "vrt",
+                              "numericType": "number"
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "label": "Lng(cm)",
+                          "class": "",
+                          "width": "80px",
+                          "metadata": {
+                            "name": "",
+                            "description": "",
+                            "type": "InputComponent",
+                            "properties": {
+                              "type": "number",
+                              "maxlength": 20,
+                              "autocomplete": true,
+                              "lineHeight": "1.2em",
+                              "size": "20",
+                              "required": false,
+                              "containerClass": "",
+                              "placeholder": "",
+                              "containerPadding": "0 5px 0 5px",
+                              "containerHeight": "auto",
+                              "containerWidth": "80px",
+                              "name": "lng",
+                              "numericType": "number"
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "label": "Lat(cm)",
+                          "class": "",
+                          "width": "80px",
+                          "metadata": {
+                            "name": "",
+                            "description": "",
+                            "type": "InputComponent",
+                            "properties": {
+                              "type": "number",
+                              "maxlength": 20,
+                              "autocomplete": true,
+                              "lineHeight": "1.2em",
+                              "size": "20",
+                              "required": false,
+                              "containerClass": "",
+                              "placeholder": "",
+                              "containerPadding": "0 5px 0 5px",
+                              "containerHeight": "auto",
+                              "containerWidth": "80px",
+                              "name": "lat",
+                              "numericType": "number"
+                            },
+                            "children": []
+                          }
+                        }
+                      ]
+                    },
+                    "children": []
+                  },
+                  "templates": [{
+                    "name": "plan1",
+                    "description": "plan1",
+                    "type": "TableComponent",
+                    "properties": {
+                      "name": "plan1",
+                      "containerClass": "",
+                      "dynamicWidth": "90%",
+                      "padding": "0 5px 0 5px",
+                      "height": "auto",
+                      "width": "100%",
+                      "tablePadding": "0 0 0 20px",
+                      "tableName": "Lung RA",
+                      "showActions": true,
+                      "showAddRowControl": false,
+                      "automaticallyAddRow": true,
+                      "showHeaderRow": true,
+                      "initialRows": 2,
+                      "columns": [{
+                        "label": "",
+                        "class": "",
+                        "width": "25%",
+                        "metadata": {
+                          "name": "isoNameLabel",
+                          "description": "",
+                          "type": "IncrementalLabelComponent",
+                          "properties": {
+                            "containerClass": "",
+                            "placeholder": "",
+                            "containerPadding": "0 5px 0 5px",
+                            "containerHeight": "auto",
+                            "containerWidth": "100%",
+                            "content": "ISO"
+                          },
+                          "children": []
+                        }
+                      },
+                        {
+                          "label": "Vrt(cm)",
+                          "class": "",
+                          "width": "80px",
+                          "metadata": {
+                            "name": "",
+                            "description": "",
+                            "type": "InputComponent",
+                            "properties": {
+                              "type": "number",
+                              "maxlength": 20,
+                              "autocomplete": true,
+                              "lineHeight": "1.2em",
+                              "size": "20",
+                              "required": false,
+                              "containerClass": "",
+                              "placeholder": "",
+                              "containerPadding": "0 5px 0 5px",
+                              "containerHeight": "auto",
+                              "containerWidth": "80px",
+                              "name": "lrt",
+                              "numericType": "number"
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "label": "Lng(cm)",
+                          "class": "",
+                          "width": "80px",
+                          "metadata": {
+                            "name": "",
+                            "description": "",
+                            "type": "InputComponent",
+                            "properties": {
+                              "type": "number",
+                              "maxlength": 20,
+                              "autocomplete": true,
+                              "lineHeight": "1.2em",
+                              "size": "20",
+                              "required": false,
+                              "containerClass": "",
+                              "placeholder": "",
+                              "containerPadding": "0 5px 0 5px",
+                              "containerHeight": "auto",
+                              "containerWidth": "80px",
+                              "name": "lng",
+                              "numericType": "number"
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "label": "Lat(cm)",
+                          "class": "",
+                          "width": "80px",
+                          "metadata": {
+                            "name": "",
+                            "description": "",
+                            "type": "InputComponent",
+                            "properties": {
+                              "type": "number",
+                              "maxlength": 20,
+                              "autocomplete": true,
+                              "lineHeight": "1.2em",
+                              "size": "20",
+                              "required": false,
+                              "containerClass": "",
+                              "placeholder": "",
+                              "containerPadding": "0 5px 0 5px",
+                              "containerHeight": "auto",
+                              "containerWidth": "80px",
+                              "name": "lat",
+                              "numericType": "number"
+                            },
+                            "children": []
+                          }
+                        }
+                      ]
+                    },
+                    "children": []
+                  },
+                    {
+                      "name": "plan2",
+                      "description": "plan2",
+                      "type": "TableComponent",
+                      "properties": {
+                        "name": "plan2",
+                        "containerClass": "",
+                        "dynamicWidth": "90%",
+                        "padding": "0 5px 0 5px",
+                        "height": "auto",
+                        "width": "100%",
+                        "tablePadding": "0 0 0 20px",
+                        "tableName": "Node RA",
+                        "showActions": true,
+                        "showAddRowControl": true,
+                        "automaticallyAddRow": true,
+                        "showHeaderRow": true,
+                        "initialRows": 1,
+                        "columns": [{
+                          "label": "",
+                          "class": "",
+                          "width": "25%",
+                          "metadata": {
+                            "name": "isoNameLabel",
+                            "description": "",
+                            "type": "IncrementalLabelComponent",
+                            "properties": {
+                              "containerClass": "",
+                              "placeholder": "",
+                              "containerPadding": "0 5px 0 5px",
+                              "containerHeight": "auto",
+                              "containerWidth": "100%",
+                              "content": "ISO"
+                            },
+                            "children": []
+                          }
+                        },
+                          {
+                            "label": "Vrt(cm)",
+                            "class": "",
+                            "width": "80px",
+                            "metadata": {
+                              "name": "",
+                              "description": "",
+                              "type": "InputComponent",
+                              "properties": {
+                                "type": "number",
+                                "maxlength": 20,
+                                "autocomplete": true,
+                                "lineHeight": "1.2em",
+                                "size": "20",
+                                "required": false,
+                                "containerClass": "",
+                                "placeholder": "",
+                                "containerPadding": "0 5px 0 5px",
+                                "containerHeight": "auto",
+                                "containerWidth": "80px",
+                                "name": "vrt",
+                                "numericType": "number"
+                              },
+                              "children": []
+                            }
+                          },
+                          {
+                            "label": "Lng(cm)",
+                            "class": "",
+                            "width": "80px",
+                            "metadata": {
+                              "name": "",
+                              "description": "",
+                              "type": "InputComponent",
+                              "properties": {
+                                "type": "number",
+                                "maxlength": 20,
+                                "autocomplete": true,
+                                "lineHeight": "1.2em",
+                                "size": "20",
+                                "required": false,
+                                "containerClass": "",
+                                "placeholder": "",
+                                "containerPadding": "0 5px 0 5px",
+                                "containerHeight": "auto",
+                                "containerWidth": "80px",
+                                "name": "lng",
+                                "numericType": "number"
+                              },
+                              "children": []
+                            }
+                          },
+                          {
+                            "label": "Lat(cm)",
+                            "class": "",
+                            "width": "80px",
+                            "metadata": {
+                              "name": "",
+                              "description": "",
+                              "type": "InputComponent",
+                              "properties": {
+                                "type": "number",
+                                "maxlength": 20,
+                                "autocomplete": true,
+                                "lineHeight": "1.2em",
+                                "size": "20",
+                                "required": false,
+                                "containerClass": "",
+                                "placeholder": "",
+                                "containerPadding": "0 5px 0 5px",
+                                "containerHeight": "auto",
+                                "containerWidth": "80px",
+                                "name": "lat",
+                                "numericType": "number"
+                              },
+                              "children": []
+                            }
+                          }
+                        ]
+                      },
+                      "children": []
+                    }
+                  ],
+                  "repeaterHeaderText": "治疗等中心",
+                  "showRepeaterHeader": "true"
+                },
+                "children": []
+              }]
+            },
+              {
+                "name": "Layout",
+                "description": "",
+                "type": "LayoutComponent",
+                "properties": {
+                  "width": "100%",
+                  "height": "",
+                  "borderTop": "",
+                  "borderRight": "",
+                  "borderBottom": "",
+                  "borderLeft": "",
+                  "class": "",
+                  "padding": "0 0 0 0",
+                  "alignItems": "",
+                  "justifyContent": "",
+                  "alignSelf": "",
+                  "flexFlow": "row wrap",
+                  "flexGrow": 1,
+                  "hidden": false,
+                  "display": "flex"
+                },
+                "children": [{
+                  "name": "Layout",
+                  "description": "Divides the form into rows and columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "50px",
+                    "borderTop": "",
+                    "borderRight": "",
+                    "borderBottom": "",
+                    "borderLeft": "",
+                    "class": "vform-default",
+                    "padding": "0 0 0 0",
+                    "alignItems": "center",
+                    "justifyContent": "flex-start",
+                    "alignSelf": "",
+                    "flexFlow": "rows wrap",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [{
+                    "name": "Text Field",
+                    "description": "Text input.",
+                    "type": "InputComponent",
+                    "properties": {
+                      "type": "text",
+                      "maxlength": "64",
+                      "autocomplete": true,
+                      "lineHeight": "1.2em",
+                      "size": "25",
+                      "required": false,
+                      "containerClass": "",
+                      "placeholder": "技师修改说明",
+                      "containerPadding": "0 0 0 0",
+                      "containerHeight": "auto",
+                      "containerWidth": "400px",
+                      "name": "repobeizhu",
+                      "vformValidatorMessage": "Validation error.",
+                      "vformValidatorExpression": ""
+                    },
+                    "children": []
+                  }]
+                },
+                  {
+                    "name": "Layout",
+                    "description": "Divides the form into rows and columns.",
+                    "type": "LayoutComponent",
+                    "properties": {
+                      "width": "100%",
+                      "height": "80px",
+                      "borderTop": "",
+                      "borderRight": "",
+                      "borderBottom": "",
+                      "borderLeft": "",
+                      "class": "vform-default",
+                      "padding": "0",
+                      "alignItems": "center",
+                      "justifyContent": "flex-start",
+                      "alignSelf": "",
+                      "flexFlow": "rows wrap",
+                      "flexGrow": 1,
+                      "hidden": false,
+                      "display": "flex"
+                    },
+                    "children": [{
+                      "name": "2 Row layout",
+                      "description": "Divides the form into 2 rows.",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "400",
+                        "height": "100%",
+                        "class": "vform-default",
+                        "padding": "0 0 0 0",
+                        "alignItems": "",
+                        "justifyContent": "flex-start",
+                        "alignSelf": "",
+                        "flexFlow": "column",
+                        "flexGrow": 1,
+                        "hidden": false,
+                        "display": "flex"
+                      },
+                      "children": [{
+                        "name": "Layout",
+                        "description": "",
+                        "type": "LayoutComponent",
+                        "properties": {
+                          "width": "400px",
+                          "height": "50%",
+                          "borderTop": "",
+                          "borderRight": "",
+                          "borderBottom": "1px solid #e7e8e9",
+                          "borderLeft": "",
+                          "class": "",
+                          "padding": "0",
+                          "alignItems": "center",
+                          "justifyContent": "flex-start",
+                          "alignSelf": "",
+                          "flexFlow": "rows wrap",
+                          "flexGrow": 1,
+                          "hidden": false,
+                          "display": "flex"
+                        },
+                        "children": [{
+                          "name": "2 Column layout",
+                          "description": "Divides the form into 2 columns.",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "100%",
+                            "class": "vform-default",
+                            "padding": "0 0 0 0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "flexFlow": "rows",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [{
+                            "name": "Layout",
+                            "description": "",
+                            "type": "LayoutComponent",
+                            "properties": {
+                              "width": "30%",
+                              "height": "100%",
+                              "borderTop": "",
+                              "borderRight": "",
+                              "borderBottom": "",
+                              "borderLeft": "",
+                              "class": "",
+                              "padding": "0",
+                              "alignItems": "center",
+                              "justifyContent": "flex-start",
+                              "flexFlow": "rows wrap",
+                              "flexGrow": 1,
+                              "display": "flex"
+                            },
+                            "children": [{
+                              "name": "Label",
+                              "description": "",
+                              "type": "LabelComponent",
+                              "properties": {
+                                "content": "主管医生批准",
+                                "class": ""
+                              },
+                              "children": []
+                            }]
+                          },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "60%",
+                                "height": "100%",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0 20px 0 0",
+                                "alignItems": "center",
+                                "justifyContent": "flex-end",
+                                "flexFlow": "rows wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [{
+                                "name": "E-signature",
+                                "description": ".",
+                                "type": "ESignComponent",
+                                "properties": {
+                                  "border": "",
+                                  "name": "zhuguanyishengqianming",
+                                  "heading": "签名",
+                                  "dialogClass": "",
+                                  "dialogUsernameLabel": "用户名",
+                                  "dialogPasswordLabel": "密码"
+                                },
+                                "children": []
+                              }]
+                            }
+                          ]
+                        }]
+                      },
+                        {
+                          "name": "Layout",
+                          "description": "",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "400px",
+                            "height": "50%",
+                            "borderTop": "",
+                            "borderRight": "",
+                            "borderBottom": "1px solid #e7e8e9",
+                            "borderLeft": "",
+                            "class": "",
+                            "padding": "0",
+                            "alignItems": "center",
+                            "justifyContent": "flex-start",
+                            "alignSelf": "",
+                            "flexFlow": "rows wrap",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [{
+                            "name": "2 Column layout",
+                            "description": "Divides the form into 2 columns.",
+                            "type": "LayoutComponent",
+                            "properties": {
+                              "width": "100%",
+                              "height": "100%",
+                              "class": "vform-default",
+                              "padding": "0 0 0 0",
+                              "alignItems": "",
+                              "justifyContent": "",
+                              "flexFlow": "rows",
+                              "flexGrow": 1,
+                              "hidden": false,
+                              "display": "flex"
+                            },
+                            "children": [{
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "30%",
+                                "height": "100%",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "0",
+                                "alignItems": "center",
+                                "justifyContent": "flex-start",
+                                "flexFlow": "rows wrap",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": [{
+                                "name": "Label",
+                                "description": "",
+                                "type": "LabelComponent",
+                                "properties": {
+                                  "content": "物理师批准",
+                                  "class": ""
+                                },
+                                "children": []
+                              }]
+                            },
+                              {
+                                "name": "Layout",
+                                "description": "",
+                                "type": "LayoutComponent",
+                                "properties": {
+                                  "width": "60%",
+                                  "height": "100%",
+                                  "borderTop": "",
+                                  "borderRight": "",
+                                  "borderBottom": "",
+                                  "borderLeft": "",
+                                  "class": "",
+                                  "padding": "0 20px 0 0",
+                                  "alignItems": "center",
+                                  "justifyContent": "flex-end",
+                                  "flexFlow": "rows wrap",
+                                  "flexGrow": 1,
+                                  "display": "flex"
+                                },
+                                "children": [{
+                                  "name": "E-signature",
+                                  "description": ".",
+                                  "type": "ESignComponent",
+                                  "properties": {
+                                    "border": "",
+                                    "name": "wulishipizhun",
+                                    "heading": "签名",
+                                    "dialogClass": "",
+                                    "dialogUsernameLabel": "用户名",
+                                    "dialogPasswordLabel": "密码"
+                                  },
+                                  "children": []
+                                }]
+                              }
+                            ]
+                          }]
+                        }
+                      ]
+                    }]
+                  }
+                ]
+              }
+            ]
+          }]
+        },
+          {
+            "name": "Layout",
+            "description": "",
+            "type": "LayoutComponent",
+            "properties": {
+              "width": "33%",
+              "height": "100%",
+              "borderTop": "",
+              "borderRight": "",
+              "borderBottom": "",
+              "borderLeft": "",
+              "class": "",
+              "padding": "20px",
+              "alignItems": "",
+              "justifyContent": "",
+              "flexFlow": "row wrap",
+              "flexGrow": 1,
+              "display": "flex"
+            },
+            "children": [{
+              "name": "Plan Summary",
+              "description": "Plan Summary",
+              "type": "RepeaterComponent",
+              "properties": {
+                "name": "jihua",
+                "containerClass": "",
+                "repeatRowText": "",
+                "padding": "0 0 0 0",
+                "height": "auto",
+                "width": "100%",
+                "dataSourceToken": "PlanSummaryDataService",
+                "showRepeatButton": false,
+                "flexFlow": "row wrap",
+                "showRepeaterHeader": true,
+                "repeaterHeaderText": "计划",
+                "columnConfig": "[{\"text\":\"野\",\"id\":\"fieldId\"},{\"text\":\"床转角\",\"id\":\"couchRotation\"},{\"text\":\"X\",\"id\":\"isoCenterX\"},{\"text\":\"Y\",\"id\":\"isoCenterY\"},{\"text\":\"Z\",\"id\":\"isoCenterZ\"}]",
+                "columnSeed": {
+                  "label": "field text",
+                  "class": "",
+                  "width": "20%",
+                  "metadata": {
+                    "name": "field id",
+                    "description": "",
+                    "type": "InputComponent",
+                    "properties": {
+                      "inputClass": "word-break",
+                      "placeholder": "",
+                      "isReadonly": true,
+                      "containerPadding": "0 5px 0 5px",
+                      "containerHeight": "auto",
+                      "containerWidth": "100%"
+                    },
+                    "children": []
+                  }
+                },
+                "templateSeed": {
+                  "name": "plan1",
+                  "description": "plan1",
+                  "type": "TableComponent",
+                  "properties": {
+                    "name": "plan1",
+                    "containerClass": "",
+                    "dynamicWidth": "90%",
+                    "padding": "0 5px 0 5px",
+                    "height": "auto",
+                    "width": "100%",
+                    "tablePadding": "0 0 0 20px",
+                    "tableName": "Lung RA",
+                    "showActions": false,
+                    "showAddRowControl": true,
+                    "automaticallyAddRow": true,
+                    "showHeaderRow": true,
+                    "initialRows": 1,
+                    "columns": [{
+                      "label": "ISO Name",
+                      "class": "",
+                      "width": "25%",
+                      "metadata": {
+                        "name": "isoNameLabel",
+                        "description": "",
+                        "type": "IncrementalLabelComponent",
+                        "properties": {
+                          "containerClass": "",
+                          "placeholder": "",
+                          "containerPadding": "0 5px 0 5px",
+                          "containerHeight": "auto",
+                          "containerWidth": "100%",
+                          "content": "ISO"
+                        },
+                        "children": []
+                      }
+                    },
+                      {
+                        "label": "Vrt(cm)",
+                        "class": "",
+                        "width": "25%",
+                        "metadata": {
+                          "name": "",
+                          "description": "",
+                          "type": "InputComponent",
+                          "properties": {
+                            "type": "number",
+                            "maxlength": 20,
+                            "autocomplete": true,
+                            "lineHeight": "1.2em",
+                            "size": "20",
+                            "required": false,
+                            "containerClass": "",
+                            "placeholder": "Vrt",
+                            "containerPadding": "0 5px 0 5px",
+                            "containerHeight": "auto",
+                            "containerWidth": "100%",
+                            "name": "vrt",
+                            "numericType": "number"
+                          },
+                          "children": []
+                        }
+                      },
+                      {
+                        "label": "Lng(cm)",
+                        "class": "",
+                        "width": "25%",
+                        "metadata": {
+                          "name": "",
+                          "description": "",
+                          "type": "InputComponent",
+                          "properties": {
+                            "type": "number",
+                            "maxlength": 20,
+                            "autocomplete": true,
+                            "lineHeight": "1.2em",
+                            "size": "20",
+                            "required": false,
+                            "containerClass": "",
+                            "placeholder": "Lng",
+                            "containerPadding": "0 5px 0 5px",
+                            "containerHeight": "auto",
+                            "containerWidth": "100%",
+                            "name": "lng",
+                            "numericType": "number"
+                          },
+                          "children": []
+                        }
+                      },
+                      {
+                        "label": "Lat(cm)",
+                        "class": "",
+                        "width": "25%",
+                        "metadata": {
+                          "name": "",
+                          "description": "",
+                          "type": "InputComponent",
+                          "properties": {
+                            "type": "number",
+                            "maxlength": 20,
+                            "autocomplete": true,
+                            "lineHeight": "1.2em",
+                            "size": "20",
+                            "required": false,
+                            "containerClass": "",
+                            "placeholder": "Lat",
+                            "containerPadding": "0 5px 0 5px",
+                            "containerHeight": "auto",
+                            "containerWidth": "100%",
+                            "name": "lat",
+                            "numericType": "number"
+                          },
+                          "children": []
+                        }
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                "templates": [{
+                  "name": "plan1",
+                  "description": "plan1",
+                  "type": "TableComponent",
+                  "properties": {
+                    "name": "plan1",
+                    "containerClass": "",
+                    "dynamicWidth": "90%",
+                    "padding": "0 5px 0 5px",
+                    "height": "auto",
+                    "width": "100%",
+                    "tablePadding": "0 0 0 20px",
+                    "tableName": "Lung RA",
+                    "showActions": true,
+                    "showAddRowControl": false,
+                    "automaticallyAddRow": true,
+                    "showHeaderRow": false,
+                    "initialRows": 2,
+                    "columns": [{
+                      "label": "ISO Name",
+                      "class": "",
+                      "width": "25%",
+                      "metadata": {
+                        "name": "isoNameLabel",
+                        "description": "",
+                        "type": "IncrementalLabelComponent",
+                        "properties": {
+                          "containerClass": "",
+                          "placeholder": "",
+                          "containerPadding": "0 5px 0 5px",
+                          "containerHeight": "auto",
+                          "containerWidth": "100%",
+                          "content": "ISO"
+                        },
+                        "children": []
+                      }
+                    },
+                      {
+                        "label": "Vrt(cm)",
+                        "class": "",
+                        "width": "25%",
+                        "metadata": {
+                          "name": "",
+                          "description": "",
+                          "type": "InputComponent",
+                          "properties": {
+                            "type": "number",
+                            "maxlength": 20,
+                            "autocomplete": true,
+                            "lineHeight": "1.2em",
+                            "size": "20",
+                            "required": false,
+                            "containerClass": "",
+                            "placeholder": "Vrt",
+                            "containerPadding": "0 5px 0 5px",
+                            "containerHeight": "auto",
+                            "containerWidth": "80px",
+                            "name": "lrt",
+                            "numericType": "number"
+                          },
+                          "children": []
+                        }
+                      },
+                      {
+                        "label": "Lng(cm)",
+                        "class": "",
+                        "width": "25%",
+                        "metadata": {
+                          "name": "",
+                          "description": "",
+                          "type": "InputComponent",
+                          "properties": {
+                            "type": "number",
+                            "maxlength": 20,
+                            "autocomplete": true,
+                            "lineHeight": "1.2em",
+                            "size": "20",
+                            "required": false,
+                            "containerClass": "",
+                            "placeholder": "Lng",
+                            "containerPadding": "0 5px 0 5px",
+                            "containerHeight": "auto",
+                            "containerWidth": "80px",
+                            "name": "lng",
+                            "numericType": "number"
+                          },
+                          "children": []
+                        }
+                      },
+                      {
+                        "label": "Lat(cm)",
+                        "class": "",
+                        "width": "25%",
+                        "metadata": {
+                          "name": "",
+                          "description": "",
+                          "type": "InputComponent",
+                          "properties": {
+                            "type": "number",
+                            "maxlength": 20,
+                            "autocomplete": true,
+                            "lineHeight": "1.2em",
+                            "size": "20",
+                            "required": false,
+                            "containerClass": "",
+                            "placeholder": "Lat",
+                            "containerPadding": "0 5px 0 5px",
+                            "containerHeight": "auto",
+                            "containerWidth": "80px",
+                            "name": "lat",
+                            "numericType": "number"
+                          },
+                          "children": []
+                        }
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                  {
+                    "name": "plan2",
+                    "description": "plan2",
+                    "type": "TableComponent",
+                    "properties": {
+                      "name": "plan2",
+                      "containerClass": "",
+                      "dynamicWidth": "90%",
+                      "padding": "0 5px 0 5px",
+                      "height": "auto",
+                      "width": "100%",
+                      "tablePadding": "0 0 0 20px",
+                      "tableName": "Node RA",
+                      "showActions": true,
+                      "showAddRowControl": true,
+                      "automaticallyAddRow": true,
+                      "showHeaderRow": false,
+                      "initialRows": 1,
+                      "columns": [{
+                        "label": "ISO Name",
+                        "class": "",
+                        "width": "25%",
+                        "metadata": {
+                          "name": "isoNameLabel",
+                          "description": "",
+                          "type": "IncrementalLabelComponent",
+                          "properties": {
+                            "containerClass": "",
+                            "placeholder": "",
+                            "containerPadding": "0 5px 0 5px",
+                            "containerHeight": "auto",
+                            "containerWidth": "100%",
+                            "content": "ISO"
+                          },
+                          "children": []
+                        }
+                      },
+                        {
+                          "label": "Vrt(cm)",
+                          "class": "",
+                          "width": "25%",
+                          "metadata": {
+                            "name": "",
+                            "description": "",
+                            "type": "InputComponent",
+                            "properties": {
+                              "type": "number",
+                              "maxlength": 20,
+                              "autocomplete": true,
+                              "lineHeight": "1.2em",
+                              "size": "20",
+                              "required": false,
+                              "containerClass": "",
+                              "placeholder": "Vrt",
+                              "containerPadding": "0 5px 0 5px",
+                              "containerHeight": "auto",
+                              "containerWidth": "80px",
+                              "name": "vrt",
+                              "numericType": "number"
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "label": "Lng(cm)",
+                          "class": "",
+                          "width": "25%",
+                          "metadata": {
+                            "name": "",
+                            "description": "",
+                            "type": "InputComponent",
+                            "properties": {
+                              "type": "number",
+                              "maxlength": 20,
+                              "autocomplete": true,
+                              "lineHeight": "1.2em",
+                              "size": "20",
+                              "required": false,
+                              "containerClass": "",
+                              "placeholder": "Lng",
+                              "containerPadding": "0 5px 0 5px",
+                              "containerHeight": "auto",
+                              "containerWidth": "80px",
+                              "name": "lng",
+                              "numericType": "number"
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "label": "Lat(cm)",
+                          "class": "",
+                          "width": "25%",
+                          "metadata": {
+                            "name": "",
+                            "description": "",
+                            "type": "InputComponent",
+                            "properties": {
+                              "type": "number",
+                              "maxlength": 20,
+                              "autocomplete": true,
+                              "lineHeight": "1.2em",
+                              "size": "20",
+                              "required": false,
+                              "containerClass": "",
+                              "placeholder": "Lat",
+                              "containerPadding": "0 5px 0 5px",
+                              "containerHeight": "auto",
+                              "containerWidth": "80px",
+                              "name": "lat",
+                              "numericType": "number"
+                            },
+                            "children": []
+                          }
+                        }
+                      ]
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              "children": []
+            }]
+          },
+          {
+            "name": "Layout",
+            "description": "",
+            "type": "LayoutComponent",
+            "properties": {
+              "width": "33%",
+              "height": "100%",
+              "borderTop": "",
+              "borderRight": "",
+              "borderBottom": "",
+              "borderLeft": "",
+              "class": "",
+              "padding": "0 20px 20px 20px",
+              "alignItems": "",
+              "justifyContent": "center",
+              "flexFlow": "row wrap",
+              "flexGrow": 1,
+              "display": "flex"
+            },
+            "children": [{
+              "name": "6 Row layout",
+              "description": "Divides the form into 2 rows.",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "100%",
+                "height": "100%",
+                "class": "vform-default",
+                "padding": "0",
+                "alignItems": "",
+                "justifyContent": "",
+                "alignSelf": "",
+                "flexFlow": "column",
+                "flexGrow": 1,
+                "hidden": false,
+                "display": "flex"
+              },
+              "children": [{
+                "name": "Layout",
+                "description": "",
+                "type": "LayoutComponent",
+                "properties": {
+                  "width": "100%",
+                  "height": "35px",
+                  "borderTop": "",
+                  "borderRight": "",
+                  "borderBottom": "2px solid lightgray",
+                  "borderLeft": "",
+                  "class": "",
+                  "padding": "20px 0 0",
+                  "alignItems": "",
+                  "justifyContent": "",
+                  "alignSelf": "",
+                  "flexFlow": "row wrap",
+                  "flexGrow": 1,
+                  "hidden": false,
+                  "display": "flex"
+                },
+                "children": [{
+                  "name": "HTML",
+                  "description": "Custom HTML.",
+                  "type": "HtmlComponent",
+                  "properties": {
+                    "html": "<label class='bodybold'>体位固定</label>",
+                    "isFormHeader": false
+                  },
+                  "children": []
+                }]
+              },
+                {
+                  "name": "2 Column layout",
+                  "description": "Divides the form into 2 columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "100%",
+                    "class": "vform-default",
+                    "borderBottom": "1px solid lightgray",
+                    "padding": "",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "flexFlow": "row",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [{
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                      "width": "30%",
+                      "height": "100%",
+                      "borderTop": "",
+                      "borderRight": "",
+                      "borderBottom": "",
+                      "borderLeft": "",
+                      "class": "",
+                      "padding": "0 0 0 20px",
+                      "alignItems": "",
+                      "justifyContent": "",
+                      "flexFlow": "row wrap",
+                      "flexGrow": 1,
+                      "display": "flex"
+                    },
+                    "children": [{
+                      "name": "HTML",
+                      "description": "Custom HTML.",
+                      "type": "HtmlComponent",
+                      "properties": {
+                        "html": "<h4 style='margin:10px 0 10px 0'>病人体位</h4>",
+                        "isFormHeader": false
+                      },
+                      "children": []
+                    }]
+                  },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "60%",
+                        "height": "100%",
+                        "class": "",
+                        "padding": "10px 0 10px 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "column",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [{
+                        "name": "ContextLabel",
+                        "description": "提供上下文数据项的显示",
+                        "type": "ContextLabelComponent",
+                        "properties": {
+                          "content": "",
+                          "class": "",
+                          "name": "form.bingrentiwei"
+                        },
+                        "children": []
+                      },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "",
+                            "name": "form.teshutiwei"
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "2 Column layout",
+                  "description": "Divides the form into 2 columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "100%",
+                    "borderBottom": "1px solid lightgray",
+                    "class": "vform-default",
+                    "padding": "0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "flexFlow": "row",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [{
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                      "width": "30%",
+                      "height": "100%",
+                      "class": "",
+                      "padding": "0 0 0 20px",
+                      "alignItems": "",
+                      "justifyContent": "",
+                      "flexFlow": "row wrap",
+                      "flexGrow": 1,
+                      "display": "flex"
+                    },
+                    "children": [{
+                      "name": "HTML",
+                      "description": "Custom HTML.",
+                      "type": "HtmlComponent",
+                      "properties": {
+                        "html": "<h4 style='margin:10px 0 10px 0'>固定垫</h4>",
+                        "isFormHeader": false
+                      },
+                      "children": []
+                    }]
+                  },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "60%",
+                        "height": "100%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 10px 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "column",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [{
+                        "name": "ContextLabel",
+                        "description": "提供上下文数据项的显示",
+                        "type": "ContextLabelComponent",
+                        "properties": {
+                          "content": "",
+                          "class": "",
+                          "name": "form.fuyadian_immbDeviceGroup",
+                          "formatter": "[{\"key\":\"true\",\"value\":\"负压垫\"}]"
+                        },
+                        "children": []
+                      },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "",
+                            "name": "form.paomodian_immbDeviceGroup",
+                            "formatter": "[{\"key\":\"true\",\"value\":\"泡沫垫\"}]"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "",
+                            "name": "form.gaofenzidingweidian_immbDeviceGroup",
+                            "formatter": "[{\"key\":\"true\",\"value\":\"高分子定位垫\"}]"
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "2 Column layout",
+                  "description": "Divides the form into 2 columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "100%",
+                    "borderBottom": "1px solid lightgray",
+                    "class": "vform-default",
+                    "padding": "0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "flexFlow": "row",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [{
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                      "width": "30%",
+                      "height": "100%",
+                      "class": "",
+                      "padding": "0 0 0 20px",
+                      "alignItems": "",
+                      "justifyContent": "",
+                      "flexFlow": "row wrap",
+                      "flexGrow": 1,
+                      "display": "flex"
+                    },
+                    "children": [{
+                      "name": "HTML",
+                      "description": "Custom HTML.",
+                      "type": "HtmlComponent",
+                      "properties": {
+                        "html": "<h4 style='margin:10px 0 10px 0'>固定器</h4>",
+                        "isFormHeader": false
+                      },
+                      "children": []
+                    }]
+                  },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "60%",
+                        "height": "100%",
+                        "class": "",
+                        "padding": "10px 0 10px 0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "column",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [{
+                        "name": "ContextLabel",
+                        "description": "提供上下文数据项的显示",
+                        "type": "ContextLabelComponent",
+                        "properties": {
+                          "content": "",
+                          "class": "",
+                          "name": "form.gudingqi1_immbDeviceGroup",
+                          "visibleExp": "$form.gudingqi1_immbDeviceGroup$!=\"null\""
+                        },
+                        "children": []
+                      },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "",
+                            "name": "form.zhenxing_immbDeviceGroup",
+                            "visibleExp": "$form.zhenxing_immbDeviceGroup$!=\"null\""
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "",
+                            "name": "form.gudingqi2_immbDeviceGroup",
+                            "visibleExp": "$form.gudingqi2_immbDeviceGroup$!=\"null\""
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "",
+                            "name": "form.qita_immbDeviceGroup"
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "2 Column layout",
+                  "description": "Divides the form into 2 columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "100%",
+                    "borderBottom": "1px solid lightgray",
+                    "class": "vform-default",
+                    "padding": "0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "flexFlow": "row",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [{
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                      "width": "30%",
+                      "height": "100%",
+                      "class": "",
+                      "padding": "0 0 0 20px",
+                      "alignItems": "",
+                      "justifyContent": "",
+                      "flexFlow": "row wrap",
+                      "flexGrow": 1,
+                      "display": "flex"
+                    },
+                    "children": [{
+                      "name": "HTML",
+                      "description": "Custom HTML.",
+                      "type": "HtmlComponent",
+                      "properties": {
+                        "html": "<h4 style='margin:10px 0 10px 0'>固定膜</h4>",
+                        "isFormHeader": false
+                      },
+                      "children": []
+                    }]
+                  },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "60%",
+                        "height": "100%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderBottom": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "0",
+                        "alignItems": "",
+                        "justifyContent": "",
+                        "flexFlow": "column",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [{
+                        "name": "Layout",
+                        "description": "",
+                        "type": "LayoutComponent",
+                        "properties": {
+                          "width": "100%",
+                          "height": "auto",
+                          "borderTop": "",
+                          "borderRight": "",
+                          "borderBottom": "",
+                          "borderLeft": "",
+                          "class": "",
+                          "padding": "10px 0 0 0",
+                          "alignItems": "",
+                          "justifyContent": "",
+                          "flexFlow": "column",
+                          "flexGrow": 1,
+                          "display": "flex"
+                        },
+                        "children": []
+                      },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "",
+                            "name": "form.toumo_immbDeviceGroup",
+                            "formatter": "[{\"key\":\"true\",\"value\":\"头膜\"}]"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "",
+                            "name": "form.toujingjianmo_immbDeviceGroup",
+                            "formatter": "[{\"key\":\"true\",\"value\":\"头颈肩膜\"}]"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "ContextLabel",
+                          "description": "提供上下文数据项的显示",
+                          "type": "ContextLabelComponent",
+                          "properties": {
+                            "content": "",
+                            "class": "",
+                            "name": "form.rumo_immbDeviceGroup",
+                            "formatter": "[{\"key\":\"true\",\"value\":\"乳膜\"}]"
+                          },
+                          "children": []
+                        },
+                        {
+                          "name": "Layout",
+                          "description": "",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "100%",
+                            "borderTop": "",
+                            "borderRight": "",
+                            "borderBottom": "",
+                            "borderLeft": "",
+                            "class": "",
+                            "padding": "0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "alignSelf": "",
+                            "flexFlow": "row wrap",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [{
+                            "name": "ContextLabel",
+                            "description": "提供上下文数据项的显示",
+                            "type": "ContextLabelComponent",
+                            "properties": {
+                              "content": "",
+                              "class": "",
+                              "name": "form.fumo_immbDeviceGroup",
+                              "formatter": "[{\"key\":\"true\",\"value\":\"腹膜\"}]"
+                            },
+                            "children": []
+                          },
+                            {
+                              "name": "ContextLabel",
+                              "description": "提供上下文数据项的显示",
+                              "type": "ContextLabelComponent",
+                              "properties": {
+                                "content": "",
+                                "class": "",
+                                "name": "form.yinshui_immbDeviceGroup",
+                                "formatter": "[{\"key\":\"true\",\"value\":\"(饮水)\"}]"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Layout",
+                          "description": "",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "100%",
+                            "borderTop": "",
+                            "borderRight": "",
+                            "borderBottom": "",
+                            "borderLeft": "",
+                            "class": "",
+                            "padding": "0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "alignSelf": "",
+                            "flexFlow": "row wrap",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [{
+                            "name": "ContextLabel",
+                            "description": "提供上下文数据项的显示",
+                            "type": "ContextLabelComponent",
+                            "properties": {
+                              "content": "",
+                              "class": "",
+                              "name": "form.yitimo_immbDeviceGroup",
+                              "formatter": "[{\"key\":\"true\",\"value\":\"一体膜\"}]"
+                            },
+                            "children": []
+                          },
+                            {
+                              "name": "ContextLabel",
+                              "description": "提供上下文数据项的显示",
+                              "type": "ContextLabelComponent",
+                              "properties": {
+                                "content": "",
+                                "class": "",
+                                "name": "form.daitou_immbDeviceGroup",
+                                "formatter": "[{\"key\":\"true\",\"value\":\"(带头)\"}]"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Layout",
+                          "description": "",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "100%",
+                            "borderTop": "",
+                            "borderRight": "",
+                            "borderBottom": "",
+                            "borderLeft": "",
+                            "class": "",
+                            "padding": "0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "alignSelf": "",
+                            "flexFlow": "row wrap",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [{
+                            "name": "ContextLabel",
+                            "description": "提供上下文数据项的显示",
+                            "type": "ContextLabelComponent",
+                            "properties": {
+                              "content": "",
+                              "class": "",
+                              "name": "form.penqiang_immbDeviceGroup",
+                              "formatter": "[{\"key\":\"true\",\"value\":\"盆腔\"}]"
+                            },
+                            "children": []
+                          },
+                            {
+                              "name": "ContextLabel",
+                              "description": "提供上下文数据项的显示",
+                              "type": "ContextLabelComponent",
+                              "properties": {
+                                "content": "",
+                                "class": "",
+                                "name": "form.bieniao_immbDeviceGroup",
+                                "formatter": "[{\"key\":\"true\",\"value\":\"(憋尿)\"}]"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Layout",
+                          "description": "",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "100%",
+                            "class": "",
+                            "padding": "0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "alignSelf": "",
+                            "flexFlow": "row wrap",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [{
+                            "name": "ContextLabel",
+                            "description": "提供上下文数据项的显示",
+                            "type": "ContextLabelComponent",
+                            "properties": {
+                              "content": "",
+                              "class": "",
+                              "name": "form.jingxiongmo_immbDeviceGroup",
+                              "formatter": "[{\"key\":\"true\",\"value\":\"颈胸膜\"}]"
+                            },
+                            "children": []
+                          },
+                            {
+                              "name": "Label",
+                              "description": "",
+                              "type": "LabelComponent",
+                              "properties": {
+                                "content": "(上肢位置",
+                                "class": "",
+                                "visibleExp": "$form.jingxiongmotice_immbDeviceGroup$=='true' || $form.jingxiongmoeshang_immbDeviceGroup$=='true' || $form.jingxiongmohuxidongdu_immbDeviceGroup$=='true'"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "ContextLabel",
+                              "description": "提供上下文数据项的显示",
+                              "type": "ContextLabelComponent",
+                              "properties": {
+                                "content": "",
+                                "class": "",
+                                "name": "form.jingxiongmotice_immbDeviceGroup",
+                                "formatter": "[{\"key\":\"true\",\"value\":\"体侧\"}]"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "ContextLabel",
+                              "description": "提供上下文数据项的显示",
+                              "type": "ContextLabelComponent",
+                              "properties": {
+                                "content": "",
+                                "class": "",
+                                "name": "form.jingxiongmoeshang_immbDeviceGroup",
+                                "formatter": "[{\"key\":\"true\",\"value\":\"额上\"}]"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "ContextLabel",
+                              "description": "提供上下文数据项的显示",
+                              "type": "ContextLabelComponent",
+                              "properties": {
+                                "content": "",
+                                "class": "",
+                                "name": "form.jingxiongmohuxidongdu_immbDeviceGroup",
+                                "formatter": "[{\"key\":\"true\",\"value\":\"呼吸动度\"}]"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "Label",
+                              "description": "",
+                              "type": "LabelComponent",
+                              "properties": {
+                                "content": ")",
+                                "class": "",
+                                "visibleExp": "$form.jingxiongmotice_immbDeviceGroup$=='true' || $form.jingxiongmoeshang_immbDeviceGroup$=='true' || $form.jingxiongmohuxidongdu_immbDeviceGroup$=='true'"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Layout",
+                          "description": "",
+                          "type": "LayoutComponent",
+                          "properties": {
+                            "width": "100%",
+                            "height": "100%",
+                            "borderTop": "",
+                            "borderRight": "",
+                            "borderBottom": "",
+                            "borderLeft": "",
+                            "class": "",
+                            "padding": "0",
+                            "alignItems": "",
+                            "justifyContent": "",
+                            "alignSelf": "",
+                            "flexFlow": "row wrap",
+                            "flexGrow": 1,
+                            "hidden": false,
+                            "display": "flex"
+                          },
+                          "children": [{
+                            "name": "ContextLabel",
+                            "description": "提供上下文数据项的显示",
+                            "type": "ContextLabelComponent",
+                            "properties": {
+                              "content": "",
+                              "class": "",
+                              "name": "form.xiongmo_immbDeviceGroup",
+                              "formatter": "[{\"key\":\"true\",\"value\":\"胸膜\"}]"
+                            },
+                            "children": []
+                          },
+                            {
+                              "name": "Label",
+                              "description": "",
+                              "type": "LabelComponent",
+                              "properties": {
+                                "content": "(上肢位置",
+                                "class": "",
+                                "visibleExp": "$form.xiongmotice_immbDeviceGroup$=='true' || $form.xiongmoeshang_immbDeviceGroup$=='true' || $form.xiongmohuxidongdu_immbDeviceGroup$=='true'"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "ContextLabel",
+                              "description": "提供上下文数据项的显示",
+                              "type": "ContextLabelComponent",
+                              "properties": {
+                                "content": "",
+                                "class": "",
+                                "name": "form.xiongmotice_immbDeviceGroup",
+                                "formatter": "[{\"key\":\"true\",\"value\":\"体侧\"}]"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "ContextLabel",
+                              "description": "提供上下文数据项的显示",
+                              "type": "ContextLabelComponent",
+                              "properties": {
+                                "content": "",
+                                "class": "",
+                                "name": "form.xiongmoeshang_immbDeviceGroup",
+                                "formatter": "[{\"key\":\"true\",\"value\":\"额上\"}]"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "ContextLabel",
+                              "description": "提供上下文数据项的显示",
+                              "type": "ContextLabelComponent",
+                              "properties": {
+                                "content": "",
+                                "class": "",
+                                "name": "form.xiongmohuxidongdu_immbDeviceGroup",
+                                "formatter": "[{\"key\":\"true\",\"value\":\"呼吸动度\"}]"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "Label",
+                              "description": "",
+                              "type": "LabelComponent",
+                              "properties": {
+                                "content": ")",
+                                "class": "",
+                                "visibleExp": "$form.xiongmotice_immbDeviceGroup$=='true' || $form.xiongmoeshang_immbDeviceGroup$=='true' || $form.xiongmohuxidongdu_immbDeviceGroup$=='true'"
+                              },
+                              "children": []
+                            },
+                            {
+                              "name": "Layout",
+                              "description": "",
+                              "type": "LayoutComponent",
+                              "properties": {
+                                "width": "100%",
+                                "height": "auto",
+                                "borderTop": "",
+                                "borderRight": "",
+                                "borderBottom": "",
+                                "borderLeft": "",
+                                "class": "",
+                                "padding": "10px 0 0 0",
+                                "alignItems": "",
+                                "justifyContent": "",
+                                "flexFlow": "column",
+                                "flexGrow": 1,
+                                "display": "flex"
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "2 Column layout",
+                  "description": "Divides the form into 2 columns.",
+                  "type": "LayoutComponent",
+                  "properties": {
+                    "width": "100%",
+                    "height": "100%",
+                    "borderBottom": "1px solid lightgray",
+                    "class": "vform-default",
+                    "padding": "0",
+                    "alignItems": "",
+                    "justifyContent": "",
+                    "flexFlow": "row",
+                    "flexGrow": 1,
+                    "hidden": false,
+                    "display": "flex"
+                  },
+                  "children": [{
+                    "name": "Layout",
+                    "description": "",
+                    "type": "LayoutComponent",
+                    "properties": {
+                      "width": "30%",
+                      "height": "auto",
+                      "borderTop": "",
+                      "borderRight": "",
+                      "borderLeft": "",
+                      "class": "",
+                      "padding": "0 0 10px 20px",
+                      "alignItems": "",
+                      "justifyContent": "",
+                      "flexFlow": "row wrap",
+                      "flexGrow": 1,
+                      "display": "flex"
+                    },
+                    "children": [{
+                      "name": "HTML",
+                      "description": "Custom HTML.",
+                      "type": "HtmlComponent",
+                      "properties": {
+                        "html": "<h4 style='margin:10px 0 10px 0'>特殊要求</h4>",
+                        "isFormHeader": false
+                      },
+                      "children": []
+                    }]
+                  },
+                    {
+                      "name": "Layout",
+                      "description": "",
+                      "type": "LayoutComponent",
+                      "properties": {
+                        "width": "60%",
+                        "height": "100%",
+                        "borderTop": "",
+                        "borderRight": "",
+                        "borderLeft": "",
+                        "class": "",
+                        "padding": "10px 0 10px 0",
+                        "alignItems": "flex-start",
+                        "justifyContent": "",
+                        "flexFlow": "column",
+                        "flexGrow": 1,
+                        "display": "flex"
+                      },
+                      "children": [{
+                        "name": "ContextLabel",
+                        "description": "提供上下文数据项的显示",
+                        "type": "ContextLabelComponent",
+                        "properties": {
+                          "content": "",
+                          "class": "",
+                          "name": "form.teshushuoming"
+                        },
+                        "children": []
+                      }]
+                    }
+                  ]
+                }
+              ]
+            }]
+          }
+        ]
+      }]
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "calc(100% - 40px)",
+        "height": "auto",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "20px 20px 10px",
+        "alignItems": "center",
+        "justifyContent": "flex-start",
+        "alignSelf": "",
+        "flexFlow": "row wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex"
+      },
+      "children": [{
+        "name": "Layout",
+        "description": "Divides the form into rows and columns.",
+        "type": "LayoutComponent",
+        "properties": {
+          "width": "100%",
+          "height": "auto",
+          "borderTop": "",
+          "borderRight": "",
+          "borderBottom": "2px solid #e7e8e9",
+          "borderLeft": "",
+          "class": "bodybold",
+          "padding": "20px 2px 10px",
+          "alignItems": "",
+          "justifyContent": "",
+          "alignSelf": "",
+          "flexFlow": "row wrap",
+          "flexGrow": 1,
+          "hidden": false,
+          "display": "flex"
+        },
+        "children": [{
+          "name": "Label",
+          "description": "",
+          "type": "LabelComponent",
+          "properties": {
+            "content": "医嘱",
+            "class": ""
+          },
+          "children": []
+        }]
+      }]
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "calc(100% - 40px)",
+        "height": "auto",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "0 20px",
+        "alignItems": "",
+        "justifyContent": "",
+        "alignSelf": "",
+        "flexFlow": "row wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex"
+      },
+      "children": [{
+        "name": "2 Column layout",
+        "description": "Divides the form into 2 columns.",
+        "type": "LayoutComponent",
+        "properties": {
+          "width": "100%",
+          "height": "100%",
+          "class": "vform-default",
+          "padding": "0 0 0 0",
+          "alignItems": "",
+          "justifyContent": "",
+          "flexFlow": "row",
+          "flexGrow": 1,
+          "hidden": false,
+          "display": "flex"
+        },
+        "children": [{
+          "name": "Layout",
+          "description": "",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "50%",
+            "height": "100%",
+            "borderTop": "",
+            "borderRight": "",
+            "borderBottom": "",
+            "borderLeft": "",
+            "class": "",
+            "padding": "15px 0 0 0",
+            "alignItems": "",
+            "justifyContent": "",
+            "flexFlow": "row wrap",
+            "flexGrow": 1,
+            "display": "flex"
+          },
+          "children": [{
+            "name": "ContextLabel",
+            "description": "提供上下文数据项的显示",
+            "type": "ContextLabelComponent",
+            "properties": {
+              "content": "体位：",
+              "class": "",
+              "name": "form.bingrentiwei",
+              "formatter": "",
+              "visibleExp": "1==1"
+            },
+            "children": []
+          }]
+        },
+          {
+            "name": "Layout",
+            "description": "",
+            "type": "LayoutComponent",
+            "properties": {
+              "width": "50%",
+              "height": "100%",
+              "borderTop": "",
+              "borderRight": "",
+              "borderBottom": "",
+              "borderLeft": "",
+              "class": "",
+              "padding": "0 0 0 0",
+              "alignItems": "",
+              "justifyContent": "",
+              "flexFlow": "row wrap",
+              "flexGrow": 1,
+              "display": "flex"
+            },
+            "children": [{
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "50%",
+                "height": "100%",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "15px 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [{
+                "name": "ContextLabel",
+                "description": "提供上下文数据项的显示",
+                "type": "ContextLabelComponent",
+                "properties": {
+                  "content": "设备：",
+                  "class": "",
+                  "name": "form.jiasuqi",
+                  "formatter": "",
+                  "visibleExp": "1==1"
+                },
+                "children": []
+              }]
+            }]
+          },
+          {
+            "name": "Layout",
+            "description": "",
+            "type": "LayoutComponent",
+            "properties": {
+              "width": "50%",
+              "height": "100%",
+              "borderTop": "",
+              "borderRight": "",
+              "borderBottom": "",
+              "borderLeft": "",
+              "class": "",
+              "padding": "0 0 0 0",
+              "alignItems": "",
+              "justifyContent": "",
+              "flexFlow": "row wrap",
+              "flexGrow": 1,
+              "display": "flex"
+            },
+            "children": [{
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "50%",
+                "height": "100%",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [{
+                "name": "Material Date picker",
+                "description": "",
+                "type": "MaterialDatepickerComponent",
+                "properties": {
+                  "mindate": "",
+                  "maxdate": "",
+                  "placeHolder": "治疗开始时间",
+                  "required": false,
+                  "margin": "",
+                  "padding": "",
+                  "width": "150px",
+                  "height": "auto",
+                  "class": "",
+                  "name": "zhiliaokaishi"
+                },
+                "children": []
+              }]
+            }]
+          },
+          {
+            "name": "Layout",
+            "description": "",
+            "type": "LayoutComponent",
+            "properties": {
+              "width": "50%",
+              "height": "100%",
+              "borderTop": "",
+              "borderRight": "",
+              "borderBottom": "",
+              "borderLeft": "",
+              "class": "",
+              "padding": "0 0 0 0",
+              "alignItems": "",
+              "justifyContent": "",
+              "flexFlow": "row wrap",
+              "flexGrow": 1,
+              "display": "flex"
+            },
+            "children": [{
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "50%",
+                "height": "100%",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [ {
+                "name": "Material Date picker",
+                "description": "",
+                "type": "MaterialDatepickerComponent",
+                "properties": {
+                  "mindate": "",
+                  "maxdate": "",
+                  "placeHolder": "治疗结束时间",
+                  "required": false,
+                  "margin": "",
+                  "padding": "",
+                  "width": "150px",
+                  "height": "auto",
+                  "class": "",
+                  "name": "zhiliaojieshu"
+                },
+                "children": []
+              }]
+            }]
+          }
+        ]
+      },
+        {
+          "name": "2 Column layout",
+          "description": "Divides the form into 2 columns.",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "100%",
+            "height": "100%",
+            "class": "vform-default",
+            "padding": "0 0 0 0",
+            "alignItems": "",
+            "justifyContent": "",
+            "flexFlow": "row",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": [{
+            "name": "Layout",
+            "description": "",
+            "type": "LayoutComponent",
+            "properties": {
+              "width": "calc(50% - 20px)",
+              "height": "100%",
+              "borderTop": "",
+              "borderRight": "",
+              "borderBottom": "",
+              "borderLeft": "",
+              "class": "",
+              "padding": "0 20px 0 0",
+              "alignItems": "",
+              "justifyContent": "",
+              "flexFlow": "row wrap",
+              "flexGrow": 1,
+              "display": "flex"
+            },
+            "children": [{
+              "name": "Text Field",
+              "description": "Text input.",
+              "type": "InputComponent",
+              "properties": {
+                "type": "text",
+                "maxlength": "128",
+                "autocomplete": true,
+                "lineHeight": "",
+                "size": "91",
+                "required": false,
+                "containerClass": "",
+                "placeholder": "医嘱内容",
+                "isReadonly": false,
+                "containerPadding": "",
+                "containerHeight": "auto",
+                "containerWidth": "100%",
+                "name": "yizhuneirong",
+                "requiredErrorMsg": "required_error",
+                "vformValidatorMessage": "Validation error.",
+                "vformValidatorExpression": ""
+              },
+              "children": []
+            }]
+          },
+            {
+              "name": "Layout",
+              "description": "",
+              "type": "LayoutComponent",
+              "properties": {
+                "width": "50%",
+                "height": "100%",
+                "borderTop": "",
+                "borderRight": "",
+                "borderBottom": "",
+                "borderLeft": "",
+                "class": "",
+                "padding": "0 0 0 0",
+                "alignItems": "",
+                "justifyContent": "",
+                "flexFlow": "row wrap",
+                "flexGrow": 1,
+                "display": "flex"
+              },
+              "children": [{
+                "name": "Text Field",
+                "description": "Text input.",
+                "type": "InputComponent",
+                "properties": {
+                  "type": "text",
+                  "maxlength": "64",
+                  "autocomplete": true,
+                  "lineHeight": "",
+                  "size": "91",
+                  "required": false,
+                  "containerClass": "",
+                  "placeholder": "摆位要求",
+                  "isReadonly": false,
+                  "containerPadding": "",
+                  "containerHeight": "auto",
+                  "containerWidth": "100%",
+                  "name": "baiweiyaoqiu",
+                  "requiredErrorMsg": "required_error",
+                  "vformValidatorMessage": "Validation error.",
+                  "vformValidatorExpression": ""
+                },
+                "children": []
+              }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "calc(100%-40px)",
+        "height": "auto",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "0 20px",
+        "alignItems": "center",
+        "justifyContent": "flex-start",
+        "alignSelf": "",
+        "flexFlow": "rows wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex"
+      },
+      "children": [{
+        "name": "2 Row layout",
+        "description": "Divides the form into 2 rows.",
+        "type": "LayoutComponent",
+        "properties": {
+          "width": "100%",
+          "height": "100%",
+          "class": "vform-default",
+          "padding": "0 0 0 0",
+          "alignItems": "",
+          "justifyContent": "",
+          "alignSelf": "",
+          "flexFlow": "column",
+          "flexGrow": 1,
+          "hidden": false,
+          "display": "flex"
+        },
+        "children": [{
+          "name": "Layout",
+          "description": "Divides the form into rows and columns.",
+          "type": "LayoutComponent",
+          "properties": {
+            "width": "730px",
+            "height": "50px",
+            "borderTop": "",
+            "borderRight": "0",
+            "borderBottom": "",
+            "borderLeft": "0",
+            "class": "vform-default",
+            "padding": "0 0 0 20px",
+            "alignItems": "center",
+            "justifyContent": "flex-start",
+            "alignSelf": "",
+            "flexFlow": "rows wrap",
+            "flexGrow": 1,
+            "hidden": false,
+            "display": "flex"
+          },
+          "children": [{
+            "name": "HTML",
+            "description": "Custom HTML.",
+            "type": "HtmlComponent",
+            "properties": {
+              "html": "<h4>靶区剂量及分次</h4>",
+              "padding": ""
+            },
+            "children": []
+          }]
+        },
+          {
+            "name": "Layout",
+            "description": "Divides the form into rows and columns.",
+            "type": "LayoutComponent",
+            "properties": {
+              "width": "100%",
+              "height": "auto",
+              "borderTop": "",
+              "borderRight": "",
+              "borderBottom": "",
+              "borderLeft": "",
+              "class": "vform-default",
+              "padding": "0 0 0 20px",
+              "alignItems": "center",
+              "justifyContent": "flex-start",
+              "alignSelf": "",
+              "flexFlow": "row wrap",
+              "flexGrow": 1,
+              "hidden": false,
+              "display": "flex"
+            },
+            "children": [{
+              "name": "TargetVolumePrescription",
+              "description": "",
+              "type": "RepeaterComponent",
+              "properties": {
+                "name": "baqujiliangjifenci",
+                "class": "x-scroll target-volume",
+                "repeatRowText": "靶区",
+                "padding": "0 5px 0 5px",
+                "height": "auto",
+                "width": "100%",
+                "showRepeatButton": true,
+                "flexFlow": "row wrap",
+                "isReadonly": "true",
+                "requireValidation": "true",
+                "requiredColumns": "[\"Target Volume\", \"Dose\", \"Fractions\"]",
+                "errMsg": "error-019",
+                "metadataTemplate": {
+                  "name": "TargetVolPres",
+                  "description": "Insert a target volume prescription column",
+                  "type": "TargetVolumeTable",
+                  "properties": {
+                    "name": "TVP1",
+                    "containerClass": "",
+                    "dynamicWidth": "auto",
+                    "dynamicHeight":"auto",
+                    "diaplay":"",
+                    "padding": "0 20px 0 0",
+                    "height": "auto",
+                    "width": "auto",
+                    "tablePadding": "",
+                    "tableName": "",
+                    "showActions": true,
+                    "showAddRowControl": false,
+                    "automaticallyAddRow": true,
+                    "showHeaderRow": true,
+                    "initialRows": 3,
+                    "isTableNameHidden": true,
+                    "columns": [{
+                      "label": "靶区",
+                      "class": "",
+                      "width": "60px",
+                      "metadata": {
+                        "name": "",
+                        "description": "",
+                        "type": "InputComponent",
+                        "properties": {
+                          "type": "text",
+                          "maxlength": 20,
+                          "autocomplete": true,
+                          "lineHeight": "1.2em",
+                          "size": "18",
+                          "required": false,
+                          "containerClass": "",
+                          "placeholder": "",
+                          "containerPadding": "",
+                          "containerHeight": "auto",
+                          "containerWidth": "60px",
+                          "name": "Target Volume",
+                          "isReadonly": "true"
+                        },
+                        "children": []
+                      }
+                    }, {
+                      "label": "部位",
+                      "class": "",
+                      "width": "112px",
+                      "metadata": {
+                        "name": "",
+                        "description": "",
+                        "type": "InputComponent",
+                        "properties": {
+                          "type": "text",
+                          "maxlength": 30,
+                          "autocomplete": true,
+                          "lineHeight": "1.2em",
+                          "size": "18",
+                          "required": false,
+                          "containerClass": "",
+                          "placeholder": "",
+                          "containerPadding": "",
+                          "containerHeight": "auto",
+                          "containerWidth": "112px",
+                          "name": "bodypart",
+                          "bodyPartToolTip": true,
+                          "isReadonly": "true"
+                        },
+                        "children": []
+                      }
+                    }, {
+                      "label": "剂量(Gy)",
+                      "class": "",
+                      "width": "66px",
+                      "metadata": {
+                        "name": "",
+                        "description": "",
+                        "type": "InputComponent",
+                        "properties": {
+                          "type": "text",
+                          "maxlength": 20,
+                          "autocomplete": true,
+                          "lineHeight": "1.2em",
+                          "size": "18",
+                          "required": false,
+                          "containerClass": "",
+                          "placeholder": "",
+                          "numericType": "float",
+                          "containerPadding": "",
+                          "containerHeight": "auto",
+                          "containerWidth": "66px",
+                          "name": "Dose",
+                          "isReadonly": "true"
+                        },
+                        "children": []
+                      }
+                    }, {
+                      "label": "分次",
+                      "class": "",
+                      "width": "40px",
+                      "metadata": {
+                        "name": "",
+                        "description": "",
+                        "type": "InputComponent",
+                        "properties": {
+                          "type": "text",
+                          "maxlength": 20,
+                          "autocomplete": true,
+                          "lineHeight": "1.2em",
+                          "size": "18",
+                          "required": false,
+                          "containerClass": "",
+                          "placeholder": "",
+                          "numericType": "integer",
+                          "containerPadding": "",
+                          "containerHeight": "auto",
+                          "containerWidth": "40px",
+                          "name": "Fractions",
+                          "isReadonly": "true"
+                        },
+                        "children": []
+                      }
+                    }],
+                    "footer": {
+                      "name": "",
+                      "description": "",
+                      "type": "InputComponent",
+                      "properties": {
+                        "type": "text",
+                        "maxlength": 32,
+                        "autocomplete": true,
+                        "lineHeight": "1.2em",
+                        "size": "18",
+                        "required": false,
+                        "inputClass": "remarkInput",
+                        "containerClass": "",
+                        "placeholder": "备注",
+                        "containerPadding": "",
+                        "containerHeight": "auto",
+                        "containerWidth": "100%",
+                        "name": "remarkRow",
+                        "isReadonly": "true"
+                      },
+                      "children": []
+                    }
+                  },
+                  "children": []
+                },
+                "firstMetadataTemplate": {
+                  "name": "TargetVolPres",
+                  "description": "Insert a target volume prescription column",
+                  "type": "TargetVolumeTable",
+                  "properties": {
+                    "name": "TVP1",
+                    "containerClass": "",
+                    "dynamicWidth": "auto",
+                    "dynamicHeight":"auto",
+                    "diaplay":"",
+                    "padding": "0 20px 0 0",
+                    "height": "auto",
+                    "width": "auto",
+                    "tablePadding": "",
+                    "tableName": "",
+                    "showActions": true,
+                    "showAddRowControl": false,
+                    "automaticallyAddRow": true,
+                    "showHeaderRow": true,
+                    "initialRows": 3,
+                    "columns": [{
+                      "label": "靶区",
+                      "class": "",
+                      "width": "60px",
+                      "metadata": {
+                        "name": "",
+                        "description": "",
+                        "type": "InputComponent",
+                        "properties": {
+                          "type": "text",
+                          "maxlength": 20,
+                          "autocomplete": true,
+                          "lineHeight": "1.2em",
+                          "size": "18",
+                          "required": false,
+                          "containerClass": "",
+                          "placeholder": "",
+                          "containerPadding": "",
+                          "containerHeight": "auto",
+                          "containerWidth": "60px",
+                          "name": "Target Volume",
+                          "isReadonly": "true"
+                        },
+                        "children": []
+                      }
+                    }, {
+                      "label": "部位",
+                      "class": "",
+                      "width": "112px",
+                      "metadata": {
+                        "name": "",
+                        "description": "",
+                        "type": "InputComponent",
+                        "properties": {
+                          "type": "text",
+                          "maxlength": 30,
+                          "autocomplete": true,
+                          "lineHeight": "1.2em",
+                          "size": "18",
+                          "required": false,
+                          "containerClass": "",
+                          "placeholder": "",
+                          "containerPadding": "",
+                          "containerHeight": "auto",
+                          "containerWidth": "112px",
+                          "name": "bodypart",
+                          "bodyPartToolTip": true,
+                          "isReadonly": "true"
+                        },
+                        "children": []
+                      }
+                    }, {
+                      "label": "剂量(Gy)",
+                      "class": "",
+                      "width": "66px",
+                      "metadata": {
+                        "name": "",
+                        "description": "",
+                        "type": "InputComponent",
+                        "properties": {
+                          "type": "text",
+                          "maxlength": 20,
+                          "autocomplete": true,
+                          "lineHeight": "1.2em",
+                          "size": "18",
+                          "required": false,
+                          "containerClass": "",
+                          "placeholder": "",
+                          "numericType": "float",
+                          "containerPadding": "",
+                          "containerHeight": "auto",
+                          "containerWidth": "66px",
+                          "name": "Dose",
+                          "isReadonly": "true"
+                        },
+                        "children": []
+                      }
+                    }, {
+                      "label": "分次",
+                      "class": "",
+                      "width": "60px",
+                      "metadata": {
+                        "name": "",
+                        "description": "",
+                        "type": "InputComponent",
+                        "properties": {
+                          "type": "text",
+                          "maxlength": 20,
+                          "autocomplete": true,
+                          "lineHeight": "1.2em",
+                          "size": "18",
+                          "required": false,
+                          "containerClass": "",
+                          "placeholder": "",
+                          "numericType": "integer",
+                          "containerPadding": "",
+                          "containerHeight": "auto",
+                          "containerWidth": "40px",
+                          "name": "Fractions",
+                          "isReadonly": "true"
+                        },
+                        "children": []
+                      }
+                    }],
+                    "footer": {
+                      "name": "",
+                      "description": "",
+                      "type": "InputComponent",
+                      "properties": {
+                        "type": "text",
+                        "maxlength": 32,
+                        "autocomplete": true,
+                        "lineHeight": "1.2em",
+                        "size": "18",
+                        "required": false,
+                        "inputClass": "remarkInput",
+                        "containerClass": "",
+                        "placeholder": "备注",
+                        "containerPadding": "",
+                        "containerHeight": "auto",
+                        "containerWidth": "100%",
+                        "name": "remarkRow",
+                        "isReadonly": "true"
+                      },
+                      "children": []
+                    }
+                  },
+                  "children": []
+                }
+              },
+              "children": []
+            }]
+          }]
+      }]
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "calc(100%-40px)",
+        "height": "50px",
+        "borderTop": "",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "14px 20px 0 20px",
+        "alignItems": "center",
+        "justifyContent": "flex-start",
+        "alignSelf": "",
+        "flexFlow": "rows wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex"
+      },
+      "children": [{
+        "name": "Text Field",
+        "description": "Text input.",
+        "type": "InputComponent",
+        "properties": {
+          "type": "text",
+          "maxlength": "60",
+          "autocomplete": true,
+          "lineHeight": "1.2em",
+          "size": "25",
+          "required": false,
+          "containerClass": "",
+          "placeholder": "备注",
+          "containerPadding": "0",
+          "containerHeight": "auto",
+          "containerWidth": "100%",
+          "name": "beizhuer",
+          "vformValidatorMessage": "Validation error.",
+          "vformValidatorExpression": ""
+        },
+        "children": []
+      }]
+    },
+    {
+      "name": "Layout",
+      "description": "Divides the form into rows and columns.",
+      "type": "LayoutComponent",
+      "properties": {
+        "width": "calc(100%-40px)",
+        "height": "",
+        "borderTop": "1px solid #e7e8e9",
+        "borderRight": "",
+        "borderBottom": "",
+        "borderLeft": "",
+        "class": "vform-default",
+        "padding": "15px 20px",
+        "alignItems": "",
+        "justifyContent": "flex-end",
+        "alignSelf": "",
+        "flexFlow": "rows wrap",
+        "flexGrow": 1,
+        "hidden": false,
+        "display": "flex"
+      },
+      "children": [{
+        "name": "Submit Button",
+        "description": "Submit the form",
+        "type": "SubmitBtnComponent",
+        "properties": {
+          "width": "150px",
+          "height": "60px",
+          "text": "提交"
+        },
+        "children": []
+      }]
+    }
+  ]
+}

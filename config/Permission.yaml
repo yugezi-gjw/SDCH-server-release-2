@@ -1,0 +1,186 @@
+Oncologist:
+  - operation: ViewPatientList
+    resourceGroups:
+      - Oncologist
+  - operation: RegisterPatient
+    resourceGroups:
+      - Oncologist
+  - operation: EditEncounter
+    resourceGroups:
+      - Oncologist
+  - operation: ConfirmPayment
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleProcedure
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleTreatment
+    resourceGroups:
+      - Oncologist
+  - operation: ManageReport
+    resourceGroups:
+      - Oncologist
+
+Oncologist_头组:
+  - operation: ViewPatientList
+    resourceGroups:
+      - Oncologist_头组
+  - operation: RegisterPatient
+    resourceGroups:
+      - Oncologist
+  - operation: EditEncounter
+    resourceGroups:
+      - Oncologist
+  - operation: ConfirmPayment
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleProcedure
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleTreatment
+    resourceGroups:
+      - Oncologist
+  - operation: ManageReport
+    resourceGroups:
+
+Oncologist_头组_头A组:
+  - operation: ViewPatientList
+    resourceGroups:
+      - Oncologist_头组_头A组
+  - operation: RegisterPatient
+    resourceGroups:
+      - Oncologist
+  - operation: EditEncounter
+    resourceGroups:
+      - Oncologist
+  - operation: ConfirmPayment
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleProcedure
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleTreatment
+    resourceGroups:
+      - Oncologist
+  - operation: ManageReport
+    resourceGroups:
+
+Oncologist_头组_头B组:
+  - operation: ViewPatientList
+    resourceGroups:
+      - Oncologist_头组_头B组
+  - operation: RegisterPatient
+    resourceGroups:
+      - Oncologist
+  - operation: EditEncounter
+    resourceGroups:
+      - Oncologist
+  - operation: ConfirmPayment
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleProcedure
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleTreatment
+    resourceGroups:
+      - Oncologist
+  - operation: ManageReport
+    resourceGroups:
+
+Oncologist_胸组:
+  - operation: ViewPatientList
+    resourceGroups:
+      - Oncologist_胸组
+  - operation: RegisterPatient
+    resourceGroups:
+      - Oncologist
+  - operation: EditEncounter
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleProcedure
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleTreatment
+    resourceGroups:
+      - Oncologist
+  - operation: ManageReport
+    resourceGroups:
+
+Oncologist_胸组_胸A组:
+  - operation: ViewPatientList
+    resourceGroups:
+      - Oncologist_胸组_胸A组
+  - operation: RegisterPatient
+    resourceGroups:
+      - Oncologist
+  - operation: EditEncounter
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleProcedure
+    resourceGroups:
+      - Oncologist
+  - operation: ManageReport
+    resourceGroups:
+      - Oncologist
+
+Physicist:
+  - operation: ViewPatientList
+    resourceGroups:
+      - Oncologist
+  - operation: EditEncounter
+    resourceGroups:
+      - Oncologist
+
+
+Technician:
+  - operation: ViewPatientList
+    resourceGroups:
+      - Oncologist
+  - operation: EditEncounter
+    resourceGroups:
+      - Oncologist
+  - operation: ConfirmPayment
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleProcedure
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleTreatment
+    resourceGroups:
+      - Oncologist
+  - operation: ManageReport
+    resourceGroups:
+      - Oncologist
+
+Technician_治疗室一23EX:
+  - operation: ScheduleTreatment
+    resourceGroups:
+      - Oncologist
+
+Technician_治疗室二IX1100:
+  - operation: ScheduleTreatment
+    resourceGroups:
+      - Oncologist
+
+Nurse:
+  - operation: ViewPatientList
+    resourceGroups:
+      - Oncologist
+  - operation: RegisterPatient
+    resourceGroups:
+      - Oncologist
+  - operation: EditEncounter
+    resourceGroups:
+      - Oncologist
+  - operation: ConfirmPayment
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleProcedure
+    resourceGroups:
+      - Oncologist
+  - operation: ScheduleTreatment
+    resourceGroups:
+      - Oncologist
+  - operation: ManageReport
+    resourceGroups:
+      - Oncologist
